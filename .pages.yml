@@ -1,0 +1,76 @@
+media:
+  input: assets
+  output: /monagy-studio/assets
+
+content:
+  - name: portfolio
+    label: إدارة موقع MoNagy Studio
+    type: file
+    path: data/content.json
+    format: json
+    fields:
+      - name: settings
+        label: إعدادات الموقع والنصوص العامة
+        type: object
+        fields:
+          - { name: brandName, label: اسم الاستوديو, type: string }
+          - { name: pageTitle, label: عنوان صفحة المتصفح, type: string }
+          - { name: metaDescription, label: وصف محركات البحث, type: text }
+          - { name: accent, label: اللون الذهبي, type: string }
+          - { name: background, label: لون الخلفية, type: string }
+          - { name: cover, label: صورة الكفر, type: image }
+          - { name: profile, label: الصورة الشخصية, type: image }
+          - { name: heroRoleEn, label: المسمى المهني بالإنجليزية, type: string }
+          - { name: heroRoleAr, label: المسمى المهني بالعربية, type: string }
+          - { name: heroTextEn, label: مقدمة الكفر بالإنجليزية, type: text }
+          - { name: heroTextAr, label: مقدمة الكفر بالعربية, type: text }
+          - { name: aboutTitleEn, label: عنوان النبذة بالإنجليزية, type: string }
+          - { name: aboutTitleAr, label: عنوان النبذة بالعربية, type: string }
+          - { name: aboutTextEn, label: النبذة بالإنجليزية, type: text }
+          - { name: aboutTextAr, label: النبذة بالعربية, type: text }
+          - { name: roleTitleEn, label: عنوان الدور المهني, type: string }
+          - { name: roleTextEn, label: وصف الدور بالإنجليزية, type: text }
+          - { name: roleTextAr, label: وصف الدور بالعربية, type: text }
+          - { name: contactTitleEn, label: عنوان التواصل, type: string }
+          - { name: contactTextEn, label: نص التواصل بالإنجليزية, type: text }
+          - { name: contactTextAr, label: نص التواصل بالعربية, type: text }
+          - { name: email, label: البريد الإلكتروني, type: string }
+          - { name: youtube, label: رابط قناة YouTube, type: string }
+      - name: services
+        label: الخدمات
+        type: object
+        list: true
+        fields:
+          - { name: titleEn, label: الخدمة بالإنجليزية, type: string }
+          - { name: titleAr, label: الخدمة بالعربية, type: string }
+      - name: workflow
+        label: مراحل الإنتاج
+        type: object
+        list: true
+        fields:
+          - { name: titleEn, label: المرحلة بالإنجليزية, type: string }
+          - { name: titleAr, label: المرحلة بالعربية, type: string }
+          - { name: descriptionEn, label: الوصف بالإنجليزية, type: text }
+      - name: tools
+        label: أدوات الإنتاج
+        type: string
+        list: true
+      - name: projects
+        label: الأفلام والمشروعات
+        type: object
+        list: true
+        fields:
+          - { name: id, label: معرف المشروع بالإنجليزية, type: string }
+          - { name: visible, label: إظهار المشروع, type: boolean, default: true }
+          - { name: featured, label: مشروع مميز, type: boolean, default: false }
+          - { name: videoId, label: معرف فيديو YouTube, type: string }
+          - { name: titleEn, label: عنوان المشروع بالإنجليزية, type: string }
+          - { name: titleAr, label: عنوان المشروع بالعربية, type: string }
+          - { name: descriptionEn, label: الوصف بالإنجليزية, type: text }
+          - { name: descriptionAr, label: الوصف بالعربية, type: text }
+          - { name: breakdownEn, label: رابط Breakdown الإنجليزي PDF, type: string }
+          - { name: breakdownAr, label: رابط Breakdown العربي PDF, type: string }
+          - name: refs
+            label: روابط أو معرفات المراجع البصرية
+            type: string
+            list: true
