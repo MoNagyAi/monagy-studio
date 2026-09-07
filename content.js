@@ -2,9 +2,47 @@ window.MONAGY_CONTENT = {
   settings: {
     brandName: "MoNagy Studio",
     email: "",
-    youtube: "https://www.youtube.com/",
+    youtube: "https://www.youtube.com/@MoNagyAi",
     accent: "#d9a52a"
   },
+  services: [
+    { titleEn: "Generative AI Filmmaking", titleAr: "صناعة الأفلام بالذكاء الاصطناعي" },
+    { titleEn: "Creative Direction", titleAr: "الإخراج الإبداعي" },
+    { titleEn: "Cinematic Storytelling", titleAr: "السرد السينمائي" },
+    { titleEn: "Branded Content & Campaigns", titleAr: "المحتوى الدعائي والحملات" },
+    { titleEn: "Character Consistency & Visual Development", titleAr: "اتساق الشخصيات والتطوير البصري" },
+    { titleEn: "AI Media Production", titleAr: "إنتاج الميديا بالذكاء الاصطناعي" },
+    { titleEn: "Virtual Production & Post", titleAr: "الإنتاج الافتراضي وما بعد الإنتاج" },
+    { titleEn: "Custom AI Production Workflows", titleAr: "مسارات إنتاج مخصصة بالذكاء الاصطناعي" },
+    { titleEn: "AI Music & Sound Design", titleAr: "الموسيقى وتصميم الصوت بالذكاء الاصطناعي" }
+  ],
+  workflow: [
+    {
+      titleEn: "Concept & Strategy", titleAr: "الفكرة والاستراتيجية",
+      descriptionEn: "Story direction, audience, mood and the visual language of the project.",
+      detailEn: "Defining the creative brief, target platform and visual reference boards before production begins.",
+      detailAr: "تحديد البريف الإبداعي والمنصة المستهدفة ولوحات المراجع البصرية قبل بدء الإنتاج."
+    },
+    {
+      titleEn: "Pre-production", titleAr: "ما قبل الإنتاج",
+      descriptionEn: "Script development, storyboards, shot planning and character design.",
+      detailEn: "Building consistent character sheets and technical shot lists ready for generative production.",
+      detailAr: "إعداد شيتات شخصيات ثابتة وقوائم لقطات تقنية جاهزة للإنتاج التوليدي."
+    },
+    {
+      titleEn: "Generative Production", titleAr: "الإنتاج التوليدي",
+      descriptionEn: "Purpose-built AI workflows with visual and character consistency.",
+      detailEn: "Combining multiple AI engines with 3D modeling and camera tracking for cinematic camera moves.",
+      detailAr: "دمج أكثر من محرك ذكاء اصطناعي مع النمذجة ثلاثية الأبعاد وتتبع الكاميرا للحصول على حركات كاميرا سينمائية."
+    },
+    {
+      titleEn: "Post & Delivery", titleAr: "ما بعد الإنتاج والتسليم",
+      descriptionEn: "Editing, sound, color, finishing and platform-ready delivery.",
+      detailEn: "Final compositing, color grading and quality control tailored to each platform's specs.",
+      detailAr: "التجميع النهائي والتصحيح اللوني ومراقبة الجودة بما يتناسب مع مواصفات كل منصة."
+    }
+  ],
+  tools: ["ComfyUI", "Kling", "Veo", "Runway", "MiniMax", "LTX", "Stable Diffusion", "Higgsfield", "3ds Max", "Camera Tracking", "After Effects", "Premiere Pro", "DaVinci Resolve", "Unreal Engine", "Blender", "Photoshop"],
   projects: [
     {
       id: "search-for-self", videoId: "lOpPuKnwH0w", featured: true,
