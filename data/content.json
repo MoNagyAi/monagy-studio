@@ -225,46 +225,6 @@
       ]
     },
     {
-      "id": "search-for-self",
-      "visible": true,
-      "featured": true,
-      "videoId": "lOpPuKnwH0w",
-      "titleEn": "Searching for the Self — Episode One",
-      "titleAr": "البحث عن الذات — الحلقة الأولى",
-      "descriptionEn": "A cinematic personal film tracing memory, identity and the return to the beginning.",
-      "descriptionAr": "فيلم شخصي سينمائي يتتبع الذاكرة والهوية والعودة إلى نقطة البداية.",
-      "breakdownEn": "https://drive.google.com/file/d/13O3IOIUidbGwFSwWruSLweunErtOvC49/view?usp=drivesdk",
-      "breakdownAr": "https://drive.google.com/file/d/1OxEIjMhkJ4Q582J7guJJ8GvUFyhJLJA8/view?usp=drivesdk",
-      "refs": [
-        "11cwUPcPYXCxWr1qEjnoY9WOt6pXr9B2p",
-        "1hZckGdPHPm3SP4J-Hg5UiOHEk11gsitw",
-        "12tPkYmDoAshvQr7fVht67--SwMomrZIH",
-        "1Df_HkKnzJmDCrUm8cYyJ_FRfXUVdd5xo",
-        "1iTWB4Hm45qXgoQggHvn6792H9igQrg3p",
-        "1mEhH90cZFlQzWKRPx1IGAxgiYqpf7LaQ"
-      ]
-    },
-    {
-      "id": "spirit-of-legend",
-      "visible": true,
-      "featured": false,
-      "videoId": "ir7-1haoF4s",
-      "titleEn": "When Egypt Plays with the Spirit of a Legend",
-      "titleAr": "حين تلعب مصر بروح الأسطورة",
-      "descriptionEn": "An epic opening to Egypt’s 2026 World Cup journey.",
-      "descriptionAr": "افتتاح ملحمي لرحلة منتخب مصر في كأس العالم 2026.",
-      "breakdownEn": "breakdowns/spirit-of-legend-en.pdf",
-      "breakdownAr": "breakdowns/spirit-of-legend-ar.pdf",
-      "refs": [
-        "1H_w7llI310yZwfA5pVS4QNhLdbxtZM-W",
-        "1LgSaehRcrS6CzeFvpVZhVI5eKKFVJb8O",
-        "1vkxDc7-MnfaXX5ysLjY7X3UFFvy58S7G",
-        "1A_-TiO6h10yvEVfeAyCvM-_8GZIQS4mk",
-        "1tlAytUw4JLY2Kb8eXdbuF4MCiweLc0oI",
-        "1XiXw3UlKL85jN8cvdpr54rU7G2hFUFGP"
-      ]
-    },
-    {
       "id": "shobeir",
       "visible": true,
       "featured": false,
@@ -322,6 +282,46 @@
         "1hbfpPp5gtzpz43j5ewL6iZFjzqvItWt8",
         "1MPOGVRnIpA58McNzFUL_e089UaAYLuvM",
         "1Kn28ZYqCirM71bOi2Um1N7KXXKPj9PUC"
+      ]
+    },
+    {
+      "id": "search-for-self",
+      "visible": true,
+      "featured": true,
+      "videoId": "lOpPuKnwH0w",
+      "titleEn": "Searching for the Self — Episode One",
+      "titleAr": "البحث عن الذات — الحلقة الأولى",
+      "descriptionEn": "A cinematic personal film tracing memory, identity and the return to the beginning.",
+      "descriptionAr": "فيلم شخصي سينمائي يتتبع الذاكرة والهوية والعودة إلى نقطة البداية.",
+      "breakdownEn": "https://drive.google.com/file/d/13O3IOIUidbGwFSwWruSLweunErtOvC49/view?usp=drivesdk",
+      "breakdownAr": "https://drive.google.com/file/d/1OxEIjMhkJ4Q582J7guJJ8GvUFyhJLJA8/view?usp=drivesdk",
+      "refs": [
+        "11cwUPcPYXCxWr1qEjnoY9WOt6pXr9B2p",
+        "1hZckGdPHPm3SP4J-Hg5UiOHEk11gsitw",
+        "12tPkYmDoAshvQr7fVht67--SwMomrZIH",
+        "1Df_HkKnzJmDCrUm8cYyJ_FRfXUVdd5xo",
+        "1iTWB4Hm45qXgoQggHvn6792H9igQrg3p",
+        "1mEhH90cZFlQzWKRPx1IGAxgiYqpf7LaQ"
+      ]
+    },
+    {
+      "id": "spirit-of-legend",
+      "visible": true,
+      "featured": false,
+      "videoId": "ir7-1haoF4s",
+      "titleEn": "When Egypt Plays with the Spirit of a Legend",
+      "titleAr": "حين تلعب مصر بروح الأسطورة",
+      "descriptionEn": "An epic opening to Egypt’s 2026 World Cup journey.",
+      "descriptionAr": "افتتاح ملحمي لرحلة منتخب مصر في كأس العالم 2026.",
+      "breakdownEn": "breakdowns/spirit-of-legend-en.pdf",
+      "breakdownAr": "breakdowns/spirit-of-legend-ar.pdf",
+      "refs": [
+        "1H_w7llI310yZwfA5pVS4QNhLdbxtZM-W",
+        "1LgSaehRcrS6CzeFvpVZhVI5eKKFVJb8O",
+        "1vkxDc7-MnfaXX5ysLjY7X3UFFvy58S7G",
+        "1A_-TiO6h10yvEVfeAyCvM-_8GZIQS4mk",
+        "1tlAytUw4JLY2Kb8eXdbuF4MCiweLc0oI",
+        "1XiXw3UlKL85jN8cvdpr54rU7G2hFUFGP"
       ]
     },
     {
