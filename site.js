@@ -84,7 +84,7 @@
     return `<a href="${escapeHtml(link)}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(title)} visual reference ${number}"><img loading="lazy" src="${escapeHtml(image)}" alt="${escapeHtml(title)} visual reference ${number}"><span>${String(number).padStart(2, "0")}</span></a>`;
   };
   const visibleProjects = (data.projects || []).filter(project => project.visible !== false);
-  if (projects) projects.innerHTML = visibleProjects.map((project, index) => {
+  if (projects && visibleProjects.length) projects.innerHTML = visibleProjects.map((project, index) => {
     const id = String(project.id || `project-${index + 1}`).replace(/[^a-z0-9_-]/gi, "-");
     const refs = (project.refs || []).filter(Boolean).slice(0, 6);
     return `
@@ -97,23 +97,11 @@
   }).join("");
 
   const services = $("#servicesList");
-  if (services) services.innerHTML = (data.services || []).map((service, index) => `<div><span>${String(index + 1).padStart(2, "0")}</span><strong>${escapeHtml(service.titleEn)}</strong><em dir="rtl">${escapeHtml(service.titleAr)}</em></div>`).join("");
+  if (services && Array.isArray(data.services) && data.services.length) services.innerHTML = data.services.map((service, index) => `<div><span>${String(index + 1).padStart(2, "0")}</span><strong>${escapeHtml(service.titleEn)}</strong><em dir="rtl">${escapeHtml(service.titleAr)}</em></div>`).join("");
 
   const workflow = $(".workflow-grid");
-  if (workflow) workflow.innerHTML = (data.workflow || []).map((step, index) => `<article><span>${String(index + 1).padStart(2, "0")}</span><h3>${escapeHtml(step.titleEn)}</h3><h4 dir="rtl">${escapeHtml(step.titleAr)}</h4><p>${escapeHtml(step.descriptionEn)}</p></article>`).join("");
+  if (workflow && Array.isArray(data.workflow) && data.workflow.length) workflow.innerHTML = data.workflow.map((step, index) => `<article><span>${String(index + 1).padStart(2, "0")}</span><h3>${escapeHtml(step.titleEn)}</h3><h4 dir="rtl">${escapeHtml(step.titleAr)}</h4><p>${escapeHtml(step.descriptionEn)}</p>${step.detailEn ? `<p class="workflow-detail">${escapeHtml(step.detailEn)}</p>` : ""}${step.detailAr ? `<p class="workflow-detail modern-arabic" dir="rtl">${escapeHtml(step.detailAr)}</p>` : ""}</article>`).join("");
 
   const stack = $(".stack-list");
-  if (stack) stack.innerHTML = (data.tools || []).map(tool => `<span>${escapeHtml(tool)}</span>`).join("");
-
-  let arabic = false;
-  const languageButton = $("#languageButton");
-  if (languageButton) languageButton.addEventListener("click", function () {
-    arabic = !arabic;
-    document.documentElement.lang = arabic ? "ar" : "en";
-    site.dir = arabic ? "rtl" : "ltr";
-    document.querySelectorAll("[data-en][data-ar]").forEach(element => {
-      element.textContent = element.dataset[arabic ? "ar" : "en"];
-    });
-    this.textContent = arabic ? "English" : "العربية";
-  });
+  if (stack && Array.isArray(data.tools) && data.tools.length) stack.innerHTML = data.tools.map(tool => `<span>${escapeHtml(tool)}</span>`).join("");
 })();
