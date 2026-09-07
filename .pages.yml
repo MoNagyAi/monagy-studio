@@ -4,59 +4,192 @@ media:
 
 content:
   - name: portfolio
-    label: إدارة موقع MoNagy Studio
+    label: إدارة موقع MoNagy Studio بالكامل
     type: file
     path: data/content.json
     format: json
     fields:
       - name: settings
-        label: إعدادات الموقع والنصوص العامة
+        label: 1) الهوية البصرية وإعدادات الموقع
         type: object
         fields:
           - { name: brandName, label: اسم الاستوديو, type: string }
           - { name: pageTitle, label: عنوان صفحة المتصفح, type: string }
-          - { name: metaDescription, label: وصف محركات البحث, type: text }
-          - { name: accent, label: اللون الذهبي, type: string }
-          - { name: background, label: لون الخلفية, type: string }
-          - { name: cover, label: صورة الكفر, type: image }
+          - { name: metaDescription, label: وصف محركات البحث SEO, type: text }
+          - { name: accent, label: اللون الذهبي الرئيسي, type: string }
+          - { name: background, label: لون خلفية الموقع, type: string }
+          - { name: panel, label: لون البطاقات والخلفيات الثانوية, type: string }
+          - { name: text, label: لون النص الرئيسي, type: string }
+          - { name: muted, label: لون النص الثانوي, type: string }
+          - { name: logoMark, label: اللوجو المختصر للهيدر, type: image }
+          - { name: logoFull, label: اللوجو الكامل - ملف الهوية, type: image }
+          - { name: favicon, label: أيقونة المتصفح Favicon, type: image }
+          - { name: cover, label: صورة الكفر الرئيسية, type: image }
           - { name: profile, label: الصورة الشخصية, type: image }
-          - { name: heroRoleEn, label: المسمى المهني بالإنجليزية, type: string }
-          - { name: heroRoleAr, label: المسمى المهني بالعربية, type: string }
-          - { name: heroTextEn, label: مقدمة الكفر بالإنجليزية, type: text }
-          - { name: heroTextAr, label: مقدمة الكفر بالعربية, type: text }
-          - { name: aboutTitleEn, label: عنوان النبذة بالإنجليزية, type: string }
-          - { name: aboutTitleAr, label: عنوان النبذة بالعربية, type: string }
-          - { name: aboutTextEn, label: النبذة بالإنجليزية, type: text }
-          - { name: aboutTextAr, label: النبذة بالعربية, type: text }
-          - { name: roleTitleEn, label: عنوان الدور المهني, type: string }
-          - { name: roleTextEn, label: وصف الدور بالإنجليزية, type: text }
-          - { name: roleTextAr, label: وصف الدور بالعربية, type: text }
-          - { name: contactTitleEn, label: عنوان التواصل, type: string }
-          - { name: contactTextEn, label: نص التواصل بالإنجليزية, type: text }
-          - { name: contactTextAr, label: نص التواصل بالعربية, type: text }
-          - { name: email, label: البريد الإلكتروني, type: string }
-          - { name: youtube, label: رابط قناة YouTube, type: string }
+          - { name: showGrain, label: إظهار تأثير الحبيبات السينمائي, type: boolean, default: true }
+
+      - name: navigation
+        label: 2) القائمة العلوية Navigation
+        type: object
+        fields:
+          - { name: filmsEn, label: Films - إنجليزي, type: string }
+          - { name: filmsAr, label: الأفلام - عربي, type: string }
+          - { name: aboutEn, label: About - إنجليزي, type: string }
+          - { name: aboutAr, label: نبذة - عربي, type: string }
+          - { name: resumeEn, label: Resume - إنجليزي, type: string }
+          - { name: resumeAr, label: السيرة الذاتية - عربي, type: string }
+          - { name: servicesEn, label: Services - إنجليزي, type: string }
+          - { name: servicesAr, label: الخدمات - عربي, type: string }
+          - { name: contactEn, label: Contact - إنجليزي, type: string }
+          - { name: contactAr, label: تواصل - عربي, type: string }
+
+      - name: hero
+        label: 3) الكفر الرئيسي Hero
+        type: object
+        fields:
+          - { name: roleEn, label: المسمى المهني بالإنجليزية, type: string }
+          - { name: roleAr, label: المسمى المهني بالعربية, type: string }
+          - { name: namePrefix, label: الجزء الأول من الاسم الكبير - MO, type: string }
+          - { name: nameAccent, label: الجزء الذهبي من الاسم - NAGY, type: string }
+          - { name: nameLine2, label: السطر الثاني - STUDIO, type: string }
+          - { name: textEn, label: مقدمة الكفر بالإنجليزية, type: text }
+          - { name: textAr, label: مقدمة الكفر بالعربية, type: text }
+          - { name: buttonEn, label: زر مشاهدة الأفلام - إنجليزي, type: string }
+          - { name: buttonAr, label: زر مشاهدة الأفلام - عربي, type: string }
+
+      - name: bio
+        label: 4) التعريف الشخصي والسيرة الذاتية
+        type: object
+        fields:
+          - { name: eyebrow, label: عنوان قسم التعريف, type: string }
+          - { name: textEn, label: التعريف الشخصي بالإنجليزية, type: text }
+          - { name: textAr, label: التعريف الشخصي بالعربية, type: text }
+          - { name: resumeTitleEn, label: عنوان Resume بالإنجليزية, type: string }
+          - { name: resumeTitleAr, label: عنوان السيرة الذاتية بالعربية, type: string }
+          - { name: resumeIntroEn, label: وصف السيرة الذاتية بالإنجليزية, type: text }
+          - { name: resumeIntroAr, label: وصف السيرة الذاتية بالعربية, type: text }
+          - { name: resumeEnLabel, label: اسم النسخة الإنجليزية, type: string }
+          - { name: resumeEnView, label: رابط عرض Resume الإنجليزي, type: string }
+          - { name: resumeEnDownload, label: رابط تحميل Resume الإنجليزي, type: string }
+          - { name: resumeArLabel, label: اسم النسخة العربية, type: string }
+          - { name: resumeArView, label: رابط عرض السيرة العربية, type: string }
+          - { name: resumeArDownload, label: رابط تحميل السيرة العربية, type: string }
+
+      - name: filmsSection
+        label: 5) إعدادات قسم الأفلام والمشروعات
+        type: object
+        fields:
+          - { name: eyebrow, label: العنوان الصغير للقسم, type: string }
+          - { name: titleLine1En, label: عنوان الأفلام - السطر الأول, type: string }
+          - { name: titleLine2En, label: عنوان الأفلام - السطر الذهبي, type: string }
+          - { name: noteEn, label: ملاحظة القسم بالإنجليزية, type: text }
+          - { name: noteAr, label: ملاحظة القسم بالعربية, type: text }
+          - { name: commercialNoteAr, label: ملاحظة المشاريع التجارية بالعربية, type: text }
+          - { name: featuredLabel, label: تسمية المشروع المميز, type: string }
+          - { name: defaultLabel, label: تسمية المشروع العادي, type: string }
+          - { name: breakdownLabelEn, label: عنوان Project Breakdown بالإنجليزية, type: string }
+          - { name: breakdownLabelAr, label: عنوان Project Breakdown بالعربية, type: string }
+          - { name: breakdownEnglishButton, label: نص زر PDF الإنجليزي, type: string }
+          - { name: breakdownArabicButton, label: نص زر PDF العربي, type: string }
+          - { name: refsLabelEn, label: عنوان المراجع البصرية بالإنجليزية, type: string }
+          - { name: refsLabelAr, label: عنوان المراجع البصرية بالعربية, type: string }
+
+      - name: about
+        label: 6) قسم About the Studio
+        type: object
+        fields:
+          - { name: eyebrow, label: العنوان الصغير, type: string }
+          - { name: titleEn, label: العنوان بالإنجليزية, type: string }
+          - { name: titleAr, label: العنوان بالعربية, type: string }
+          - { name: textEn, label: النص بالإنجليزية, type: text }
+          - { name: textAr, label: النص بالعربية, type: text }
+
+      - name: role
+        label: 7) الدور الإبداعي
+        type: object
+        fields:
+          - { name: eyebrow, label: العنوان الصغير, type: string }
+          - { name: titleEn, label: المسمى المهني, type: string }
+          - { name: textEn, label: وصف الدور بالإنجليزية, type: text }
+          - { name: textAr, label: وصف الدور بالعربية, type: text }
+
+      - name: servicesSection
+        label: 8) عنوان قسم الخدمات
+        type: object
+        fields:
+          - { name: eyebrow, label: عنوان SERVICES والخدمات, type: string }
+
       - name: services
-        label: الخدمات
+        label: 9) الخدمات
         type: object
         list: true
         fields:
           - { name: titleEn, label: الخدمة بالإنجليزية, type: string }
           - { name: titleAr, label: الخدمة بالعربية, type: string }
+
+      - name: workflowSection
+        label: 10) عنوان مراحل الإنتاج
+        type: object
+        fields:
+          - { name: eyebrow, label: العنوان الصغير, type: string }
+          - { name: titleLine1En, label: العنوان - السطر الأول, type: string }
+          - { name: titleLine2En, label: العنوان - السطر الذهبي, type: string }
+
       - name: workflow
-        label: مراحل الإنتاج
+        label: 11) مراحل الإنتاج Workflow
         type: object
         list: true
         fields:
           - { name: titleEn, label: المرحلة بالإنجليزية, type: string }
           - { name: titleAr, label: المرحلة بالعربية, type: string }
-          - { name: descriptionEn, label: الوصف بالإنجليزية, type: text }
+          - { name: descriptionEn, label: الوصف المختصر بالإنجليزية, type: text }
+          - { name: descriptionAr, label: الوصف المختصر بالعربية, type: text }
+          - { name: detailEn, label: التفاصيل بالإنجليزية, type: text }
+          - { name: detailAr, label: التفاصيل بالعربية, type: text }
+
+      - name: stackSection
+        label: 12) عنوان أدوات الإنتاج
+        type: object
+        fields:
+          - { name: eyebrow, label: العنوان الصغير, type: string }
+          - { name: titleEn, label: العنوان بالإنجليزية, type: string }
+          - { name: textAr, label: النص بالعربية, type: text }
+
       - name: tools
-        label: أدوات الإنتاج
+        label: 13) البرامج والأدوات
         type: string
         list: true
+
+      - name: contact
+        label: 14) التواصل ووسائل التواصل الاجتماعي
+        type: object
+        fields:
+          - { name: eyebrow, label: العنوان الصغير, type: string }
+          - { name: titleLine1En, label: عنوان التواصل - السطر الأول, type: string }
+          - { name: titleLine2En, label: عنوان التواصل - السطر الذهبي, type: string }
+          - { name: textEn, label: نص التواصل بالإنجليزية, type: text }
+          - { name: textAr, label: نص التواصل بالعربية, type: text }
+          - { name: email, label: البريد الإلكتروني, type: string }
+          - { name: phone1, label: رقم الهاتف الأول, type: string }
+          - { name: phone2, label: رقم الهاتف الثاني, type: string }
+          - { name: youtubeButton, label: نص زر YouTube, type: string }
+          - { name: facebook, label: رابط Facebook, type: string }
+          - { name: linkedin, label: رابط LinkedIn, type: string }
+          - { name: instagram, label: رابط Instagram, type: string }
+          - { name: threads, label: رابط Threads, type: string }
+          - { name: youtube, label: رابط YouTube, type: string }
+          - { name: tiktok, label: رابط TikTok, type: string }
+          - { name: whatsapp, label: رابط WhatsApp, type: string }
+
+      - name: footer
+        label: 15) الفوتر Footer
+        type: object
+        fields:
+          - { name: tagline, label: جملة الفوتر, type: string }
+          - { name: youtubeLabel, label: نص رابط YouTube في الفوتر, type: string }
+
       - name: projects
-        label: الأفلام والمشروعات
+        label: 16) الأفلام والمشروعات
         type: object
         list: true
         fields:
