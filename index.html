@@ -11,14 +11,14 @@
   <main class="studio-site classic-site" id="site" dir="ltr" style="--studio-bg:#070707;--studio-accent:#d9a52a">
     <div class="grain" aria-hidden="true"></div>
     <header class="topbar">
-      <a class="classic-brand" href="#home"><span class="brand-mark">MN</span><span>MoNagy Studio</span></a>
+      <a class="classic-brand" href="#home"><img class="brand-mark" src="assets/logo-mark.png" alt="MoNagy Studio logo"><span>MoNagy Studio</span></a>
       <nav aria-label="Primary navigation">
-        <a href="#films" data-en="Films" data-ar="الأفلام">Films</a>
-        <a href="#about" data-en="About" data-ar="نبذة">About</a>
-        <a href="#services" data-en="Services" data-ar="الخدمات">Services</a>
-        <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+        <a href="#films"><span class="nav-label-en">Films</span><span class="nav-label-ar" dir="rtl">الأفلام</span></a>
+        <a href="#about"><span class="nav-label-en">About</span><span class="nav-label-ar" dir="rtl">نبذة</span></a>
+        <a href="#bio"><span class="nav-label-en">Resume</span><span class="nav-label-ar" dir="rtl">السيرة الذاتية</span></a>
+        <a href="#services"><span class="nav-label-en">Services</span><span class="nav-label-ar" dir="rtl">الخدمات</span></a>
+        <a href="#contact"><span class="nav-label-en">Contact</span><span class="nav-label-ar" dir="rtl">تواصل</span></a>
       </nav>
-      <div class="top-actions"><button class="lang-switch" id="languageButton" type="button">العربية</button></div>
     </header>
 
     <section class="classic-hero" id="home">
@@ -31,21 +31,49 @@
         </div>
         <div class="hero-bottom">
           <p data-en="Generative AI filmmaking, cinematic storytelling and media production — from concept to final frame." data-ar="صناعة أفلام بالذكاء الاصطناعي وسرد سينمائي وإنتاج إعلامي متكامل — من الفكرة إلى الكادر الأخير.">Generative AI filmmaking, cinematic storytelling and media production — from concept to final frame.</p>
-          <a class="showreel" href="#films"><span data-en="View selected films" data-ar="شاهد الأفلام المختارة">View selected films</span><i>↓</i></a>
+          <a class="showreel" href="#films"><span class="showreel-text"><span class="showreel-en">VIEW SELECTED FILMS</span><span class="showreel-ar" dir="rtl">شاهد الأفلام المختارة</span></span><i>↓</i></a>
         </div>
       </div>
     </section>
 
-    <aside class="breakdown-promise">
-      <span class="promise-icon">PDF</span>
-      <p><strong data-en="Every film includes a Project Breakdown PDF" data-ar="كل فيلم مرفق بملف PROJECT BREAKDOWN PDF">Every film includes a Project Breakdown PDF</strong><small data-en="Available in Arabic and English beside every project." data-ar="متاح بالعربية والإنجليزية بجانب كل مشروع.">Available in Arabic and English beside every project.</small></p>
-      <div><span>العربية</span><span>ENGLISH</span></div>
-    </aside>
+    <section id="bio" class="filmmaker-bio-section">
+      <div class="bio-copy">
+        <p class="classic-eyebrow">MEET THE FILMMAKER / تعرف على صانع الأفلام</p>
+        <p>I'm Mohamed Fathi Nagy, PhD — a Generative AI Filmmaker and AI Media Producer based in Egypt, working remotely with clients and creative teams worldwide. I specialize in cinematic storytelling, animation, sports media and branded content, developing projects from concept and visual development through to final delivery using tools like ComfyUI, Adobe After Effects and Unreal Engine. I hold a PhD in Applied Arts and currently teach at the Faculty of Applied Arts, Beni Suef University.</p>
+        <p class="modern-arabic" dir="rtl">أنا محمد فتحي ناجي، حاصل على درجة الدكتوراه، صانع أفلام ومنتج ميديا بالذكاء الاصطناعي التوليدي، مقيم في مصر وأعمل عن بُعد مع عملاء وفرق إبداعية حول العالم. أتخصص في السرد السينمائي والأنيميشن والميديا الرياضية والمحتوى الدعائي، وأطوّر المشروعات من الفكرة والتطوير البصري وحتى التسليم النهائي باستخدام أدوات مثل ComfyUI وAdobe After Effects وUnreal Engine. حاصل على الدكتوراه في الفنون التطبيقية، وأعمل حاليًا مدرسًا بكلية الفنون التطبيقية، جامعة بني سويف.</p>
+      </div>
+      <div class="resume-block">
+        <p class="resume-label"><strong data-en="Resume" data-ar="السيرة الذاتية">Resume</strong><small data-en="View or download — available in English and Arabic, hosted on Google Drive." data-ar="عرض أو تحميل — متاحة بالعربية والإنجليزية عبر جوجل درايف.">View or download — available in English and Arabic, hosted on Google Drive.</small></p>
+        <div class="resume-lang-group">
+          <div class="resume-lang-row">
+            <span class="resume-lang-name">Resume — English</span>
+            <div class="resume-lang-actions">
+              <a class="resume-icon-btn" href="https://drive.google.com/file/d/1LMkW-2MhcKxmZPB-19u0bz6Ce1x5-TsX/view?usp=drive_link" target="_blank" rel="noreferrer" aria-label="View Resume in English" data-en="👁 View" data-ar="👁 عرض">👁 View</a>
+              <a class="resume-icon-btn resume-icon-btn-solid" href="https://drive.google.com/uc?export=download&id=1LMkW-2MhcKxmZPB-19u0bz6Ce1x5-TsX" target="_blank" rel="noreferrer" aria-label="Download Resume in English" data-en="⬇ Download" data-ar="⬇ تحميل">⬇ Download</a>
+            </div>
+          </div>
+          <div class="resume-lang-row">
+            <span class="resume-lang-name" dir="rtl">السيرة الذاتية — عربي</span>
+            <div class="resume-lang-actions">
+              <a class="resume-icon-btn" href="https://drive.google.com/file/d/1tZCGmljEbW91CYAi-vV6diOScY8Ony5g/view?usp=drive_link" target="_blank" rel="noreferrer" aria-label="عرض السيرة الذاتية بالعربية" data-en="👁 View" data-ar="👁 عرض">👁 View</a>
+              <a class="resume-icon-btn resume-icon-btn-solid" href="https://drive.google.com/uc?export=download&id=1tZCGmljEbW91CYAi-vV6diOScY8Ony5g" target="_blank" rel="noreferrer" aria-label="تحميل السيرة الذاتية بالعربية" data-en="⬇ Download" data-ar="⬇ تحميل">⬇ Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="films" class="modern-work-section">
       <div class="modern-section-heading">
-        <div><p class="classic-eyebrow">SELECTED FILMS</p><h2>Every film has its own<br><em>Project Breakdown PDF.</em></h2></div>
-        <p dir="rtl">كل فيلم مرفق بدراسة مشروع خاصة به<br>بصيغة PDF بالعربية والإنجليزية.</p>
+        <div>
+          <p class="classic-eyebrow">SELECTED FILMS</p>
+          <h2>Every film has its own<br><em>Project Breakdown PDF.</em></h2>
+          <p class="modern-section-note">The films shown here are personal projects — you can explore commercial work through the Resume.</p>
+        </div>
+        <div class="modern-section-heading-note">
+          <p dir="rtl">كل فيلم مرفق بدراسة مشروع خاصة به<br>بصيغة PDF بالعربية والإنجليزية.</p>
+          <p dir="rtl">الأفلام المعروضة هنا مشاريع شخصية — يمكنك الاطلاع على المشاريع التجارية من خلال السيرة الذاتية.</p>
+        </div>
       </div>
       <div class="modern-projects-list" id="projects"></div>
     </section>
@@ -68,23 +96,41 @@
     <section class="workflow-section">
       <div class="workflow-heading"><div><p class="classic-eyebrow">PRODUCTION WORKFLOW / مراحل الإنتاج</p><h2>One connected workflow.<br><em>From idea to final film.</em></h2></div></div>
       <div class="workflow-grid">
-        <article><span>01</span><h3>Concept & Strategy</h3><h4 dir="rtl">الفكرة والاستراتيجية</h4><p>Story direction, audience, mood and the visual language of the project.</p></article>
-        <article><span>02</span><h3>Pre-production</h3><h4 dir="rtl">ما قبل الإنتاج</h4><p>Script development, storyboards, shot planning and character design.</p></article>
-        <article><span>03</span><h3>Generative Production</h3><h4 dir="rtl">الإنتاج التوليدي</h4><p>Purpose-built AI workflows with visual and character consistency.</p></article>
-        <article><span>04</span><h3>Post & Delivery</h3><h4 dir="rtl">ما بعد الإنتاج والتسليم</h4><p>Editing, sound, color, finishing and platform-ready delivery.</p></article>
+        <article><span>01</span><h3>Concept & Strategy</h3><h4 dir="rtl">الفكرة والاستراتيجية</h4><p>Story direction, audience, mood and the visual language of the project.</p><p class="workflow-detail">Defining the creative brief, target platform and visual reference boards before production begins.</p><p class="workflow-detail modern-arabic" dir="rtl">تحديد البريف الإبداعي والمنصة المستهدفة ولوحات المراجع البصرية قبل بدء الإنتاج.</p></article>
+        <article><span>02</span><h3>Pre-production</h3><h4 dir="rtl">ما قبل الإنتاج</h4><p>Script development, storyboards, shot planning and character design.</p><p class="workflow-detail">Building consistent character sheets and technical shot lists ready for generative production.</p><p class="workflow-detail modern-arabic" dir="rtl">إعداد شيتات شخصيات ثابتة وقوائم لقطات تقنية جاهزة للإنتاج التوليدي.</p></article>
+        <article><span>03</span><h3>Generative Production</h3><h4 dir="rtl">الإنتاج التوليدي</h4><p>Purpose-built AI workflows with visual and character consistency.</p><p class="workflow-detail">Combining multiple AI engines with 3D modeling and camera tracking for cinematic camera moves.</p><p class="workflow-detail modern-arabic" dir="rtl">دمج أكثر من محرك ذكاء اصطناعي مع النمذجة ثلاثية الأبعاد وتتبع الكاميرا للحصول على حركات كاميرا سينمائية.</p></article>
+        <article><span>04</span><h3>Post & Delivery</h3><h4 dir="rtl">ما بعد الإنتاج والتسليم</h4><p>Editing, sound, color, finishing and platform-ready delivery.</p><p class="workflow-detail">Final compositing, color grading and quality control tailored to each platform's specs.</p><p class="workflow-detail modern-arabic" dir="rtl">التجميع النهائي والتصحيح اللوني ومراقبة الجودة بما يتناسب مع مواصفات كل منصة.</p></article>
       </div>
     </section>
 
     <section class="production-stack-section">
       <div><p class="classic-eyebrow">PRODUCTION STACK</p><h2>Tools serving the story.</h2><p dir="rtl">الأدوات في خدمة الحكاية، وليست بديلًا عن الرؤية الإبداعية.</p></div>
-      <div class="stack-list"><span>ComfyUI</span><span>Kling</span><span>Veo</span><span>Runway</span><span>MiniMax</span><span>LTX</span><span>Stable Diffusion</span><span>Higgsfield</span></div>
+      <div class="stack-list"><span>ComfyUI</span><span>Kling</span><span>Veo</span><span>Runway</span><span>MiniMax</span><span>LTX</span><span>Stable Diffusion</span><span>Higgsfield</span><span>3ds Max</span><span>Camera Tracking</span><span>After Effects</span><span>Premiere Pro</span><span>DaVinci Resolve</span><span>Unreal Engine</span><span>Blender</span><span>Photoshop</span></div>
     </section>
 
     <section id="contact" class="contact-cta-section">
-      <p class="classic-eyebrow">START A CONVERSATION / تواصل وتعاون دولي</p><h2>Ready to build your<br><em>next cinematic story?</em></h2><p>Based in Egypt • Working globally</p><p dir="rtl">متاح لإنتاج الأفلام والمحتوى السينمائي والحملات الإبداعية والتعاون مع العملاء والاستوديوهات حول العالم.</p><div><a class="contact-secondary" href="https://www.youtube.com/" target="_blank" rel="noreferrer">▶ VIEW YOUTUBE CHANNEL</a></div>
+      <p class="classic-eyebrow">START A CONVERSATION / تواصل وتعاون دولي</p><h2>Ready to build your<br><em>next cinematic story?</em></h2><p>Based in Egypt • Working globally</p><p dir="rtl">متاح لإنتاج الأفلام والمحتوى السينمائي والحملات الإبداعية والتعاون مع العملاء والاستوديوهات حول العالم.</p>
+      <div>
+        <a class="contact-secondary contact-email" href="mailto:monagy-studio@hotmail.com">monagy-studio@hotmail.com</a>
+        <a class="contact-secondary contact-phone" href="tel:+201006347562">+20 100 634 7562</a>
+        <a class="contact-secondary contact-phone" href="tel:+201067498965">+20 106 749 8965</a>
+        <a class="contact-secondary contact-youtube" href="https://www.youtube.com/@MoNagyAi" target="_blank" rel="noreferrer">VIEW YOUTUBE CHANNEL</a>
+      </div>
+      <div class="social-icons">
+        <a class="social-icon-btn" href="https://www.facebook.com/mo.nagyai" target="_blank" rel="noreferrer" aria-label="Facebook">f</a>
+        <a class="social-icon-btn" href="https://www.linkedin.com/in/mo-nagy-ai/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+        <a class="social-icon-btn" href="https://www.instagram.com/mo.nagy.ai" target="_blank" rel="noreferrer" aria-label="Instagram">ig</a>
+        <a class="social-icon-btn" href="https://www.threads.com/@mo.nagy.ai" target="_blank" rel="noreferrer" aria-label="Threads">@</a>
+        <a class="social-icon-btn" href="https://www.youtube.com/@MoNagyAi" target="_blank" rel="noreferrer" aria-label="YouTube">▶</a>
+        <a class="social-icon-btn" href="https://www.tiktok.com/@monagyai" target="_blank" rel="noreferrer" aria-label="TikTok">♪</a>
+        <a class="social-icon-btn" href="https://wa.me/message/MI6QH6JGHCE5L1" target="_blank" rel="noreferrer" aria-label="WhatsApp">wa</a>
+      </div>
     </section>
 
-    <footer class="modern-footer"><p>LET'S CREATE SOMETHING CINEMATIC.</p><h2>MoNagy Studio</h2><div><a href="https://www.youtube.com/" target="_blank" rel="noreferrer">▶ YOUTUBE CHANNEL</a></div></footer>
+    <footer class="modern-footer">
+      <p>LET'S CREATE SOMETHING CINEMATIC.</p><h2>MoNagy Studio</h2>
+      <div><a href="https://www.youtube.com/@MoNagyAi" target="_blank" rel="noreferrer">YOUTUBE CHANNEL</a></div>
+    </footer>
   </main>
   <script src="content.js"></script>
   <script src="site.js"></script>
