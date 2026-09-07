@@ -269,3 +269,7 @@ button,input,textarea,select { font:inherit; }
   .workflow-grid article { min-height:auto; border-right:0; border-bottom:1px solid #ffffff1d; }
   .workflow-grid article:last-child { border-bottom:0; }
 }
+
+/* Keep uploaded covers fully visible on every screen. */
+.classic-hero { background:#050505; }
+.classic-site .cover { object-fit:contain; object-position:center center; background:#050505; }
