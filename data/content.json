@@ -5,23 +5,85 @@
     "metaDescription": "Cinematic Generative AI filmmaking portfolio by Mohamed Nagy.",
     "accent": "#d9a52a",
     "background": "#070707",
+    "panel": "#101010",
+    "text": "#f6f3ea",
+    "muted": "#a4a09a",
+    "logoMark": "/monagy-studio/assets/logo-mark.png",
+    "logoFull": "/monagy-studio/assets/logo-full.png",
+    "favicon": "/monagy-studio/assets/logo-mark.png",
     "cover": "/monagy-studio/assets/ChatGPT Image 27 أغسطس 2026، 10_56_41 ص.png",
     "profile": "/monagy-studio/assets/profile.jpg",
-    "heroRoleEn": "AI FILMMAKER • CREATIVE DIRECTOR",
-    "heroRoleAr": "صانع أفلام بالذكاء الاصطناعي • مخرج إبداعي",
-    "heroTextEn": "Generative AI filmmaking, cinematic storytelling and media production — from concept to final frame.",
-    "heroTextAr": "صناعة أفلام بالذكاء الاصطناعي وسرد سينمائي وإنتاج إعلامي متكامل — من الفكرة إلى الكادر الأخير.",
-    "aboutTitleEn": "From concept to final frame.",
-    "aboutTitleAr": "من الفكرة إلى الكادر الأخير.",
-    "aboutTextEn": "I create cinematic films and visual experiences with Generative AI, combining concept development, directing, storyboarding, character consistency and post-production in a complete professional workflow.",
-    "aboutTextAr": "أصنع أفلامًا وتجارب بصرية سينمائية باستخدام الذكاء الاصطناعي التوليدي، من تطوير الفكرة والإخراج والستوري بورد واتساق الشخصيات حتى مرحلة ما بعد الإنتاج.",
-    "roleTitleEn": "AI Filmmaker & Creative Director",
-    "roleTextEn": "I bridge cinematic direction and Generative AI production, turning an initial concept into a coherent film with a clear visual identity. Every project is shaped through story development, shot design, character consistency and final post-production.",
-    "roleTextAr": "أجمع بين الإخراج السينمائي والإنتاج بالذكاء الاصطناعي التوليدي لتحويل الفكرة إلى فيلم متكامل بهوية بصرية واضحة، من تطوير الحكاية وتصميم اللقطات واتساق الشخصيات حتى مرحلة ما بعد الإنتاج.",
-    "contactTitleEn": "Ready to build your next cinematic story?",
-    "contactTextEn": "Based in Egypt • Working globally",
-    "contactTextAr": "متاح لإنتاج الأفلام والمحتوى السينمائي والحملات الإبداعية والتعاون مع العملاء والاستوديوهات حول العالم.",
-    "youtube": "https://www.youtube.com/@MoNagyAi"
+    "showGrain": true
+  },
+  "navigation": {
+    "filmsEn": "Films",
+    "filmsAr": "الأفلام",
+    "aboutEn": "About",
+    "aboutAr": "نبذة",
+    "resumeEn": "Resume",
+    "resumeAr": "السيرة الذاتية",
+    "servicesEn": "Services",
+    "servicesAr": "الخدمات",
+    "contactEn": "Contact",
+    "contactAr": "تواصل"
+  },
+  "hero": {
+    "roleEn": "AI FILMMAKER • CREATIVE DIRECTOR",
+    "roleAr": "صانع أفلام بالذكاء الاصطناعي • مخرج إبداعي",
+    "namePrefix": "MO",
+    "nameAccent": "NAGY",
+    "nameLine2": "STUDIO",
+    "textEn": "Generative AI filmmaking, cinematic storytelling and media production — from concept to final frame.",
+    "textAr": "صناعة أفلام بالذكاء الاصطناعي وسرد سينمائي وإنتاج إعلامي متكامل — من الفكرة إلى الكادر الأخير.",
+    "buttonEn": "VIEW SELECTED FILMS",
+    "buttonAr": "شاهد الأفلام المختارة"
+  },
+  "bio": {
+    "eyebrow": "MEET THE FILMMAKER / تعرف على صانع الأفلام",
+    "textEn": "I'm Mohamed Fathi Nagy, PhD — a Generative AI Filmmaker and AI Media Producer based in Egypt, working remotely with clients and creative teams worldwide. I specialize in cinematic storytelling, animation, sports media and branded content, developing projects from concept and visual development through to final delivery using tools like ComfyUI, Adobe After Effects and Unreal Engine. I hold a PhD in Applied Arts and currently teach at the Faculty of Applied Arts, Beni Suef University.",
+    "textAr": "أنا محمد فتحي ناجي، حاصل على درجة الدكتوراه، صانع أفلام ومنتج ميديا بالذكاء الاصطناعي التوليدي، مقيم في مصر وأعمل عن بُعد مع عملاء وفرق إبداعية حول العالم. أتخصص في السرد السينمائي والأنيميشن والميديا الرياضية والمحتوى الدعائي، وأطوّر المشروعات من الفكرة والتطوير البصري وحتى التسليم النهائي باستخدام أدوات مثل ComfyUI وAdobe After Effects وUnreal Engine. حاصل على الدكتوراه في الفنون التطبيقية، وأعمل حاليًا مدرسًا بكلية الفنون التطبيقية، جامعة بني سويف.",
+    "resumeTitleEn": "Resume",
+    "resumeTitleAr": "السيرة الذاتية",
+    "resumeIntroEn": "View or download — available in English and Arabic, hosted on Google Drive.",
+    "resumeIntroAr": "عرض أو تحميل — متاحة بالعربية والإنجليزية عبر جوجل درايف.",
+    "resumeEnLabel": "Resume — English",
+    "resumeEnView": "https://drive.google.com/file/d/1LMkW-2MhcKxmZPB-19u0bz6Ce1x5-TsX/view?usp=drive_link",
+    "resumeEnDownload": "https://drive.google.com/uc?export=download&id=1LMkW-2MhcKxmZPB-19u0bz6Ce1x5-TsX",
+    "resumeArLabel": "السيرة الذاتية — عربي",
+    "resumeArView": "https://drive.google.com/file/d/1tZCGmljEbW91CYAi-vV6diOScY8Ony5g/view?usp=drive_link",
+    "resumeArDownload": "https://drive.google.com/uc?export=download&id=1tZCGmljEbW91CYAi-vV6diOScY8Ony5g"
+  },
+  "filmsSection": {
+    "eyebrow": "SELECTED FILMS",
+    "titleLine1En": "Every film has its own",
+    "titleLine2En": "Project Breakdown PDF.",
+    "noteEn": "The films shown here are personal projects — you can explore commercial work through the Resume.",
+    "noteAr": "كل فيلم مرفق بدراسة مشروع خاصة به بصيغة PDF بالعربية والإنجليزية.",
+    "commercialNoteAr": "الأفلام المعروضة هنا مشاريع شخصية — يمكنك الاطلاع على المشاريع التجارية من خلال السيرة الذاتية.",
+    "featuredLabel": "FEATURED FILM",
+    "defaultLabel": "AI CINEMATIC FILM",
+    "breakdownLabelEn": "PROJECT BREAKDOWN PDF",
+    "breakdownLabelAr": "دراسة وتفاصيل تنفيذ المشروع",
+    "breakdownEnglishButton": "ENGLISH PDF ↗",
+    "breakdownArabicButton": "PDF العربية ↗",
+    "refsLabelEn": "SAMPLE OF VISUAL REFERENCES",
+    "refsLabelAr": "نماذج من المراجع البصرية"
+  },
+  "about": {
+    "eyebrow": "ABOUT THE STUDIO",
+    "titleEn": "From concept to final frame.",
+    "titleAr": "من الفكرة إلى الكادر الأخير.",
+    "textEn": "I create cinematic films and visual experiences with Generative AI, combining concept development, directing, storyboarding, character consistency and post-production in a complete professional workflow.",
+    "textAr": "أصنع أفلامًا وتجارب بصرية سينمائية باستخدام الذكاء الاصطناعي التوليدي، من تطوير الفكرة والإخراج والستوري بورد واتساق الشخصيات حتى مرحلة ما بعد الإنتاج."
+  },
+  "role": {
+    "eyebrow": "THE ROLE / الدور الإبداعي",
+    "titleEn": "AI Filmmaker & Creative Director",
+    "textEn": "I bridge cinematic direction and Generative AI production, turning an initial concept into a coherent film with a clear visual identity. Every project is shaped through story development, shot design, character consistency and final post-production.",
+    "textAr": "أجمع بين الإخراج السينمائي والإنتاج بالذكاء الاصطناعي التوليدي لتحويل الفكرة إلى فيلم متكامل بهوية بصرية واضحة، من تطوير الحكاية وتصميم اللقطات واتساق الشخصيات حتى مرحلة ما بعد الإنتاج."
+  },
+  "servicesSection": {
+    "eyebrow": "SERVICES / الخدمات"
   },
   "services": [
     {"titleEn":"Generative AI Filmmaking","titleAr":"صناعة الأفلام بالذكاء الاصطناعي"},
@@ -34,13 +96,45 @@
     {"titleEn":"Custom AI Production Workflows","titleAr":"مسارات إنتاج مخصصة بالذكاء الاصطناعي"},
     {"titleEn":"AI Music & Sound Design","titleAr":"الموسيقى وتصميم الصوت بالذكاء الاصطناعي"}
   ],
+  "workflowSection": {
+    "eyebrow": "PRODUCTION WORKFLOW / مراحل الإنتاج",
+    "titleLine1En": "One connected workflow.",
+    "titleLine2En": "From idea to final film."
+  },
   "workflow": [
-    {"titleEn":"Concept & Strategy","titleAr":"الفكرة والاستراتيجية","descriptionEn":"Story direction, audience, mood and the visual language of the project.","detailEn":"Defining the creative brief, target platform and visual reference boards before production begins.","detailAr":"تحديد البريف الإبداعي والمنصة المستهدفة ولوحات المراجع البصرية قبل بدء الإنتاج."},
-    {"titleEn":"Pre-production","titleAr":"ما قبل الإنتاج","descriptionEn":"Script development, storyboards, shot planning and character design.","detailEn":"Building consistent character sheets and technical shot lists ready for generative production.","detailAr":"إعداد شيتات شخصيات ثابتة وقوائم لقطات تقنية جاهزة للإنتاج التوليدي."},
-    {"titleEn":"Generative Production","titleAr":"الإنتاج التوليدي","descriptionEn":"Purpose-built AI workflows with visual and character consistency.","detailEn":"Combining multiple AI engines with 3D modeling and camera tracking for cinematic camera moves.","detailAr":"دمج أكثر من محرك ذكاء اصطناعي مع النمذجة ثلاثية الأبعاد وتتبع الكاميرا للحصول على حركات كاميرا سينمائية."},
-    {"titleEn":"Post & Delivery","titleAr":"ما بعد الإنتاج والتسليم","descriptionEn":"Editing, sound, color, finishing and platform-ready delivery.","detailEn":"Final compositing, color grading and quality control tailored to each platform's specs.","detailAr":"التجميع النهائي والتصحيح اللوني ومراقبة الجودة بما يتناسب مع مواصفات كل منصة."}
+    {"titleEn":"Concept & Strategy","titleAr":"الفكرة والاستراتيجية","descriptionEn":"Story direction, audience, mood and the visual language of the project.","descriptionAr":"","detailEn":"Defining the creative brief, target platform and visual reference boards before production begins.","detailAr":"تحديد البريف الإبداعي والمنصة المستهدفة ولوحات المراجع البصرية قبل بدء الإنتاج."},
+    {"titleEn":"Pre-production","titleAr":"ما قبل الإنتاج","descriptionEn":"Script development, storyboards, shot planning and character design.","descriptionAr":"","detailEn":"Building consistent character sheets and technical shot lists ready for generative production.","detailAr":"إعداد شيتات شخصيات ثابتة وقوائم لقطات تقنية جاهزة للإنتاج التوليدي."},
+    {"titleEn":"Generative Production","titleAr":"الإنتاج التوليدي","descriptionEn":"Purpose-built AI workflows with visual and character consistency.","descriptionAr":"","detailEn":"Combining multiple AI engines with 3D modeling and camera tracking for cinematic camera moves.","detailAr":"دمج أكثر من محرك ذكاء اصطناعي مع النمذجة ثلاثية الأبعاد وتتبع الكاميرا للحصول على حركات كاميرا سينمائية."},
+    {"titleEn":"Post & Delivery","titleAr":"ما بعد الإنتاج والتسليم","descriptionEn":"Editing, sound, color, finishing and platform-ready delivery.","descriptionAr":"","detailEn":"Final compositing, color grading and quality control tailored to each platform's specs.","detailAr":"التجميع النهائي والتصحيح اللوني ومراقبة الجودة بما يتناسب مع مواصفات كل منصة."}
   ],
+  "stackSection": {
+    "eyebrow": "PRODUCTION STACK",
+    "titleEn": "Tools serving the story.",
+    "textAr": "الأدوات في خدمة الحكاية، وليست بديلًا عن الرؤية الإبداعية."
+  },
   "tools": ["ComfyUI","Kling","Veo","Runway","MiniMax","LTX","Stable Diffusion","Higgsfield","3ds Max","Camera Tracking","After Effects","Premiere Pro","DaVinci Resolve","Unreal Engine","Blender","Photoshop"],
+  "contact": {
+    "eyebrow": "START A CONVERSATION / تواصل وتعاون دولي",
+    "titleLine1En": "Ready to build your",
+    "titleLine2En": "next cinematic story?",
+    "textEn": "Based in Egypt • Working globally",
+    "textAr": "متاح لإنتاج الأفلام والمحتوى السينمائي والحملات الإبداعية والتعاون مع العملاء والاستوديوهات حول العالم.",
+    "email": "monagy-studio@hotmail.com",
+    "phone1": "+20 100 634 7562",
+    "phone2": "+20 106 749 8965",
+    "youtubeButton": "VIEW YOUTUBE CHANNEL",
+    "facebook": "https://www.facebook.com/mo.nagyai",
+    "linkedin": "https://www.linkedin.com/in/mo-nagy-ai/",
+    "instagram": "https://www.instagram.com/mo.nagy.ai",
+    "threads": "https://www.threads.com/@mo.nagy.ai",
+    "youtube": "https://www.youtube.com/@MoNagyAi",
+    "tiktok": "https://www.tiktok.com/@monagyai",
+    "whatsapp": "https://wa.me/message/MI6QH6JGHCE5L1"
+  },
+  "footer": {
+    "tagline": "LET'S CREATE SOMETHING CINEMATIC.",
+    "youtubeLabel": "YOUTUBE CHANNEL"
+  },
   "projects": [
     {"id":"search-for-self","visible":true,"featured":true,"videoId":"lOpPuKnwH0w","titleEn":"Searching for the Self — Episode One","titleAr":"البحث عن الذات — الحلقة الأولى","descriptionEn":"A cinematic personal film tracing memory, identity and the return to the beginning.","descriptionAr":"فيلم شخصي سينمائي يتتبع الذاكرة والهوية والعودة إلى نقطة البداية.","breakdownEn":"https://drive.google.com/file/d/13O3IOIUidbGwFSwWruSLweunErtOvC49/view?usp=drivesdk","breakdownAr":"https://drive.google.com/file/d/1OxEIjMhkJ4Q582J7guJJ8GvUFyhJLJA8/view?usp=drivesdk","refs":["11cwUPcPYXCxWr1qEjnoY9WOt6pXr9B2p","1hZckGdPHPm3SP4J-Hg5UiOHEk11gsitw","12tPkYmDoAshvQr7fVht67--SwMomrZIH","1Df_HkKnzJmDCrUm8cYyJ_FRfXUVdd5xo","1iTWB4Hm45qXgoQggHvn6792H9igQrg3p","1mEhH90cZFlQzWKRPx1IGAxgiYqpf7LaQ"]},
     {"id":"black-cat","visible":true,"featured":true,"videoId":"NXDDc7eO5qM","titleEn":"Al Maddāh — Legend of the Black Cat","titleAr":"المداح — أسطورة القط الأسود","descriptionEn":"Egyptian mythology meets cinematic football drama in a character-led sports fantasy.","descriptionAr":"تمتزج الأسطورة المصرية بالدراما الكروية السينمائية في فانتازيا رياضية قائمة على الشخصية.","breakdownEn":"https://drive.google.com/file/d/1vQBtWRARmc3cMzAC7e4SR-yjbT2VZSL8/view?usp=drivesdk","breakdownAr":"https://drive.google.com/file/d/19sQ4eHkb1hhBbYwOThu0qGPoKEfKPOIB/view?usp=drivesdk","refs":["12mPYKTsSlKYQ024uJfhhnWUFFAVZQh-T","1AMQSEgymqtGKBeQ-pX5WkpyNowhww6Xv","162YEKVh5Qe0M--m88_urQBxh7x_ZtyuO","1qQ6fT1ug_SnQ2NAmTJ2KIYKfDOcm3Mrb","1uupBCbpXxKVEFw-xNeePaU_XAf_FFPf4","1u5Atrez_qCNwTCv47F27Pjkys2i9uW5-"]},
