@@ -276,3 +276,65 @@ button,input,textarea,select { font:inherit; }
 
 /* Hide automatic project sequence numbers. */
 .modern-project-number { display:none !important; }
+
+/* Keep the bilingual navigation visible on phones and tablets. */
+@media (max-width:900px) {
+  .classic-site .topbar {
+    height:112px;
+    align-items:flex-start;
+    padding-top:10px;
+    background:linear-gradient(to bottom,rgba(5,5,5,.98) 0%,rgba(5,5,5,.95) 72%,rgba(5,5,5,.72) 100%);
+  }
+  .classic-site nav {
+    display:flex;
+    position:absolute;
+    left:0;
+    right:0;
+    top:56px;
+    width:100%;
+    transform:none;
+    justify-content:space-evenly;
+    gap:8px;
+    padding:0 12px 8px;
+    font-size:.68rem;
+    letter-spacing:.08em;
+    white-space:nowrap;
+  }
+  .classic-site nav a {
+    min-width:0;
+    flex:1 1 0;
+    padding:5px 2px 7px;
+  }
+  .classic-site nav a .nav-label-ar {
+    font-size:9px;
+  }
+  .classic-site nav a::after {
+    inset:auto 8px 1px;
+  }
+  .classic-hero-content {
+    padding-top:126px;
+  }
+}
+
+@media (max-width:560px) {
+  .classic-site .topbar {
+    height:108px;
+    padding:8px 10px 0;
+  }
+  .classic-site nav {
+    top:52px;
+    gap:2px;
+    padding:0 4px 7px;
+    font-size:.58rem;
+    letter-spacing:.045em;
+  }
+  .classic-site nav a {
+    padding-inline:1px;
+  }
+  .classic-site nav a .nav-label-ar {
+    font-size:8px;
+  }
+  .classic-hero-content {
+    padding-top:122px;
+  }
+}
