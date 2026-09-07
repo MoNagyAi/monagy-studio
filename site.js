@@ -257,4 +257,37 @@
 
   const stack = $(".stack-list");
   if (stack && Array.isArray(data.tools) && data.tools.length) stack.innerHTML = data.tools.map(tool => `<span>${escapeHtml(tool)}</span>`).join("");
+
+  // Lightweight deterrence against casual image saving. This is not DRM:
+  // public web assets can still be retrieved by a determined visitor.
+  const protectImages = () => {
+    $$("img").forEach(image => {
+      image.draggable = false;
+      image.setAttribute("draggable", "false");
+      image.style.webkitUserDrag = "none";
+      image.style.userSelect = "none";
+      image.style.webkitUserSelect = "none";
+    });
+  };
+  protectImages();
+
+  if (document.body && "MutationObserver" in window) {
+    const imageObserver = new MutationObserver(protectImages);
+    imageObserver.observe(document.body, { childList: true, subtree: true });
+  }
+
+  document.addEventListener("dragstart", event => {
+    if (event.target instanceof Element && event.target.closest("img, picture")) event.preventDefault();
+  });
+
+  document.addEventListener("contextmenu", event => {
+    if (!(event.target instanceof Element)) return;
+    if (event.target.closest("img, picture, .modern-reference-grid, .classic-reference-grid, .classic-hero .cover")) {
+      event.preventDefault();
+    }
+  });
+
+  document.addEventListener("selectstart", event => {
+    if (event.target instanceof Element && event.target.closest("img, picture")) event.preventDefault();
+  });
 })();
