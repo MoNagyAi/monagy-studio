@@ -273,3 +273,6 @@ button,input,textarea,select { font:inherit; }
 /* Keep uploaded covers fully visible on every screen. */
 .classic-hero { background:#050505; }
 .classic-site .cover { object-fit:contain; object-position:center center; background:#050505; }
+
+/* Hide automatic project sequence numbers. */
+.modern-project-number { display:none !important; }
