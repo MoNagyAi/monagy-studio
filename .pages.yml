@@ -207,3 +207,77 @@ content:
             label: روابط أو معرفات المراجع البصرية
             type: string
             list: true
+
+  - name: pricing
+    label: 17) جدول الأسعار العربي والإنجليزي
+    type: file
+    path: data/pricing.json
+    format: json
+    fields:
+      - name: settings
+        label: إعدادات قسم الأسعار
+        type: object
+        fields:
+          - { name: eyebrowEn, label: العنوان الصغير - إنجليزي, type: string }
+          - { name: eyebrowAr, label: العنوان الصغير - عربي, type: string }
+          - { name: titleEn, label: عنوان الجدول - إنجليزي, type: string }
+          - { name: titleAr, label: عنوان الجدول - عربي, type: string }
+          - { name: noteEn, label: الملاحظة - إنجليزي, type: text }
+          - { name: noteAr, label: الملاحظة - عربي, type: text }
+          - { name: defaultLanguage, label: اللغة الافتراضية en أو ar, type: string }
+
+      - name: english
+        label: الجدول الإنجليزي
+        type: object
+        fields:
+          - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
+          - name: packages
+            label: الأعمدة / الباقات الإنجليزية - أضف أو احذف عمودًا من هنا
+            type: object
+            list: true
+            fields:
+              - { name: price, label: السعر, type: string }
+              - { name: name, label: اسم الباقة, type: string }
+              - { name: tagline, label: الوصف المختصر, type: string }
+              - { name: summary, label: ملخص الباقة, type: text }
+              - { name: buttonLabel, label: نص زر الاختيار, type: string }
+              - { name: buttonUrl, label: رابط زر الاختيار, type: string }
+          - name: rows
+            label: الصفوف الإنجليزية - أضف أو احذف صفًا من هنا
+            type: object
+            list: true
+            fields:
+              - { name: label, label: اسم الصف, type: string }
+              - name: cells
+                label: قيم الخلايا بترتيب الباقات من اليسار لليمين
+                type: string
+                list: true
+              - { name: emphasis, label: إبراز الصف, type: boolean, default: false }
+
+      - name: arabic
+        label: الجدول العربي
+        type: object
+        fields:
+          - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
+          - name: packages
+            label: الأعمدة / الباقات العربية - أضف أو احذف عمودًا من هنا
+            type: object
+            list: true
+            fields:
+              - { name: price, label: السعر, type: string }
+              - { name: name, label: اسم الباقة, type: string }
+              - { name: tagline, label: الوصف المختصر, type: string }
+              - { name: summary, label: ملخص الباقة, type: text }
+              - { name: buttonLabel, label: نص زر الاختيار, type: string }
+              - { name: buttonUrl, label: رابط زر الاختيار, type: string }
+          - name: rows
+            label: الصفوف العربية - أضف أو احذف صفًا من هنا
+            type: object
+            list: true
+            fields:
+              - { name: label, label: اسم الصف, type: string }
+              - name: cells
+                label: قيم الخلايا بترتيب الباقات من اليمين لليسار
+                type: string
+                list: true
+              - { name: emphasis, label: إبراز الصف, type: boolean, default: false }
