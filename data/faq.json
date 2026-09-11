@@ -30,7 +30,7 @@
     },
     {
       "question": "What do you need for AI lip-sync?",
-      "answer": "For lip-sync projects, please provide the source video and final audio or dialogue. The best results come from clear faces, good source quality and limited obstruction around the mouth."
+      "answer": "Please provide clear reference images of the character or characters, preferably front-facing or with the face clearly visible, together with the final audio or dialogue. Higher-quality character images generally produce more stable and convincing lip-sync results."
     },
     {
       "question": "Can you lip-sync more than one character?",
@@ -96,7 +96,7 @@
     },
     {
       "question": "ماذا تحتاج لخدمة مزامنة الشفاه؟",
-      "answer": "أحتاج إلى الفيديو الأصلي والصوت أو الحوار النهائي. للحصول على أفضل نتيجة يُفضّل أن يكون الوجه واضحًا وجودة الفيديو جيدة وألا توجد عناصر تحجب الفم بشكل كبير."
+      "answer": "أحتاج إلى صور مرجعية واضحة للشخصية أو الشخصيات، ويفضل أن يكون الوجه ظاهرًا بوضوح أو في زاوية أمامية مناسبة، بالإضافة إلى ملف الصوت أو الحوار النهائي. كلما كانت صور الشخصيات أعلى جودة وأكثر وضوحًا كانت نتيجة مزامنة الشفاه أكثر ثباتًا وإقناعًا."
     },
     {
       "question": "هل يمكن عمل مزامنة شفاه لأكثر من شخصية؟",
