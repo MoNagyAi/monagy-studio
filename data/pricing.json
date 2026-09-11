@@ -17,9 +17,9 @@
     "english": {
       "firstColumnLabel": "Package",
       "packages": [
-        {"price":"US$100","name":"Cinematic Short","tagline":"UP TO 30 SEC","summary":"A focused cinematic piece for teasers, sports promos, concept films and short branded stories.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"US$180","name":"Cinematic Story","tagline":"UP TO 60 SEC","summary":"A complete one-minute cinematic story for trailers, narrative sequences and character-driven content.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"US$800","name":"Cinematic Film","tagline":"UP TO 4 MIN","summary":"A full short-form film project with deeper storytelling, multiple sequences and extended visual development.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
+        {"price":"US$100","originalPrice":"US$500","discountLabel":"80% OFF","name":"Cinematic Short","tagline":"UP TO 30 SEC","summary":"A focused cinematic piece for teasers, sports promos, concept films and short branded stories.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
+        {"price":"US$180","originalPrice":"US$900","discountLabel":"80% OFF","name":"Cinematic Story","tagline":"UP TO 60 SEC","summary":"A complete one-minute cinematic story for trailers, narrative sequences and character-driven content.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
+        {"price":"US$800","originalPrice":"US$4,000","discountLabel":"80% OFF","name":"Cinematic Film","tagline":"UP TO 4 MIN","summary":"A full short-form film project with deeper storytelling, multiple sequences and extended visual development.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
       ],
       "rows": [
         {"label":"Creative direction","cells":["✓","✓","✓"]},
@@ -42,9 +42,9 @@
     "arabic": {
       "firstColumnLabel": "الباقة",
       "packages": [
-        {"price":"100 دولار","name":"سينمائي قصير","tagline":"حتى 30 ثانية","summary":"عمل سينمائي مركز مناسب للتريلرات القصيرة والميديا الرياضية والأفلام المفاهيمية والقصص الدعائية القصيرة.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"180 دولار","name":"قصة سينمائية","tagline":"حتى 60 ثانية","summary":"قصة سينمائية متكاملة لمدة دقيقة مناسبة للمشاهد السردية والتريلرات والمحتوى القائم على الشخصيات.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"800 دولار","name":"فيلم سينمائي","tagline":"حتى 4 دقائق","summary":"مشروع فيلم قصير متكامل بسرد أعمق ومشاهد متعددة وتطوير بصري ممتد.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
+        {"price":"100 دولار","originalPrice":"500 دولار","discountLabel":"خصم 80%","name":"سينمائي قصير","tagline":"حتى 30 ثانية","summary":"عمل سينمائي مركز مناسب للتريلرات القصيرة والميديا الرياضية والأفلام المفاهيمية والقصص الدعائية القصيرة.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
+        {"price":"180 دولار","originalPrice":"900 دولار","discountLabel":"خصم 80%","name":"قصة سينمائية","tagline":"حتى 60 ثانية","summary":"قصة سينمائية متكاملة لمدة دقيقة مناسبة للمشاهد السردية والتريلرات والمحتوى القائم على الشخصيات.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
+        {"price":"800 دولار","originalPrice":"4,000 دولار","discountLabel":"خصم 80%","name":"فيلم سينمائي","tagline":"حتى 4 دقائق","summary":"مشروع فيلم قصير متكامل بسرد أعمق ومشاهد متعددة وتطوير بصري ممتد.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
       ],
       "rows": [
         {"label":"الإخراج الإبداعي","cells":["✓","✓","✓"]},
@@ -73,9 +73,9 @@
     "english": {
       "firstColumnLabel": "Package",
       "packages": [
-        {"price":"US$130","name":"3D Style Short","tagline":"UP TO 30 SEC","summary":"A short stylized 3D-look sequence for product reveals, characters, promos and visual concepts.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"US$250","name":"3D Style Story","tagline":"UP TO 60 SEC","summary":"A richer 3D-style cinematic sequence with developed environments, camera movement and visual continuity.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"US$900","name":"3D Style Film","tagline":"UP TO 3 MIN","summary":"An extended 3D-style film with multiple sequences, stronger art direction and advanced consistency.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
+        {"price":"US$130","originalPrice":"US$650","discountLabel":"80% OFF","name":"3D Style Short","tagline":"UP TO 30 SEC","summary":"A short stylized 3D-look sequence for product reveals, characters, promos and visual concepts.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
+        {"price":"US$250","originalPrice":"US$1,250","discountLabel":"80% OFF","name":"3D Style Story","tagline":"UP TO 60 SEC","summary":"A richer 3D-style cinematic sequence with developed environments, camera movement and visual continuity.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
+        {"price":"US$900","originalPrice":"US$4,500","discountLabel":"80% OFF","name":"3D Style Film","tagline":"UP TO 3 MIN","summary":"An extended 3D-style film with multiple sequences, stronger art direction and advanced consistency.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
       ],
       "rows": [
         {"label":"Creative direction","cells":["✓","✓","✓"]},
@@ -98,9 +98,9 @@
     "arabic": {
       "firstColumnLabel": "الباقة",
       "packages": [
-        {"price":"130 دولار","name":"ثري دي قصير","tagline":"حتى 30 ثانية","summary":"مشهد قصير بطابع ثلاثي الأبعاد مناسب لإظهار المنتجات والشخصيات والعروض البصرية والأفكار الإبداعية.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"250 دولار","name":"قصة بطابع ثري دي","tagline":"حتى 60 ثانية","summary":"تسلسل سينمائي أغنى بطابع ثلاثي الأبعاد مع تطوير للبيئات وحركة الكاميرا والاستمرارية البصرية.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"900 دولار","name":"فيلم بطابع ثري دي","tagline":"حتى 3 دقائق","summary":"فيلم ممتد بطابع ثلاثي الأبعاد يضم مشاهد متعددة وإخراجًا بصريًا أقوى واتساقًا متقدمًا.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
+        {"price":"130 دولار","originalPrice":"650 دولار","discountLabel":"خصم 80%","name":"ثري دي قصير","tagline":"حتى 30 ثانية","summary":"مشهد قصير بطابع ثلاثي الأبعاد مناسب لإظهار المنتجات والشخصيات والعروض البصرية والأفكار الإبداعية.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
+        {"price":"250 دولار","originalPrice":"1,250 دولار","discountLabel":"خصم 80%","name":"قصة بطابع ثري دي","tagline":"حتى 60 ثانية","summary":"تسلسل سينمائي أغنى بطابع ثلاثي الأبعاد مع تطوير للبيئات وحركة الكاميرا والاستمرارية البصرية.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
+        {"price":"900 دولار","originalPrice":"4,500 دولار","discountLabel":"خصم 80%","name":"فيلم بطابع ثري دي","tagline":"حتى 3 دقائق","summary":"فيلم ممتد بطابع ثلاثي الأبعاد يضم مشاهد متعددة وإخراجًا بصريًا أقوى واتساقًا متقدمًا.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
       ],
       "rows": [
         {"label":"الإخراج الإبداعي","cells":["✓","✓","✓"]},
@@ -129,9 +129,9 @@
     "english": {
       "firstColumnLabel": "Package",
       "packages": [
-        {"price":"US$7","name":"Lip Sync Short","tagline":"UP TO 30 SEC","summary":"For one clear speaking character and a short dialogue clip.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"US$13","name":"Lip Sync Pro","tagline":"UP TO 60 SEC","summary":"For longer dialogue with higher continuity requirements and additional cleanup.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"US$24","name":"Lip Sync Extended","tagline":"UP TO 120 SEC","summary":"For extended dialogue or up to two speaking characters with more detailed finishing.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
+        {"price":"US$7","originalPrice":"US$35","discountLabel":"80% OFF","name":"Lip Sync Short","tagline":"UP TO 30 SEC","summary":"For one clear speaking character and a short dialogue clip.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
+        {"price":"US$13","originalPrice":"US$65","discountLabel":"80% OFF","name":"Lip Sync Pro","tagline":"UP TO 60 SEC","summary":"For longer dialogue with higher continuity requirements and additional cleanup.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
+        {"price":"US$24","originalPrice":"US$120","discountLabel":"80% OFF","name":"Lip Sync Extended","tagline":"UP TO 120 SEC","summary":"For extended dialogue or up to two speaking characters with more detailed finishing.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
       ],
       "rows": [
         {"label":"High-quality lip sync","cells":["✓","✓","✓"]},
@@ -152,9 +152,9 @@
     "arabic": {
       "firstColumnLabel": "الباقة",
       "packages": [
-        {"price":"7 دولار","name":"ليب سينك قصير","tagline":"حتى 30 ثانية","summary":"مناسب لشخصية واحدة واضحة تتحدث في مقطع حواري قصير.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"13 دولار","name":"ليب سينك احترافي","tagline":"حتى 60 ثانية","summary":"مناسب للحوار الأطول مع متطلبات أعلى للاستمرارية ومعالجة إضافية.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"24 دولار","name":"ليب سينك ممتد","tagline":"حتى 120 ثانية","summary":"مناسب للحوار الممتد أو حتى شخصيتين متحدثتين مع معالجة نهائية أكثر تفصيلًا.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
+        {"price":"7 دولار","originalPrice":"35 دولار","discountLabel":"خصم 80%","name":"ليب سينك قصير","tagline":"حتى 30 ثانية","summary":"مناسب لشخصية واحدة واضحة تتحدث في مقطع حواري قصير.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
+        {"price":"13 دولار","originalPrice":"65 دولار","discountLabel":"خصم 80%","name":"ليب سينك احترافي","tagline":"حتى 60 ثانية","summary":"مناسب للحوار الأطول مع متطلبات أعلى للاستمرارية ومعالجة إضافية.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
+        {"price":"24 دولار","originalPrice":"120 دولار","discountLabel":"خصم 80%","name":"ليب سينك ممتد","tagline":"حتى 120 ثانية","summary":"مناسب للحوار الممتد أو حتى شخصيتين متحدثتين مع معالجة نهائية أكثر تفصيلًا.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
       ],
       "rows": [
         {"label":"مزامنة شفاه عالية الجودة","cells":["✓","✓","✓"]},
