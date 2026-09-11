@@ -207,3 +207,126 @@ content:
             label: روابط أو معرفات المراجع البصرية
             type: string
             list: true
+
+
+  - name: pricing
+    label: الباقات والأسعار ومتطلبات العميل
+    type: file
+    path: data/pricing.json
+    format: json
+    fields:
+      - name: cta
+        label: "نص زر الطلب"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - name: custom
+        label: "طلب مخصص"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - { name: enabled, label: "إظهار قسم الأسعار", type: boolean }
+      - name: faqTitle
+        label: "عنوان الأسئلة"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - name: faqs
+        label: "الأسئلة والإجابات"
+        type: object
+        list: true
+        fields:
+          - name: answer
+            label: "الإجابة"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+          - name: question
+            label: "السؤال"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+      - name: intro
+        label: "المقدمة"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - name: note
+        label: "شروط التسعير"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - name: packages
+        label: "الباقات الثلاث"
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "معرف الباقة (starter أو product أو brand؛ لا تغيّره)", type: text }
+          - name: name
+            label: "اسم الباقة"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+          - { name: price, label: "السعر المبدئي بالدولار", type: number }
+          - name: summary
+            label: "وصف الباقة"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+      - name: requirements
+        label: "متطلبات العميل"
+        type: object
+        list: true
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - name: requirementsTitle
+        label: "عنوان المتطلبات"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - name: rows
+        label: "صفوف المقارنة"
+        type: object
+        list: true
+        fields:
+          - name: brand
+            label: "باقة العلامة"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+          - name: label
+            label: "عنوان الصف"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+          - name: product
+            label: "باقة المنتج"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+          - name: starter
+            label: "باقة البداية"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+      - name: title
+        label: "العنوان"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
