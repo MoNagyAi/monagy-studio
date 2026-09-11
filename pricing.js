@@ -121,8 +121,10 @@
 
     let html='<thead><tr><th>'+esc(block.firstColumnLabel||'')+'</th>';
     packages.forEach(pkg=>{
+      const original=pkg.originalPrice?'<span class="package-original-price">'+esc(pkg.originalPrice)+'</span>':'';
+      const discount=pkg.discountLabel?'<span class="package-discount">'+esc(pkg.discountLabel)+'</span>':'';
       html+='<th class="package-head">'+
-        '<span class="package-price">'+esc(pkg.price||'')+'</span>'+
+        '<div class="package-price-wrap">'+original+'<span class="package-price">'+esc(pkg.price||'')+'</span>'+discount+'</div>'+
         '<span class="package-name">'+esc(pkg.name||'')+'</span>'+
         '<span class="package-tagline">'+esc(pkg.tagline||'')+'</span>'+
         '<span class="package-summary">'+esc(pkg.summary||'')+'</span>'+
