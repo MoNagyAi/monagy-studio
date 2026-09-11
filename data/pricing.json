@@ -17,51 +17,105 @@
     "english": {
       "firstColumnLabel": "Package",
       "packages": [
-        {"price":"US$100","originalPrice":"US$500","discountLabel":"80% OFF","name":"Cinematic Short","tagline":"UP TO 30 SEC","summary":"A focused cinematic piece for teasers, sports promos, concept films and short branded stories.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"US$180","originalPrice":"US$900","discountLabel":"80% OFF","name":"Cinematic Story","tagline":"UP TO 60 SEC","summary":"A complete one-minute cinematic story for trailers, narrative sequences and character-driven content.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"US$800","originalPrice":"US$4,000","discountLabel":"80% OFF","name":"Cinematic Film","tagline":"UP TO 4 MIN","summary":"A full short-form film project with deeper storytelling, multiple sequences and extended visual development.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
+        {
+          "price": "US$100",
+          "originalPrice": "US$500",
+          "discountLabel": "80% OFF",
+          "name": "Cinematic Short",
+          "tagline": "UP TO 30 SEC",
+          "summary": "A focused cinematic piece for teasers, sports promos, concept films and short branded stories.",
+          "buttonLabel": "Select",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        },
+        {
+          "price": "US$180",
+          "originalPrice": "US$900",
+          "discountLabel": "80% OFF",
+          "name": "Cinematic Story",
+          "tagline": "UP TO 60 SEC",
+          "summary": "A complete one-minute cinematic story for trailers, narrative sequences and character-driven content.",
+          "buttonLabel": "Select",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        },
+        {
+          "price": "US$800",
+          "originalPrice": "US$4,000",
+          "discountLabel": "80% OFF",
+          "name": "Cinematic Film",
+          "tagline": "UP TO 4 MIN",
+          "summary": "A full short-form film project with deeper storytelling, multiple sequences and extended visual development.",
+          "buttonLabel": "Select",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        }
       ],
       "rows": [
-        {"label":"Creative direction","cells":["✓","✓","✓"]},
-        {"label":"Concept & script development","cells":["✓","✓","✓"]},
-        {"label":"Shot design & AI production","cells":["✓","✓","✓"]},
-        {"label":"Video editing & compositing","cells":["✓","✓","✓"]},
-        {"label":"Sound design & SFX","cells":["✓","✓","✓"]},
-        {"label":"Voice-over / dialogue integration","cells":["✓","✓","✓"]},
-        {"label":"Character & visual consistency","cells":["Standard","Advanced","Extended"]},
-        {"label":"Virtual environment development","cells":["Standard","Advanced","Extended"]},
-        {"label":"Custom assets / props integration","cells":["Standard","Advanced","Extended"]},
-        {"label":"Orientation / Aspect ratio","cells":["16:9 • 9:16 • 1:1 • 4:5","16:9 • 9:16 • 1:1 • 4:5","16:9 • 9:16 • 1:1 • 4:5 • 2.39:1"]},
-        {"label":"Included output formats","cells":["1 format","1 format","1 format"]},
-        {"label":"Running time","cells":["Up to 30 sec","Up to 60 sec","Up to 4 min"]},
-        {"label":"Revisions","cells":["2","2","5"]},
-        {"label":"Delivery Time","cells":["5 days","7 days","21 days"]},
-        {"label":"Total","cells":["US$100","US$180","US$800"],"emphasis":true}
+        {"label": "Creative direction", "cells": ["✓", "✓", "✓"]},
+        {"label": "Concept & script development", "cells": ["✓", "✓", "✓"]},
+        {"label": "Shot design & AI production", "cells": ["✓", "✓", "✓"]},
+        {"label": "Video editing & compositing", "cells": ["✓", "✓", "✓"]},
+        {"label": "Sound design & SFX", "cells": ["✓", "✓", "✓"]},
+        {"label": "Voice-over / dialogue integration", "cells": ["✓", "✓", "✓"]},
+        {"label": "Character & visual consistency", "cells": ["Standard", "Advanced", "Extended"]},
+        {"label": "Virtual environment development", "cells": ["Standard", "Advanced", "Extended"]},
+        {"label": "Custom assets / props integration", "cells": ["Standard", "Advanced", "Extended"]},
+        {"label": "Orientation / Aspect ratio", "cells": ["16:9 • 9:16 • 1:1 • 4:5", "16:9 • 9:16 • 1:1 • 4:5", "16:9 • 9:16 • 1:1 • 4:5 • 2.39:1"]},
+        {"label": "Included output formats", "cells": ["1 format", "1 format", "1 format"]},
+        {"label": "Running time", "cells": ["Up to 30 sec", "Up to 60 sec", "Up to 4 min"]},
+        {"label": "Revisions", "cells": ["2", "2", "5"]},
+        {"label": "Delivery Time", "cells": ["5 days", "7 days", "21 days"]},
+        {"label": "Total", "cells": ["US$100", "US$180", "US$800"], "emphasis": true}
       ]
     },
     "arabic": {
       "firstColumnLabel": "الباقة",
       "packages": [
-        {"price":"100 دولار","originalPrice":"500 دولار","discountLabel":"خصم 80%","name":"سينمائي قصير","tagline":"حتى 30 ثانية","summary":"عمل سينمائي مركز مناسب للتريلرات القصيرة والميديا الرياضية والأفلام المفاهيمية والقصص الدعائية القصيرة.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"180 دولار","originalPrice":"900 دولار","discountLabel":"خصم 80%","name":"قصة سينمائية","tagline":"حتى 60 ثانية","summary":"قصة سينمائية متكاملة لمدة دقيقة مناسبة للمشاهد السردية والتريلرات والمحتوى القائم على الشخصيات.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"800 دولار","originalPrice":"4,000 دولار","discountLabel":"خصم 80%","name":"فيلم سينمائي","tagline":"حتى 4 دقائق","summary":"مشروع فيلم قصير متكامل بسرد أعمق ومشاهد متعددة وتطوير بصري ممتد.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
+        {
+          "price": "100 دولار",
+          "originalPrice": "500 دولار",
+          "discountLabel": "خصم 80%",
+          "name": "سينمائي قصير",
+          "tagline": "حتى 30 ثانية",
+          "summary": "عمل سينمائي مركز مناسب للتريلرات القصيرة والميديا الرياضية والأفلام المفاهيمية والقصص الدعائية القصيرة.",
+          "buttonLabel": "اختيار",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        },
+        {
+          "price": "180 دولار",
+          "originalPrice": "900 دولار",
+          "discountLabel": "خصم 80%",
+          "name": "قصة سينمائية",
+          "tagline": "حتى 60 ثانية",
+          "summary": "قصة سينمائية متكاملة لمدة دقيقة مناسبة للمشاهد السردية والتريلرات والمحتوى القائم على الشخصيات.",
+          "buttonLabel": "اختيار",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        },
+        {
+          "price": "800 دولار",
+          "originalPrice": "4,000 دولار",
+          "discountLabel": "خصم 80%",
+          "name": "فيلم سينمائي",
+          "tagline": "حتى 4 دقائق",
+          "summary": "مشروع فيلم قصير متكامل بسرد أعمق ومشاهد متعددة وتطوير بصري ممتد.",
+          "buttonLabel": "اختيار",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        }
       ],
       "rows": [
-        {"label":"الإخراج الإبداعي","cells":["✓","✓","✓"]},
-        {"label":"تطوير الفكرة والسيناريو","cells":["✓","✓","✓"]},
-        {"label":"تصميم الكادرات والإنتاج بالذكاء الاصطناعي","cells":["✓","✓","✓"]},
-        {"label":"المونتاج والمعالجة البصرية","cells":["✓","✓","✓"]},
-        {"label":"تصميم الصوت والمؤثرات الصوتية","cells":["✓","✓","✓"]},
-        {"label":"دمج التعليق الصوتي أو الحوار","cells":["✓","✓","✓"]},
-        {"label":"اتساق الشخصيات والهوية البصرية","cells":["أساسي","متقدم","موسع"]},
-        {"label":"تصميم وتطوير البيئة الافتراضية","cells":["أساسي","متقدم","موسع"]},
-        {"label":"الأصول والعناصر البصرية (Assets)","cells":["أساسية","متقدمة","موسعة"]},
-        {"label":"اتجاه الفيديو / نسبة العرض","cells":["أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5","أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5","أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5 • سينمائي عريض 2.39:1"]},
-        {"label":"عدد المقاسات المشمولة","cells":["مقاس واحد","مقاس واحد","مقاس واحد"]},
-        {"label":"مدة الفيديو","cells":["حتى 30 ثانية","حتى 60 ثانية","حتى 4 دقائق"]},
-        {"label":"عدد التعديلات","cells":["2","2","5"]},
-        {"label":"مدة التسليم","cells":["5 أيام","7 أيام","21 يومًا"]},
-        {"label":"الإجمالي","cells":["100 دولار","180 دولار","800 دولار"],"emphasis":true}
+        {"label": "الإخراج الإبداعي", "cells": ["✓", "✓", "✓"]},
+        {"label": "تطوير الفكرة والسيناريو", "cells": ["✓", "✓", "✓"]},
+        {"label": "تصميم الكادرات والإنتاج بالذكاء الاصطناعي", "cells": ["✓", "✓", "✓"]},
+        {"label": "المونتاج والمعالجة البصرية", "cells": ["✓", "✓", "✓"]},
+        {"label": "تصميم الصوت والمؤثرات الصوتية", "cells": ["✓", "✓", "✓"]},
+        {"label": "دمج التعليق الصوتي أو الحوار", "cells": ["✓", "✓", "✓"]},
+        {"label": "اتساق الشخصيات والهوية البصرية", "cells": ["أساسي", "متقدم", "موسع"]},
+        {"label": "تصميم وتطوير البيئة الافتراضية", "cells": ["أساسي", "متقدم", "موسع"]},
+        {"label": "الأصول والعناصر البصرية (Assets)", "cells": ["أساسية", "متقدمة", "موسعة"]},
+        {"label": "اتجاه الفيديو / نسبة العرض", "cells": ["أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5", "أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5", "أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5 • سينمائي عريض 2.39:1"]},
+        {"label": "عدد المقاسات المشمولة", "cells": ["مقاس واحد", "مقاس واحد", "مقاس واحد"]},
+        {"label": "مدة الفيديو", "cells": ["حتى 30 ثانية", "حتى 60 ثانية", "حتى 4 دقائق"]},
+        {"label": "عدد التعديلات", "cells": ["2", "2", "5"]},
+        {"label": "مدة التسليم", "cells": ["5 أيام", "7 أيام", "21 يومًا"]},
+        {"label": "الإجمالي", "cells": ["100 دولار", "180 دولار", "800 دولار"], "emphasis": true}
       ]
     }
   },
@@ -73,51 +127,105 @@
     "english": {
       "firstColumnLabel": "Package",
       "packages": [
-        {"price":"US$130","originalPrice":"US$650","discountLabel":"80% OFF","name":"3D Style Short","tagline":"UP TO 30 SEC","summary":"A short stylized 3D-look sequence for product reveals, characters, promos and visual concepts.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"US$250","originalPrice":"US$1,250","discountLabel":"80% OFF","name":"3D Style Story","tagline":"UP TO 60 SEC","summary":"A richer 3D-style cinematic sequence with developed environments, camera movement and visual continuity.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"US$900","originalPrice":"US$4,500","discountLabel":"80% OFF","name":"3D Style Film","tagline":"UP TO 3 MIN","summary":"An extended 3D-style film with multiple sequences, stronger art direction and advanced consistency.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
+        {
+          "price": "US$90",
+          "originalPrice": "US$450",
+          "discountLabel": "80% OFF",
+          "name": "3D Style Short",
+          "tagline": "UP TO 30 SEC",
+          "summary": "A short stylized 3D-look sequence for product reveals, characters, promos and visual concepts.",
+          "buttonLabel": "Select",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        },
+        {
+          "price": "US$170",
+          "originalPrice": "US$850",
+          "discountLabel": "80% OFF",
+          "name": "3D Style Story",
+          "tagline": "UP TO 60 SEC",
+          "summary": "A richer 3D-style cinematic sequence with developed environments, camera movement and visual continuity.",
+          "buttonLabel": "Select",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        },
+        {
+          "price": "US$750",
+          "originalPrice": "US$3,750",
+          "discountLabel": "80% OFF",
+          "name": "3D Style Film",
+          "tagline": "UP TO 3 MIN",
+          "summary": "An extended 3D-style film with multiple sequences, stronger art direction and advanced consistency.",
+          "buttonLabel": "Select",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        }
       ],
       "rows": [
-        {"label":"Creative direction","cells":["✓","✓","✓"]},
-        {"label":"3D-style visual development","cells":["✓","✓","✓"]},
-        {"label":"Character / product consistency","cells":["Standard","Advanced","Extended"]},
-        {"label":"Virtual environment development","cells":["Standard","Advanced","Extended"]},
-        {"label":"Custom assets / props integration","cells":["Standard","Advanced","Extended"]},
-        {"label":"Environment & shot design","cells":["✓","✓","✓"]},
-        {"label":"Cinematic camera motion","cells":["✓","✓","✓"]},
-        {"label":"Animation & compositing","cells":["✓","✓","✓"]},
-        {"label":"Sound design & SFX","cells":["✓","✓","✓"]},
-        {"label":"Orientation / Aspect ratio","cells":["16:9 • 9:16 • 1:1 • 4:5","16:9 • 9:16 • 1:1 • 4:5","16:9 • 9:16 • 1:1 • 4:5 • 2.39:1"]},
-        {"label":"Included output formats","cells":["1 format","1 format","1 format"]},
-        {"label":"Running time","cells":["Up to 30 sec","Up to 60 sec","Up to 3 min"]},
-        {"label":"Revisions","cells":["2","3","5"]},
-        {"label":"Delivery Time","cells":["7 days","10 days","25 days"]},
-        {"label":"Total","cells":["US$130","US$250","US$900"],"emphasis":true}
+        {"label": "Creative direction", "cells": ["✓", "✓", "✓"]},
+        {"label": "3D-style visual development", "cells": ["✓", "✓", "✓"]},
+        {"label": "Character / product consistency", "cells": ["Standard", "Advanced", "Extended"]},
+        {"label": "Virtual environment development", "cells": ["Standard", "Advanced", "Extended"]},
+        {"label": "Custom assets / props integration", "cells": ["Standard", "Advanced", "Extended"]},
+        {"label": "Environment & shot design", "cells": ["✓", "✓", "✓"]},
+        {"label": "Cinematic camera motion", "cells": ["✓", "✓", "✓"]},
+        {"label": "Animation & compositing", "cells": ["✓", "✓", "✓"]},
+        {"label": "Sound design & SFX", "cells": ["✓", "✓", "✓"]},
+        {"label": "Orientation / Aspect ratio", "cells": ["16:9 • 9:16 • 1:1 • 4:5", "16:9 • 9:16 • 1:1 • 4:5", "16:9 • 9:16 • 1:1 • 4:5 • 2.39:1"]},
+        {"label": "Included output formats", "cells": ["1 format", "1 format", "1 format"]},
+        {"label": "Running time", "cells": ["Up to 30 sec", "Up to 60 sec", "Up to 3 min"]},
+        {"label": "Revisions", "cells": ["2", "3", "5"]},
+        {"label": "Delivery Time", "cells": ["7 days", "10 days", "25 days"]},
+        {"label": "Total", "cells": ["US$90", "US$170", "US$750"], "emphasis": true}
       ]
     },
     "arabic": {
       "firstColumnLabel": "الباقة",
       "packages": [
-        {"price":"130 دولار","originalPrice":"650 دولار","discountLabel":"خصم 80%","name":"ثري دي قصير","tagline":"حتى 30 ثانية","summary":"مشهد قصير بطابع ثلاثي الأبعاد مناسب لإظهار المنتجات والشخصيات والعروض البصرية والأفكار الإبداعية.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"250 دولار","originalPrice":"1,250 دولار","discountLabel":"خصم 80%","name":"قصة بطابع ثري دي","tagline":"حتى 60 ثانية","summary":"تسلسل سينمائي أغنى بطابع ثلاثي الأبعاد مع تطوير للبيئات وحركة الكاميرا والاستمرارية البصرية.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"900 دولار","originalPrice":"4,500 دولار","discountLabel":"خصم 80%","name":"فيلم بطابع ثري دي","tagline":"حتى 3 دقائق","summary":"فيلم ممتد بطابع ثلاثي الأبعاد يضم مشاهد متعددة وإخراجًا بصريًا أقوى واتساقًا متقدمًا.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
+        {
+          "price": "90 دولار",
+          "originalPrice": "450 دولار",
+          "discountLabel": "خصم 80%",
+          "name": "ثري دي قصير",
+          "tagline": "حتى 30 ثانية",
+          "summary": "مشهد قصير بطابع ثلاثي الأبعاد مناسب لإظهار المنتجات والشخصيات والعروض البصرية والأفكار الإبداعية.",
+          "buttonLabel": "اختيار",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        },
+        {
+          "price": "170 دولار",
+          "originalPrice": "850 دولار",
+          "discountLabel": "خصم 80%",
+          "name": "قصة بطابع ثري دي",
+          "tagline": "حتى 60 ثانية",
+          "summary": "تسلسل سينمائي أغنى بطابع ثلاثي الأبعاد مع تطوير للبيئات وحركة الكاميرا والاستمرارية البصرية.",
+          "buttonLabel": "اختيار",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        },
+        {
+          "price": "750 دولار",
+          "originalPrice": "3,750 دولار",
+          "discountLabel": "خصم 80%",
+          "name": "فيلم بطابع ثري دي",
+          "tagline": "حتى 3 دقائق",
+          "summary": "فيلم ممتد بطابع ثلاثي الأبعاد يضم مشاهد متعددة وإخراجًا بصريًا أقوى واتساقًا متقدمًا.",
+          "buttonLabel": "اختيار",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        }
       ],
       "rows": [
-        {"label":"الإخراج الإبداعي","cells":["✓","✓","✓"]},
-        {"label":"التطوير البصري بطابع ثلاثي الأبعاد","cells":["✓","✓","✓"]},
-        {"label":"اتساق الشخصيات أو المنتجات","cells":["أساسي","متقدم","موسع"]},
-        {"label":"تصميم وتطوير البيئة الافتراضية","cells":["أساسي","متقدم","موسع"]},
-        {"label":"الأصول والعناصر البصرية (Assets)","cells":["أساسية","متقدمة","موسعة"]},
-        {"label":"تصميم البيئات والكادرات","cells":["✓","✓","✓"]},
-        {"label":"حركة الكاميرا السينمائية","cells":["✓","✓","✓"]},
-        {"label":"التحريك والمعالجة البصرية","cells":["✓","✓","✓"]},
-        {"label":"تصميم الصوت والمؤثرات الصوتية","cells":["✓","✓","✓"]},
-        {"label":"اتجاه الفيديو / نسبة العرض","cells":["أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5","أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5","أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5 • سينمائي عريض 2.39:1"]},
-        {"label":"عدد المقاسات المشمولة","cells":["مقاس واحد","مقاس واحد","مقاس واحد"]},
-        {"label":"مدة الفيديو","cells":["حتى 30 ثانية","حتى 60 ثانية","حتى 3 دقائق"]},
-        {"label":"عدد التعديلات","cells":["2","3","5"]},
-        {"label":"مدة التسليم","cells":["7 أيام","10 أيام","25 يومًا"]},
-        {"label":"الإجمالي","cells":["130 دولار","250 دولار","900 دولار"],"emphasis":true}
+        {"label": "الإخراج الإبداعي", "cells": ["✓", "✓", "✓"]},
+        {"label": "التطوير البصري بطابع ثلاثي الأبعاد", "cells": ["✓", "✓", "✓"]},
+        {"label": "اتساق الشخصيات أو المنتجات", "cells": ["أساسي", "متقدم", "موسع"]},
+        {"label": "تصميم وتطوير البيئة الافتراضية", "cells": ["أساسي", "متقدم", "موسع"]},
+        {"label": "الأصول والعناصر البصرية (Assets)", "cells": ["أساسية", "متقدمة", "موسعة"]},
+        {"label": "تصميم البيئات والكادرات", "cells": ["✓", "✓", "✓"]},
+        {"label": "حركة الكاميرا السينمائية", "cells": ["✓", "✓", "✓"]},
+        {"label": "التحريك والمعالجة البصرية", "cells": ["✓", "✓", "✓"]},
+        {"label": "تصميم الصوت والمؤثرات الصوتية", "cells": ["✓", "✓", "✓"]},
+        {"label": "اتجاه الفيديو / نسبة العرض", "cells": ["أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5", "أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5", "أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5 • سينمائي عريض 2.39:1"]},
+        {"label": "عدد المقاسات المشمولة", "cells": ["مقاس واحد", "مقاس واحد", "مقاس واحد"]},
+        {"label": "مدة الفيديو", "cells": ["حتى 30 ثانية", "حتى 60 ثانية", "حتى 3 دقائق"]},
+        {"label": "عدد التعديلات", "cells": ["2", "3", "5"]},
+        {"label": "مدة التسليم", "cells": ["7 أيام", "10 أيام", "25 يومًا"]},
+        {"label": "الإجمالي", "cells": ["90 دولار", "170 دولار", "750 دولار"], "emphasis": true}
       ]
     }
   },
@@ -129,47 +237,101 @@
     "english": {
       "firstColumnLabel": "Package",
       "packages": [
-        {"price":"US$7","originalPrice":"US$35","discountLabel":"80% OFF","name":"Lip Sync Short","tagline":"UP TO 30 SEC","summary":"For one clear speaking character and a short dialogue clip.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"US$13","originalPrice":"US$65","discountLabel":"80% OFF","name":"Lip Sync Pro","tagline":"UP TO 60 SEC","summary":"For longer dialogue with higher continuity requirements and additional cleanup.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"US$24","originalPrice":"US$120","discountLabel":"80% OFF","name":"Lip Sync Extended","tagline":"UP TO 120 SEC","summary":"For extended dialogue or up to two speaking characters with more detailed finishing.","buttonLabel":"Select","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
+        {
+          "price": "US$21",
+          "originalPrice": "US$105",
+          "discountLabel": "80% OFF",
+          "name": "Lip Sync Short",
+          "tagline": "UP TO 30 SEC",
+          "summary": "For one clear speaking character and a short dialogue clip.",
+          "buttonLabel": "Select",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        },
+        {
+          "price": "US$39",
+          "originalPrice": "US$195",
+          "discountLabel": "80% OFF",
+          "name": "Lip Sync Pro",
+          "tagline": "UP TO 60 SEC",
+          "summary": "For longer dialogue with higher continuity requirements and additional cleanup.",
+          "buttonLabel": "Select",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        },
+        {
+          "price": "US$72",
+          "originalPrice": "US$360",
+          "discountLabel": "80% OFF",
+          "name": "Lip Sync Extended",
+          "tagline": "UP TO 120 SEC",
+          "summary": "For extended dialogue or up to two speaking characters with more detailed finishing.",
+          "buttonLabel": "Select",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        }
       ],
       "rows": [
-        {"label":"High-quality lip sync","cells":["✓","✓","✓"]},
-        {"label":"Audio / dialogue integration","cells":["✓","✓","✓"]},
-        {"label":"Face & motion preservation","cells":["✓","✓","✓"]},
-        {"label":"Basic visual cleanup","cells":["✓","✓","✓"]},
-        {"label":"Speaking characters","cells":["1","1","Up to 2"]},
-        {"label":"Virtual environment / background","cells":["Optional add-on","Optional add-on","Optional add-on"]},
-        {"label":"Custom assets / props","cells":["Optional add-on","Optional add-on","Optional add-on"]},
-        {"label":"Orientation / Aspect ratio","cells":["Source ratio • 16:9 • 9:16 • 1:1 • 4:5","Source ratio • 16:9 • 9:16 • 1:1 • 4:5","Source ratio • 16:9 • 9:16 • 1:1 • 4:5"]},
-        {"label":"Included output formats","cells":["1 format","1 format","1 format"]},
-        {"label":"Running time","cells":["Up to 30 sec","Up to 60 sec","Up to 120 sec"]},
-        {"label":"Revisions","cells":["1","2","3"]},
-        {"label":"Delivery Time","cells":["2 days","2–3 days","3–4 days"]},
-        {"label":"Total","cells":["US$7","US$13","US$24"],"emphasis":true}
+        {"label": "High-quality lip sync", "cells": ["✓", "✓", "✓"]},
+        {"label": "Audio / dialogue integration", "cells": ["✓", "✓", "✓"]},
+        {"label": "Face & motion preservation", "cells": ["✓", "✓", "✓"]},
+        {"label": "Basic visual cleanup", "cells": ["✓", "✓", "✓"]},
+        {"label": "Speaking characters", "cells": ["1", "1", "Up to 2"]},
+        {"label": "Virtual environment / background", "cells": ["Optional add-on", "Optional add-on", "Optional add-on"]},
+        {"label": "Custom assets / props", "cells": ["Optional add-on", "Optional add-on", "Optional add-on"]},
+        {"label": "Orientation / Aspect ratio", "cells": ["Source ratio • 16:9 • 9:16 • 1:1 • 4:5", "Source ratio • 16:9 • 9:16 • 1:1 • 4:5", "Source ratio • 16:9 • 9:16 • 1:1 • 4:5"]},
+        {"label": "Included output formats", "cells": ["1 format", "1 format", "1 format"]},
+        {"label": "Running time", "cells": ["Up to 30 sec", "Up to 60 sec", "Up to 120 sec"]},
+        {"label": "Revisions", "cells": ["1", "2", "3"]},
+        {"label": "Delivery Time", "cells": ["2 days", "2–3 days", "3–4 days"]},
+        {"label": "Total", "cells": ["US$21", "US$39", "US$72"], "emphasis": true}
       ]
     },
     "arabic": {
       "firstColumnLabel": "الباقة",
       "packages": [
-        {"price":"7 دولار","originalPrice":"35 دولار","discountLabel":"خصم 80%","name":"ليب سينك قصير","tagline":"حتى 30 ثانية","summary":"مناسب لشخصية واحدة واضحة تتحدث في مقطع حواري قصير.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"13 دولار","originalPrice":"65 دولار","discountLabel":"خصم 80%","name":"ليب سينك احترافي","tagline":"حتى 60 ثانية","summary":"مناسب للحوار الأطول مع متطلبات أعلى للاستمرارية ومعالجة إضافية.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"},
-        {"price":"24 دولار","originalPrice":"120 دولار","discountLabel":"خصم 80%","name":"ليب سينك ممتد","tagline":"حتى 120 ثانية","summary":"مناسب للحوار الممتد أو حتى شخصيتين متحدثتين مع معالجة نهائية أكثر تفصيلًا.","buttonLabel":"اختيار","buttonUrl":"https://wa.me/message/MI6QH6JGHCE5L1"}
+        {
+          "price": "21 دولار",
+          "originalPrice": "105 دولار",
+          "discountLabel": "خصم 80%",
+          "name": "ليب سينك قصير",
+          "tagline": "حتى 30 ثانية",
+          "summary": "مناسب لشخصية واحدة واضحة تتحدث في مقطع حواري قصير.",
+          "buttonLabel": "اختيار",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        },
+        {
+          "price": "39 دولار",
+          "originalPrice": "195 دولار",
+          "discountLabel": "خصم 80%",
+          "name": "ليب سينك احترافي",
+          "tagline": "حتى 60 ثانية",
+          "summary": "مناسب للحوار الأطول مع متطلبات أعلى للاستمرارية ومعالجة إضافية.",
+          "buttonLabel": "اختيار",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        },
+        {
+          "price": "72 دولار",
+          "originalPrice": "360 دولار",
+          "discountLabel": "خصم 80%",
+          "name": "ليب سينك ممتد",
+          "tagline": "حتى 120 ثانية",
+          "summary": "مناسب للحوار الممتد أو حتى شخصيتين متحدثتين مع معالجة نهائية أكثر تفصيلًا.",
+          "buttonLabel": "اختيار",
+          "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+        }
       ],
       "rows": [
-        {"label":"مزامنة شفاه عالية الجودة","cells":["✓","✓","✓"]},
-        {"label":"دمج الصوت والحوار","cells":["✓","✓","✓"]},
-        {"label":"الحفاظ على الوجه والحركة","cells":["✓","✓","✓"]},
-        {"label":"معالجة بصرية أساسية","cells":["✓","✓","✓"]},
-        {"label":"عدد الشخصيات المتحدثة","cells":["1","1","حتى 2"]},
-        {"label":"البيئة الافتراضية / الخلفية","cells":["إضافة اختيارية","إضافة اختيارية","إضافة اختيارية"]},
-        {"label":"الأصول والعناصر البصرية (Assets)","cells":["إضافة اختيارية","إضافة اختيارية","إضافة اختيارية"]},
-        {"label":"اتجاه الفيديو / نسبة العرض","cells":["نسبة المصدر • أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5","نسبة المصدر • أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5","نسبة المصدر • أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5"]},
-        {"label":"عدد المقاسات المشمولة","cells":["مقاس واحد","مقاس واحد","مقاس واحد"]},
-        {"label":"مدة الفيديو","cells":["حتى 30 ثانية","حتى 60 ثانية","حتى 120 ثانية"]},
-        {"label":"عدد التعديلات","cells":["1","2","3"]},
-        {"label":"مدة التسليم","cells":["يومان","2–3 أيام","3–4 أيام"]},
-        {"label":"الإجمالي","cells":["7 دولار","13 دولار","24 دولار"],"emphasis":true}
+        {"label": "مزامنة شفاه عالية الجودة", "cells": ["✓", "✓", "✓"]},
+        {"label": "دمج الصوت والحوار", "cells": ["✓", "✓", "✓"]},
+        {"label": "الحفاظ على الوجه والحركة", "cells": ["✓", "✓", "✓"]},
+        {"label": "معالجة بصرية أساسية", "cells": ["✓", "✓", "✓"]},
+        {"label": "عدد الشخصيات المتحدثة", "cells": ["1", "1", "حتى 2"]},
+        {"label": "البيئة الافتراضية / الخلفية", "cells": ["إضافة اختيارية", "إضافة اختيارية", "إضافة اختيارية"]},
+        {"label": "الأصول والعناصر البصرية (Assets)", "cells": ["إضافة اختيارية", "إضافة اختيارية", "إضافة اختيارية"]},
+        {"label": "اتجاه الفيديو / نسبة العرض", "cells": ["نسبة المصدر • أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5", "نسبة المصدر • أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5", "نسبة المصدر • أفقي 16:9 • رأسي 9:16 • مربع 1:1 • رأسي 4:5"]},
+        {"label": "عدد المقاسات المشمولة", "cells": ["مقاس واحد", "مقاس واحد", "مقاس واحد"]},
+        {"label": "مدة الفيديو", "cells": ["حتى 30 ثانية", "حتى 60 ثانية", "حتى 120 ثانية"]},
+        {"label": "عدد التعديلات", "cells": ["1", "2", "3"]},
+        {"label": "مدة التسليم", "cells": ["يومان", "2–3 أيام", "3–4 أيام"]},
+        {"label": "الإجمالي", "cells": ["21 دولار", "39 دولار", "72 دولار"], "emphasis": true}
       ]
     }
   }
