@@ -1,0 +1,33 @@
+<!doctype html><html lang="ar" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>اختبار إشعارات MoNagy</title>
+<style>body{font:18px/1.8 system-ui;max-width:760px;margin:40px auto;padding:20px;background:#101010;color:#eee}button,a{display:inline-block;padding:12px 20px;margin:8px;background:#e1b951;color:#111;border:0;border-radius:8px;font:inherit}pre{white-space:pre-wrap;background:#222;padding:16px;font:15px/1.7 system-ui}button:disabled{opacity:.5}</style>
+<h1>اختبار إشعارات البورتفوليو</h1><p>هذه الصفحة لا تتتبّع زيارتك. زر الاختبار يرسل سجلًا تجريبيًا واضحًا إلى خدمة الإشعارات.</p>
+<pre id="status">جارٍ فحص الإعداد…</pre>
+<button id="check" disabled>١. فتح خدمة الاستقبال</button>
+<button id="test" disabled>٢. إرسال زيارة تجريبية</button>
+<p>بعد إرسال الاختبار، ستفتح نتيجة Google في صفحة جديدة. أرسل صورة النتيجة:</p>
+<ul><li><b>accepted</b>: تم حفظ الاختبار. يُفترض إرسال ملخص بعد 5–10 دقائق إذا كانت المهمة والأذونات تعملان.</li><li><b>rejected</b>: الخدمة رفضت البيانات؛ نحتاج مراجعة النسخة المنشورة.</li><li><b>capacity</b>: امتلأ الحد الحالي لسجلات الزيارات.</li><li>طلب تسجيل دخول أو رسالة منع وصول: نحتاج مراجعة صلاحية نشر تطبيق الويب.</li></ul>
+<p>زر فتح الخدمة يجب أن يعرض: <b dir="ltr">MoNagy visit receiver ready</b>. ظهوره وحده لا يؤكد عمل استقبال الزيارات.</p>
+<script>
+(async()=>{
+ const status=document.getElementById("status"), check=document.getElementById("check"), test=document.getElementById("test");
+ try{
+  const response=await fetch("data/visit-notifications.json",{cache:"no-store"});
+  if(!response.ok)throw new Error("تعذر تحميل ملف الإعداد: "+response.status);
+  const c=await response.json();
+  if(!/^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(c.endpoint||""))throw new Error("رابط الاستقبال غير صالح");
+  let opted="غير متاح";try{opted=localStorage.getItem("monagy-visit-optout")==="1"?"نعم":"لا";}catch(_){}
+  status.textContent="تفعيل الموقع: "+(c.enabled?"نعم":"لا")+"\nطلب عدم التتبع DNT: "+(navigator.doNotTrack==="1"?"نعم":"لا")+"\nإشارة الخصوصية GPC: "+(navigator.globalPrivacyControl?"نعم":"لا")+"\nإيقاف الملخصات محليًا: "+opted+"\nدعم إنشاء معرّف الزيارة: "+(typeof crypto.randomUUID==="function"?"نعم":"لا")+"\nلا نتجاوز اختيارات الخصوصية؛ الاختبار التالي يدوي فقط.";
+  check.disabled=false;test.disabled=false;
+  check.onclick=()=>window.open(c.endpoint,"_blank","noopener,noreferrer");
+  test.onclick=()=>{
+   const uuid=typeof crypto.randomUUID==="function"?crypto.randomUUID(): "aaaaaaaa-aaaa-4aaa-8aaa-"+Array.from(crypto.getRandomValues(new Uint8Array(6)),x=>x.toString(16).padStart(2,"0")).join("");
+   const data={version:1,sequence:1,visit:uuid,site:"https://monagyai.github.io/monagy-studio/",source:"اختبار تقني يدوي — ليس زائرًا حقيقيًا",device:"صفحة التشخيص",os:"Test",browser:"Test",language:"ar",visibleSeconds:0,clicks:0,events:[{label:"اختبار استقبال وإرسال ملخص الزيارة",count:1}]};
+   // Native navigation shows the server response without reading across origins.
+   // text/plain forms insert "="; put it inside a harmless JSON string.
+   const form=document.createElement("form");form.method="POST";form.action=c.endpoint;form.target="_blank";form.rel="noopener noreferrer";form.enctype="text/plain";
+   const field=document.createElement("input");field.type="hidden";field.name=JSON.stringify(data).slice(0,-1)+',"padding":"';field.value='"}';
+   form.append(field);document.body.append(form);form.submit();form.remove();
+  };
+ }catch(error){status.textContent=error.message;}
+})();
+</script></html>
