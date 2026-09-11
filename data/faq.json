@@ -27,6 +27,8 @@
     {"question":"Can you create videos for commercial use?","answer":"Yes. I can create content for brands, agencies, sports media, campaigns, presentations, social media and other commercial projects."},
     {"question":"Can you work with my existing footage?","answer":"Yes. Existing footage can be combined with AI-generated shots, visual effects, lip-sync, compositing or other post-production work depending on the project."},
     {"question":"What can affect the final price?","answer":"Video duration, number of scenes, number of characters, character consistency, virtual environments, custom assets, visual complexity, lip-sync difficulty, 3D-style requirements, source quality, revisions, extra aspect ratios and delivery time can affect the final quote."},
+    {"question":"What payment methods are available for clients in Egypt?","answer":"For clients in Egypt, payment may be completed by local bank transfer or other available local payment methods. Please contact me before making any payment so I can confirm the current available method, payment details and total amount for your project."},
+    {"question":"What payment methods are available for clients outside Egypt?","answer":"For international clients, payment may be made by international bank transfer or another available cross-border payment method depending on the client’s country and project platform. Please contact me before sending payment to confirm the most suitable method, currency, transfer details and any applicable fees."},
     {"question":"Should I contact you before placing an order?","answer":"For cinematic films, 3D-style projects, multi-character videos or complex lip-sync work, contacting me first is highly recommended so I can confirm the correct package, timeline and scope."}
   ],
   "arabic": [
@@ -53,6 +55,8 @@
     {"question":"هل يمكن استخدام الفيديو تجاريًا؟","answer":"نعم. يمكن تنفيذ مشروعات للعلامات التجارية والوكالات والميديا الرياضية والحملات والمحتوى الرقمي والعروض والمشروعات التجارية."},
     {"question":"هل يمكن العمل على فيديو موجود بالفعل؟","answer":"نعم. يمكن دمج الفيديو الموجود مع مشاهد مولدة بالذكاء الاصطناعي أو المؤثرات البصرية أو مزامنة الشفاه أو المعالجة والمونتاج."},
     {"question":"ما العوامل التي قد تغيّر السعر النهائي؟","answer":"مدة الفيديو، عدد المشاهد، عدد الشخصيات، مستوى اتساق الشخصيات، البيئات الافتراضية، الأصول البصرية المخصصة، التعقيد البصري، صعوبة مزامنة الشفاه، متطلبات الطابع ثلاثي الأبعاد، جودة المواد المصدرية، عدد التعديلات، المقاسات الإضافية وموعد التسليم قد تؤثر على السعر النهائي."},
+    {"question":"ما وسائل الدفع المتاحة للعملاء من داخل مصر؟","answer":"للعملاء داخل مصر يمكن الدفع عن طريق التحويل البنكي المحلي أو من خلال وسائل دفع محلية أخرى متاحة وقت تنفيذ المشروع. يُرجى التواصل معي قبل إجراء أي تحويل للتأكد من وسيلة الدفع المتاحة حاليًا، وبيانات التحويل، والقيمة النهائية للمشروع."},
+    {"question":"ما وسائل الدفع المتاحة للعملاء من خارج مصر؟","answer":"للعملاء من خارج مصر يمكن الدفع عن طريق التحويل البنكي الدولي أو من خلال وسيلة دفع دولية أخرى متاحة وفقًا لدولة العميل والمنصة المستخدمة في تنفيذ المشروع. يُرجى التواصل معي قبل إجراء الدفع للتأكد من الوسيلة الأنسب، والعملة، وبيانات التحويل، وأي رسوم محتملة."},
     {"question":"هل يُفضّل التواصل قبل الطلب؟","answer":"نعم، خصوصًا في الأفلام السينمائية ومشروعات الطابع ثلاثي الأبعاد والأعمال متعددة الشخصيات أو مشروعات مزامنة الشفاه المعقدة، حتى نحدد الباقة والمدة والتكلفة المناسبة بدقة."}
   ]
 }
