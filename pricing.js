@@ -5,10 +5,15 @@
   const safe=(v='')=>/^(https?:\/\/|mailto:|tel:|\/|\.\/)/i.test(String(v).trim())?String(v).trim():'#';
 
   let data={};
+  let faqData={};
   try{
-    const res=await fetch('data/pricing.json',{cache:'no-store'});
-    if(!res.ok) throw new Error('pricing data failed');
-    data=await res.json();
+    const [pricingRes,faqRes]=await Promise.all([
+      fetch('data/pricing.json',{cache:'no-store'}),
+      fetch('data/faq.json',{cache:'no-store'})
+    ]);
+    if(!pricingRes.ok) throw new Error('pricing data failed');
+    data=await pricingRes.json();
+    if(faqRes.ok) faqData=await faqRes.json();
   }catch(err){
     console.error(err);
     $('#pricingTable').innerHTML='<tbody><tr><td>Pricing data is unavailable.</td></tr></tbody>';
@@ -34,6 +39,19 @@
     const hero=$('.pricing-hero');
     if(hero) hero.appendChild(switcher);
     return switcher;
+  }
+
+  function renderFaq(){
+    const title=$('#faqTitle');
+    const intro=$('#faqIntro');
+    const list=$('#faqList');
+    if(!title||!intro||!list) return;
+    title.textContent=lang==='ar'?(faqData.titleAr||'الأسئلة الشائعة'):(faqData.titleEn||'Frequently Asked Questions');
+    intro.textContent=lang==='ar'?(faqData.introAr||''):(faqData.introEn||'');
+    const items=lang==='ar'?(faqData.arabic||[]):(faqData.english||[]);
+    list.innerHTML=items.map((item,index)=>
+      '<details class="faq-item"'+(index===0?' open':'')+'><summary>'+esc(item.question||'')+'</summary><div class="faq-answer">'+esc(item.answer||'')+'</div></details>'
+    ).join('');
   }
 
   function render(){
@@ -87,6 +105,7 @@
     html+='</tr></tbody>';
     table.dir=page.dir;
     table.innerHTML=html;
+    renderFaq();
   }
 
   $$('.language-switch button').forEach(btn=>btn.addEventListener('click',()=>{
