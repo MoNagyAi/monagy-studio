@@ -207,3 +207,140 @@ content:
             label: روابط أو معرفات المراجع البصرية
             type: string
             list: true
+
+
+  - name: pricing
+    label: الباقات والأسعار ومتطلبات العميل
+    type: file
+    path: data/pricing.json
+    format: json
+    fields:
+      - name: cta
+        label: "زر اختيار الباقة"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - name: custom
+        label: "طلب مخصص"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - { name: enabled, label: "إظهار القسم", type: boolean }
+      - name: faqTitle
+        label: "عنوان الأسئلة"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - name: faqs
+        label: "الأسئلة الشائعة"
+        type: object
+        list: true
+        fields:
+          - name: answer
+            label: "الإجابة"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+          - name: question
+            label: "السؤال"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+      - name: intro
+        label: "المقدمة"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - name: note
+        label: "ملاحظات التسعير"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - name: packages
+        label: "الباقات"
+        type: object
+        list: true
+        fields:
+          - { name: deliveryDays, label: "أيام التسليم العادي", type: number }
+          - name: description
+            label: "وصف الفيديو"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+          - { name: expressDays, label: "أيام التسليم السريع", type: number }
+          - { name: expressEnabled, label: "إتاحة التسليم السريع", type: boolean }
+          - { name: expressFee, label: "رسوم التسليم السريع بالدولار", type: number }
+          - { name: id, label: "معرف الباقة (لا تغيّره)", type: text }
+          - name: name
+            label: "اسم الباقة"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+          - { name: price, label: "السعر بالدولار", type: number }
+          - name: summary
+            label: "الاستخدام الأنسب"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+      - name: requirements
+        label: "متطلبات العميل"
+        type: object
+        list: true
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - name: requirementsTitle
+        label: "عنوان المتطلبات"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }
+      - name: rows
+        label: "صفوف المقارنة"
+        type: object
+        list: true
+        fields:
+          - name: brand
+            label: "المتميزة"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+              - { name: included, label: "مشمول ✓", type: boolean }
+          - { name: kind, label: "نوع الصف", type: select, options: [feature, text] }
+          - name: label
+            label: "عنوان الصف"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+          - name: product
+            label: "المتوسطة"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+              - { name: included, label: "مشمول ✓", type: boolean }
+          - name: starter
+            label: "الأساسية"
+            type: object
+            fields:
+              - { name: ar, label: "العربية", type: text }
+              - { name: en, label: "English", type: text }
+              - { name: included, label: "مشمول ✓", type: boolean }
+      - name: title
+        label: "عنوان الجدول"
+        type: object
+        fields:
+          - { name: ar, label: "العربية", type: text }
+          - { name: en, label: "English", type: text }

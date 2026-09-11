@@ -1,0 +1,357 @@
+{
+  "cta": {
+    "en": "Select package",
+    "ar": "اختيار الباقة"
+  },
+  "custom": {
+    "ar": "تحتاج فيلمًا أطول أو تحريك شخصيات أو حملة كاملة؟ اطلب عرضًا مخصصًا من قسم التواصل.",
+    "en": "Need a longer film, character animation or a campaign? Request a custom quote through Contact."
+  },
+  "enabled": true,
+  "faqTitle": {
+    "ar": "أسئلة قبل أن نبدأ",
+    "en": "Before we create"
+  },
+  "faqs": [
+    {
+      "answer": {
+        "ar": "لا. أرسل هدفك ورسالتك الأساسية، ويتم تطوير الفكرة وفق الباقة المختارة واعتمادها قبل بدء الإنتاج.",
+        "en": "No. Send your goal and key message. Creative development follows the selected package. We approve the concept before production."
+      },
+      "question": {
+        "ar": "هل أحتاج سيناريو جاهزًا؟",
+        "en": "Do I need a finished script?"
+      }
+    },
+    {
+      "answer": {
+        "ar": "قد يغيّر الذكاء الاصطناعي التفاصيل الدقيقة والنصوص والشكل. أراجع الصور أولًا؛ وقد تتطلب دقة العبوة أو الشعار تركيبًا بصريًا وتسعيرًا منفصلًا. لا توجد ضمانة تطابق كامل في كل كادر.",
+        "en": "AI can alter fine details, text and geometry. I review your assets first; precise packaging or logo work may require compositing and a separate quote. Exact frame-by-frame identity is not guaranteed."
+      },
+      "question": {
+        "ar": "هل سيظهر المنتج مطابقًا لصوري؟",
+        "en": "Will the product look exactly like my photos?"
+      }
+    },
+    {
+      "answer": {
+        "ar": "قائمة ملاحظات مجمعة داخل الفكرة المعتمدة، مثل سرعة العرض أو النصوص أو المونتاج. تغيير الفكرة أو استبدال مشاهد أو إعادة توليد خارج النطاق يُسعّر قبل تنفيذه.",
+        "en": "One consolidated feedback list within the approved concept, such as pacing, text or edit changes. New concepts, replacement scenes and reshoots/regeneration beyond scope are quoted before work starts."
+      },
+      "question": {
+        "ar": "ما المقصود بجولة تعديل؟",
+        "en": "What counts as a revision?"
+      }
+    },
+    {
+      "answer": {
+        "ar": "بعد اعتماد المتطلبات واستلام الملفات والموافقة على الفكرة وترتيبات الدفع. تأخر الملاحظات أو زيادة نطاق العمل قد يغيّر موعد التسليم.",
+        "en": "After the brief, required assets, concept and payment arrangements are approved. Client feedback delays and added scope can move the delivery date."
+      },
+      "question": {
+        "ar": "متى يبدأ حساب مدة التسليم؟",
+        "en": "When does the delivery period start?"
+      }
+    },
+    {
+      "answer": {
+        "en": "One AI voiceover in Arabic or English is included, using the approved script. Specify language, accent and pronunciation before production. Human voice talent, extra languages and additional versions are quoted separately; voice licensing is confirmed before use.",
+        "ar": "يشمل السعر تعليقًا صوتيًا واحدًا بالذكاء الاصطناعي بالعربية أو الإنجليزية وفق النص المعتمد. حدّد اللغة واللهجة والنطق قبل الإنتاج. المؤدي البشري واللغات والنسخ الإضافية تُسعّر منفصلة، ويُؤكد ترخيص الصوت قبل استخدامه."
+      },
+      "question": {
+        "ar": "هل يمكن إضافة تعليق صوتي عربي أو إنجليزي؟",
+        "en": "Can I request Arabic or English voiceover?"
+      }
+    },
+    {
+      "answer": {
+        "ar": "وضّح المنصات والدول وطبيعة الاستخدام قبل التسعير، للتأكد من أن تراخيص الموسيقى والصوت والمواد الخارجية تغطيه. يجب امتلاك حقوق المواد التي ترسلها.",
+        "en": "Tell me your intended platforms, territories and usage before quoting. Music, voice and third-party asset licenses must cover that use. You must have rights to the materials you supply."
+      },
+      "question": {
+        "ar": "هل أستطيع استخدام الفيديو في إعلانات مدفوعة؟",
+        "en": "Can I use the video in paid ads?"
+      }
+    },
+    {
+      "answer": {
+        "ar": "تشمل الباقة فيديو MP4 نهائيًا بمقاس واحد متفق عليه. المقاسات الإضافية والنسخ الأطول وتصدير 4K وملفات العمل القابلة للتعديل خيارات منفصلة حسب الإمكانية والتراخيص.",
+        "en": "Packages include one final MP4 in one agreed aspect ratio. Additional formats, longer cuts, 4K exports and editable project files are optional and subject to feasibility and licensing."
+      },
+      "question": {
+        "ar": "هل المقاسات الإضافية وملفات العمل مشمولة؟",
+        "en": "Are extra formats and source files included?"
+      }
+    },
+    {
+      "answer": {
+        "ar": "أرسل متطلباتك لطلب عرض. أؤكد نطاق العمل والسعر الإجمالي ومراحل الدفع والتسليم كتابيًا قبل الحجز. الموقع لا يستقبل دفعات ولا يؤكد طلبًا تلقائيًا.",
+        "en": "Request a quote with your brief. I confirm scope, total price, payment milestones and delivery in writing before booking. The website does not take payment or confirm an order automatically."
+      },
+      "question": {
+        "ar": "كيف يتم الحجز والدفع؟",
+        "en": "How do booking and payment work?"
+      }
+    }
+  ],
+  "intro": {
+    "ar": "اختر الباقة المناسبة لفيديو مشروعك بالذكاء الاصطناعي. كل باقة تشمل منتجًا أو علامة واحدة، وفكرة واحدة، وفيديو نهائيًا واحدًا.",
+    "en": "Choose a starting point for your AI video. Each package covers one product or brand, one concept and one final video."
+  },
+  "note": {
+    "en": "Starting prices in USD for the stated scope. The total updates with your delivery choice. Express delivery is subject to availability and confirmation. Final scope, quote, payment terms and usage rights are agreed in writing before booking.",
+    "ar": "أسعار تبدأ من المبالغ المعروضة بالدولار الأمريكي للنطاق الموضح. يتغير الإجمالي بحسب اختيار التسليم. التسليم السريع يخضع للتوافر والتأكيد. يُعتمد نطاق العمل والسعر والدفع وحقوق الاستخدام كتابيًا قبل الحجز."
+  },
+  "packages": [
+    {
+      "id": "starter",
+      "name": {
+        "en": "Basic",
+        "ar": "الأساسية"
+      },
+      "price": 100,
+      "summary": {
+        "en": "Best for testing a product",
+        "ar": "مناسبة لتجربة إعلان لمنتج"
+      },
+      "description": {
+        "en": "1 AI video up to 15 seconds",
+        "ar": "فيديو واحد بالذكاء الاصطناعي حتى 15 ثانية"
+      },
+      "deliveryDays": 3,
+      "expressEnabled": true,
+      "expressDays": 1,
+      "expressFee": 15
+    },
+    {
+      "id": "product",
+      "name": {
+        "en": "Standard",
+        "ar": "المتوسطة"
+      },
+      "price": 200,
+      "summary": {
+        "en": "For brands & social media ads",
+        "ar": "للعلامات التجارية وإعلانات التواصل"
+      },
+      "description": {
+        "en": "1 AI video up to 30 seconds",
+        "ar": "فيديو واحد بالذكاء الاصطناعي حتى 30 ثانية"
+      },
+      "deliveryDays": 5,
+      "expressEnabled": true,
+      "expressDays": 2,
+      "expressFee": 25
+    },
+    {
+      "id": "brand",
+      "name": {
+        "en": "Premium",
+        "ar": "المتميزة"
+      },
+      "price": 500,
+      "summary": {
+        "en": "Cinematic brand campaign",
+        "ar": "حملة سينمائية للعلامة التجارية"
+      },
+      "description": {
+        "en": "1 AI video up to 60 seconds",
+        "ar": "فيديو واحد بالذكاء الاصطناعي حتى 60 ثانية"
+      },
+      "deliveryDays": 7,
+      "expressEnabled": true,
+      "expressDays": 3,
+      "expressFee": 40
+    }
+  ],
+  "requirements": [
+    {
+      "ar": "اسم العلامة أو المنتج ورابطه والهدف: انتشار، إطلاق منتج، أو مبيعات.",
+      "en": "Brand / product name, website and the goal: awareness, launch or sales."
+    },
+    {
+      "ar": "الجمهور المستهدف والدولة واللغة والرسالة أو العرض المطلوب توصيله.",
+      "en": "Target audience, country, language and the message or offer to communicate."
+    },
+    {
+      "ar": "صور واضحة للمنتج من عدة زوايا، والشعار بصيغة PNG أو SVG، ونصوص العبوة وألوان الهوية.",
+      "en": "Clear product photos from several angles, logo PNG/SVG, packaging text and brand colors."
+    },
+    {
+      "ar": "مرجعان أو ثلاثة للأسلوب البصري، مع توضيح العناصر أو الأساليب غير المرغوبة.",
+      "en": "2–3 visual references and any styles or elements to avoid."
+    },
+    {
+      "ar": "مدة الفيديو ومنصة العرض والمقاس (9:16 أو 16:9 أو 1:1) والموعد المطلوب والميزانية.",
+      "en": "Video duration, platform, aspect ratio (9:16, 16:9 or 1:1), deadline and budget."
+    },
+    {
+      "ar": "النصوص والادعاءات المعتمدة، والسيناريو إن وجد، وطريقة نطق الأسماء، وتأكيد امتلاك حق استخدام المواد المرسلة.",
+      "en": "Approved claims, script if available, pronunciation notes, and confirmation that you can use supplied assets."
+    }
+  ],
+  "requirementsTitle": {
+    "ar": "المطلوب لبدء مشروعك",
+    "en": "What I need from you"
+  },
+  "rows": [
+    {
+      "kind": "feature",
+      "label": {
+        "en": "Video editing",
+        "ar": "مونتاج الفيديو"
+      },
+      "starter": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "product": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "brand": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      }
+    },
+    {
+      "kind": "feature",
+      "label": {
+        "en": "Script writing",
+        "ar": "كتابة السيناريو"
+      },
+      "starter": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "product": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "brand": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      }
+    },
+    {
+      "kind": "feature",
+      "label": {
+        "en": "Product imagery",
+        "ar": "إظهار صور المنتج"
+      },
+      "starter": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "product": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "brand": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      }
+    },
+    {
+      "kind": "feature",
+      "label": {
+        "en": "AI voiceover",
+        "ar": "تعليق صوتي بالذكاء الاصطناعي"
+      },
+      "starter": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "product": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "brand": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      }
+    },
+    {
+      "kind": "text",
+      "label": {
+        "en": "Running time (seconds)",
+        "ar": "مدة الفيديو بالثواني"
+      },
+      "starter": {
+        "included": true,
+        "en": "15",
+        "ar": "15"
+      },
+      "product": {
+        "included": true,
+        "en": "30",
+        "ar": "30"
+      },
+      "brand": {
+        "included": true,
+        "en": "60",
+        "ar": "60"
+      }
+    },
+    {
+      "kind": "text",
+      "label": {
+        "en": "Number of aspect ratios",
+        "ar": "عدد مقاسات العرض"
+      },
+      "starter": {
+        "included": true,
+        "en": "1",
+        "ar": "1"
+      },
+      "product": {
+        "included": true,
+        "en": "1",
+        "ar": "1"
+      },
+      "brand": {
+        "included": true,
+        "en": "1",
+        "ar": "1"
+      }
+    },
+    {
+      "kind": "text",
+      "label": {
+        "en": "Revision rounds",
+        "ar": "جولات التعديل"
+      },
+      "starter": {
+        "included": true,
+        "en": "1",
+        "ar": "1"
+      },
+      "product": {
+        "included": true,
+        "en": "2",
+        "ar": "2"
+      },
+      "brand": {
+        "included": true,
+        "en": "3",
+        "ar": "3"
+      }
+    }
+  ],
+  "title": {
+    "en": "Compare packages",
+    "ar": "قارن الباقات"
+  }
+}
