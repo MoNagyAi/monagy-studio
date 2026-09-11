@@ -6,14 +6,17 @@
 
   let data={};
   let faqData={};
+  let overviewData={};
   try{
-    const [pricingRes,faqRes]=await Promise.all([
+    const [pricingRes,faqRes,overviewRes]=await Promise.all([
       fetch('data/pricing.json',{cache:'no-store'}),
-      fetch('data/faq.json',{cache:'no-store'})
+      fetch('data/faq.json',{cache:'no-store'}),
+      fetch('data/service-overview.json',{cache:'no-store'})
     ]);
     if(!pricingRes.ok) throw new Error('pricing data failed');
     data=await pricingRes.json();
     if(faqRes.ok) faqData=await faqRes.json();
+    if(overviewRes.ok) overviewData=await overviewRes.json();
   }catch(err){
     console.error(err);
     $('#pricingTable').innerHTML='<tbody><tr><td>Pricing data is unavailable.</td></tr></tbody>';
@@ -39,6 +42,26 @@
     const hero=$('.pricing-hero');
     if(hero) hero.appendChild(switcher);
     return switcher;
+  }
+
+  function renderOverview(){
+    const block=lang==='ar'?(overviewData.arabic||{}):(overviewData.english||{});
+    if(!block||!Object.keys(block).length) return;
+    const set=(id,value)=>{const el=$(id);if(el)el.textContent=value||'';};
+    const renderList=(id,items)=>{const el=$(id);if(el)el.innerHTML=(Array.isArray(items)?items:[]).map(item=>'<li>'+esc(item)+'</li>').join('');};
+    set('#serviceOverviewEyebrow',block.eyebrow);
+    set('#serviceOverviewTitle',block.title);
+    set('#serviceOverviewSubtitle',block.subtitle);
+    set('#serviceOverviewIntro',block.intro);
+    set('#serviceSummaryTitle',block.summaryTitle);
+    set('#serviceIdealTitle',block.idealTitle);
+    set('#serviceIncludesTitle',block.includesTitle);
+    set('#serviceNoteTitle',block.noteTitle);
+    set('#serviceNote',block.note);
+    set('#serviceCta',block.cta);
+    renderList('#serviceSummaryList',block.summary);
+    renderList('#serviceIdealList',block.idealFor);
+    renderList('#serviceIncludesList',block.includes);
   }
 
   function renderFaq(){
@@ -105,6 +128,7 @@
     html+='</tr></tbody>';
     table.dir=page.dir;
     table.innerHTML=html;
+    renderOverview();
     renderFaq();
   }
 
