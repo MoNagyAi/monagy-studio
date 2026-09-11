@@ -209,7 +209,7 @@ content:
             list: true
 
   - name: pricing
-    label: 17) جدول الأسعار العربي والإنجليزي
+    label: 17) الأسعار والباقات - Cinematic / 3D / Lip-Sync
     type: file
     path: data/pricing.json
     format: json
@@ -220,64 +220,294 @@ content:
         fields:
           - { name: eyebrowEn, label: العنوان الصغير - إنجليزي, type: string }
           - { name: eyebrowAr, label: العنوان الصغير - عربي, type: string }
-          - { name: titleEn, label: عنوان الجدول - إنجليزي, type: string }
-          - { name: titleAr, label: عنوان الجدول - عربي, type: string }
-          - { name: noteEn, label: الملاحظة - إنجليزي, type: text }
-          - { name: noteAr, label: الملاحظة - عربي, type: text }
+          - { name: titleEn, label: عنوان القسم - إنجليزي, type: string }
+          - { name: titleAr, label: عنوان القسم - عربي, type: string }
+          - { name: noteEn, label: الملاحظة العامة - إنجليزي, type: text }
+          - { name: noteAr, label: الملاحظة العامة - عربي, type: text }
           - { name: defaultLanguage, label: اللغة الافتراضية en أو ar, type: string }
+          - { name: defaultCategory, label: الباقة الافتراضية cinematic أو threeD أو lipSync, type: string }
 
+      - name: cinematic
+        label: الأفلام السينمائية Cinematic Films
+        type: object
+        fields:
+          - { name: labelEn, label: اسم القسم - إنجليزي, type: string }
+          - { name: labelAr, label: اسم القسم - عربي, type: string }
+          - { name: noteEn, label: وصف القسم - إنجليزي, type: text }
+          - { name: noteAr, label: وصف القسم - عربي, type: text }
+          - name: english
+            label: الباقات الإنجليزية
+            type: object
+            fields:
+              - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
+              - name: packages
+                label: الباقات / الأعمدة الإنجليزية
+                type: object
+                list: true
+                fields:
+                  - { name: price, label: سعر العرض الحالي, type: string }
+                  - { name: originalPrice, label: السعر الأصلي المشطوب, type: string }
+                  - { name: discountLabel, label: نسبة الخصم, type: string }
+                  - { name: name, label: اسم الباقة, type: string }
+                  - { name: tagline, label: المدة أو الوصف المختصر, type: string }
+                  - { name: summary, label: ملخص الباقة, type: text }
+                  - { name: buttonLabel, label: نص زر الاختيار, type: string }
+                  - { name: buttonUrl, label: رابط زر الاختيار, type: string }
+              - name: rows
+                label: صفوف مقارنة الباقات الإنجليزية
+                type: object
+                list: true
+                fields:
+                  - { name: label, label: اسم الصف, type: string }
+                  - name: cells
+                    label: قيم الخلايا حسب ترتيب الباقات
+                    type: string
+                    list: true
+                  - { name: emphasis, label: إبراز الصف, type: boolean, default: false }
+          - name: arabic
+            label: الباقات العربية
+            type: object
+            fields:
+              - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
+              - name: packages
+                label: الباقات / الأعمدة العربية
+                type: object
+                list: true
+                fields:
+                  - { name: price, label: سعر العرض الحالي, type: string }
+                  - { name: originalPrice, label: السعر الأصلي المشطوب, type: string }
+                  - { name: discountLabel, label: نسبة الخصم, type: string }
+                  - { name: name, label: اسم الباقة, type: string }
+                  - { name: tagline, label: المدة أو الوصف المختصر, type: string }
+                  - { name: summary, label: ملخص الباقة, type: text }
+                  - { name: buttonLabel, label: نص زر الاختيار, type: string }
+                  - { name: buttonUrl, label: رابط زر الاختيار, type: string }
+              - name: rows
+                label: صفوف مقارنة الباقات العربية
+                type: object
+                list: true
+                fields:
+                  - { name: label, label: اسم الصف, type: string }
+                  - name: cells
+                    label: قيم الخلايا حسب ترتيب الباقات
+                    type: string
+                    list: true
+                  - { name: emphasis, label: إبراز الصف, type: boolean, default: false }
+
+      - name: threeD
+        label: أفلام بطابع ثلاثي الأبعاد 3D-Style Films
+        type: object
+        fields:
+          - { name: labelEn, label: اسم القسم - إنجليزي, type: string }
+          - { name: labelAr, label: اسم القسم - عربي, type: string }
+          - { name: noteEn, label: وصف القسم - إنجليزي, type: text }
+          - { name: noteAr, label: وصف القسم - عربي, type: text }
+          - name: english
+            label: الباقات الإنجليزية
+            type: object
+            fields:
+              - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
+              - name: packages
+                label: الباقات / الأعمدة الإنجليزية
+                type: object
+                list: true
+                fields:
+                  - { name: price, label: سعر العرض الحالي, type: string }
+                  - { name: originalPrice, label: السعر الأصلي المشطوب, type: string }
+                  - { name: discountLabel, label: نسبة الخصم, type: string }
+                  - { name: name, label: اسم الباقة, type: string }
+                  - { name: tagline, label: المدة أو الوصف المختصر, type: string }
+                  - { name: summary, label: ملخص الباقة, type: text }
+                  - { name: buttonLabel, label: نص زر الاختيار, type: string }
+                  - { name: buttonUrl, label: رابط زر الاختيار, type: string }
+              - name: rows
+                label: صفوف مقارنة الباقات الإنجليزية
+                type: object
+                list: true
+                fields:
+                  - { name: label, label: اسم الصف, type: string }
+                  - name: cells
+                    label: قيم الخلايا حسب ترتيب الباقات
+                    type: string
+                    list: true
+                  - { name: emphasis, label: إبراز الصف, type: boolean, default: false }
+          - name: arabic
+            label: الباقات العربية
+            type: object
+            fields:
+              - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
+              - name: packages
+                label: الباقات / الأعمدة العربية
+                type: object
+                list: true
+                fields:
+                  - { name: price, label: سعر العرض الحالي, type: string }
+                  - { name: originalPrice, label: السعر الأصلي المشطوب, type: string }
+                  - { name: discountLabel, label: نسبة الخصم, type: string }
+                  - { name: name, label: اسم الباقة, type: string }
+                  - { name: tagline, label: المدة أو الوصف المختصر, type: string }
+                  - { name: summary, label: ملخص الباقة, type: text }
+                  - { name: buttonLabel, label: نص زر الاختيار, type: string }
+                  - { name: buttonUrl, label: رابط زر الاختيار, type: string }
+              - name: rows
+                label: صفوف مقارنة الباقات العربية
+                type: object
+                list: true
+                fields:
+                  - { name: label, label: اسم الصف, type: string }
+                  - name: cells
+                    label: قيم الخلايا حسب ترتيب الباقات
+                    type: string
+                    list: true
+                  - { name: emphasis, label: إبراز الصف, type: boolean, default: false }
+
+      - name: lipSync
+        label: مزامنة الشفاه AI Lip-Sync
+        type: object
+        fields:
+          - { name: labelEn, label: اسم القسم - إنجليزي, type: string }
+          - { name: labelAr, label: اسم القسم - عربي, type: string }
+          - { name: noteEn, label: وصف القسم - إنجليزي, type: text }
+          - { name: noteAr, label: وصف القسم - عربي, type: text }
+          - name: english
+            label: الباقات الإنجليزية
+            type: object
+            fields:
+              - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
+              - name: packages
+                label: الباقات / الأعمدة الإنجليزية
+                type: object
+                list: true
+                fields:
+                  - { name: price, label: سعر العرض الحالي, type: string }
+                  - { name: originalPrice, label: السعر الأصلي المشطوب, type: string }
+                  - { name: discountLabel, label: نسبة الخصم, type: string }
+                  - { name: name, label: اسم الباقة, type: string }
+                  - { name: tagline, label: المدة أو الوصف المختصر, type: string }
+                  - { name: summary, label: ملخص الباقة, type: text }
+                  - { name: buttonLabel, label: نص زر الاختيار, type: string }
+                  - { name: buttonUrl, label: رابط زر الاختيار, type: string }
+              - name: rows
+                label: صفوف مقارنة الباقات الإنجليزية
+                type: object
+                list: true
+                fields:
+                  - { name: label, label: اسم الصف, type: string }
+                  - name: cells
+                    label: قيم الخلايا حسب ترتيب الباقات
+                    type: string
+                    list: true
+                  - { name: emphasis, label: إبراز الصف, type: boolean, default: false }
+          - name: arabic
+            label: الباقات العربية
+            type: object
+            fields:
+              - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
+              - name: packages
+                label: الباقات / الأعمدة العربية
+                type: object
+                list: true
+                fields:
+                  - { name: price, label: سعر العرض الحالي, type: string }
+                  - { name: originalPrice, label: السعر الأصلي المشطوب, type: string }
+                  - { name: discountLabel, label: نسبة الخصم, type: string }
+                  - { name: name, label: اسم الباقة, type: string }
+                  - { name: tagline, label: المدة أو الوصف المختصر, type: string }
+                  - { name: summary, label: ملخص الباقة, type: text }
+                  - { name: buttonLabel, label: نص زر الاختيار, type: string }
+                  - { name: buttonUrl, label: رابط زر الاختيار, type: string }
+              - name: rows
+                label: صفوف مقارنة الباقات العربية
+                type: object
+                list: true
+                fields:
+                  - { name: label, label: اسم الصف, type: string }
+                  - name: cells
+                    label: قيم الخلايا حسب ترتيب الباقات
+                    type: string
+                    list: true
+                  - { name: emphasis, label: إبراز الصف, type: boolean, default: false }
+
+  - name: faq
+    label: 18) الأسئلة الشائعة FAQ - عربي وإنجليزي
+    type: file
+    path: data/faq.json
+    format: json
+    fields:
+      - { name: titleEn, label: عنوان FAQ بالإنجليزية, type: string }
+      - { name: titleAr, label: عنوان FAQ بالعربية, type: string }
+      - { name: introEn, label: مقدمة FAQ بالإنجليزية, type: text }
+      - { name: introAr, label: مقدمة FAQ بالعربية, type: text }
       - name: english
-        label: الجدول الإنجليزي
+        label: الأسئلة والأجوبة الإنجليزية
         type: object
+        list: true
         fields:
-          - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
-          - name: packages
-            label: الأعمدة / الباقات الإنجليزية - أضف أو احذف عمودًا من هنا
-            type: object
-            list: true
-            fields:
-              - { name: price, label: السعر, type: string }
-              - { name: name, label: اسم الباقة, type: string }
-              - { name: tagline, label: الوصف المختصر, type: string }
-              - { name: summary, label: ملخص الباقة, type: text }
-              - { name: buttonLabel, label: نص زر الاختيار, type: string }
-              - { name: buttonUrl, label: رابط زر الاختيار, type: string }
-          - name: rows
-            label: الصفوف الإنجليزية - أضف أو احذف صفًا من هنا
-            type: object
-            list: true
-            fields:
-              - { name: label, label: اسم الصف, type: string }
-              - name: cells
-                label: قيم الخلايا بترتيب الباقات من اليسار لليمين
-                type: string
-                list: true
-              - { name: emphasis, label: إبراز الصف, type: boolean, default: false }
-
+          - { name: question, label: السؤال, type: string }
+          - { name: answer, label: الإجابة, type: text }
       - name: arabic
-        label: الجدول العربي
+        label: الأسئلة والأجوبة العربية
+        type: object
+        list: true
+        fields:
+          - { name: question, label: السؤال, type: string }
+          - { name: answer, label: الإجابة, type: text }
+
+  - name: serviceOverview
+    label: 19) تعريف الخدمة About the Service
+    type: file
+    path: data/service-overview.json
+    format: json
+    fields:
+      - name: english
+        label: النسخة الإنجليزية
         type: object
         fields:
-          - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
-          - name: packages
-            label: الأعمدة / الباقات العربية - أضف أو احذف عمودًا من هنا
-            type: object
+          - { name: eyebrow, label: العنوان الصغير, type: string }
+          - { name: title, label: العنوان الرئيسي, type: string }
+          - { name: subtitle, label: العنوان الفرعي, type: string }
+          - { name: intro, label: مقدمة الخدمة, type: text }
+          - { name: summaryTitle, label: عنوان مميزات الخدمة, type: string }
+          - name: summary
+            label: مميزات الخدمة
+            type: string
             list: true
-            fields:
-              - { name: price, label: السعر, type: string }
-              - { name: name, label: اسم الباقة, type: string }
-              - { name: tagline, label: الوصف المختصر, type: string }
-              - { name: summary, label: ملخص الباقة, type: text }
-              - { name: buttonLabel, label: نص زر الاختيار, type: string }
-              - { name: buttonUrl, label: رابط زر الاختيار, type: string }
-          - name: rows
-            label: الصفوف العربية - أضف أو احذف صفًا من هنا
-            type: object
+          - { name: idealTitle, label: عنوان الخدمات المناسبة لـ, type: string }
+          - name: idealFor
+            label: المجالات المناسبة
+            type: string
             list: true
-            fields:
-              - { name: label, label: اسم الصف, type: string }
-              - name: cells
-                label: قيم الخلايا بترتيب الباقات من اليمين لليسار
-                type: string
-                list: true
-              - { name: emphasis, label: إبراز الصف, type: boolean, default: false }
+          - { name: includesTitle, label: عنوان ما قد يشمله المشروع, type: string }
+          - name: includes
+            label: ما قد يشمله المشروع
+            type: string
+            list: true
+          - { name: noteTitle, label: عنوان الملاحظة, type: string }
+          - { name: note, label: الملاحظة, type: text }
+          - { name: cta, label: دعوة التواصل, type: text }
+      - name: arabic
+        label: النسخة العربية
+        type: object
+        fields:
+          - { name: eyebrow, label: العنوان الصغير, type: string }
+          - { name: title, label: العنوان الرئيسي, type: string }
+          - { name: subtitle, label: العنوان الفرعي, type: string }
+          - { name: intro, label: مقدمة الخدمة, type: text }
+          - { name: summaryTitle, label: عنوان مميزات الخدمة, type: string }
+          - name: summary
+            label: مميزات الخدمة
+            type: string
+            list: true
+          - { name: idealTitle, label: عنوان الخدمات المناسبة لـ, type: string }
+          - name: idealFor
+            label: المجالات المناسبة
+            type: string
+            list: true
+          - { name: includesTitle, label: عنوان ما قد يشمله المشروع, type: string }
+          - name: includes
+            label: ما قد يشمله المشروع
+            type: string
+            list: true
+          - { name: noteTitle, label: عنوان الملاحظة, type: string }
+          - { name: note, label: الملاحظة, type: text }
+          - { name: cta, label: دعوة التواصل, type: text }
