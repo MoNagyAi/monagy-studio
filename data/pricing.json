@@ -4,8 +4,8 @@
     "eyebrowAr": "الإنتاج السينمائي بالذكاء الاصطناعي",
     "titleEn": "Compare packages",
     "titleAr": "مقارنة الباقات",
-    "noteEn": "Packages are designed for cinematic AI production — from short-form content and teasers to narrative sequences, music videos, sports films and short films. Final pricing may vary with complexity, duration, characters and production requirements.",
-    "noteAr": "الباقات مخصصة للإنتاج السينمائي بالذكاء الاصطناعي — من المحتوى القصير والإعلانات التشويقية إلى المشاهد السردية والفيديوهات الموسيقية والأعمال الرياضية والأفلام القصيرة. قد يختلف السعر النهائي حسب درجة التعقيد والمدة وعدد الشخصيات ومتطلبات الإنتاج.",
+    "noteEn": "Packages are designed for cinematic AI production — from short-form content and teasers to narrative sequences, sports films, branded films and short films. Final pricing may vary with complexity, duration, characters and production requirements.",
+    "noteAr": "الباقات مخصصة للإنتاج السينمائي بالذكاء الاصطناعي — من المحتوى القصير والإعلانات التشويقية إلى المشاهد السردية والأعمال الرياضية وأفلام العلامات التجارية والأفلام القصيرة. قد يختلف السعر النهائي حسب درجة التعقيد والمدة وعدد الشخصيات ومتطلبات الإنتاج.",
     "defaultLanguage": "en"
   },
   "english": {
@@ -23,7 +23,7 @@
         "price": "US$900",
         "name": "Standard",
         "tagline": "1 MIN CINEMATIC STORY",
-        "summary": "Ideal for trailers, narrative sequences, branded films, sports storytelling and music visuals.",
+        "summary": "Ideal for trailers, narrative sequences, branded films, sports storytelling and character-driven content.",
         "buttonLabel": "Select",
         "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
       },
@@ -31,7 +31,7 @@
         "price": "US$4,000",
         "name": "Premium",
         "tagline": "UP TO 4 MIN FULL PROJECT",
-        "summary": "Designed for short films, narrative projects, music videos, cinematic campaigns and longer-form storytelling.",
+        "summary": "Designed for short films, narrative projects, cinematic campaigns and longer-form visual storytelling.",
         "buttonLabel": "Select",
         "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
       }
@@ -41,7 +41,7 @@
       { "label": "Concept & script development", "cells": ["✓", "✓", "✓"] },
       { "label": "Shot design & AI production", "cells": ["✓", "✓", "✓"] },
       { "label": "Video editing & compositing", "cells": ["✓", "✓", "✓"] },
-      { "label": "Music & sound effects", "cells": ["✓", "✓", "✓"] },
+      { "label": "Sound design & SFX", "cells": ["✓", "✓", "✓"] },
       { "label": "Voice-over / dialogue integration", "cells": ["✓", "✓", "✓"] },
       { "label": "Character & visual consistency", "cells": ["Standard", "Advanced", "Extended"] },
       { "label": "Running time (seconds)", "cells": ["30", "60", "240"] },
@@ -65,7 +65,7 @@
         "price": "900 دولار",
         "name": "قياسي",
         "tagline": "قصة سينمائية حتى دقيقة",
-        "summary": "مناسب للتريلرات والمشاهد السردية وأفلام العلامات التجارية والسرد الرياضي والفيديوهات الموسيقية.",
+        "summary": "مناسب للتريلرات والمشاهد السردية وأفلام العلامات التجارية والسرد الرياضي والمحتوى القائم على الشخصيات.",
         "buttonLabel": "اختيار",
         "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
       },
@@ -73,7 +73,7 @@
         "price": "4,000 دولار",
         "name": "مميز",
         "tagline": "مشروع متكامل حتى 4 دقائق",
-        "summary": "مخصص للأفلام القصيرة والمشروعات السردية والفيديوهات الموسيقية والحملات السينمائية والمحتوى القصصي الأطول.",
+        "summary": "مخصص للأفلام القصيرة والمشروعات السردية والحملات السينمائية والمحتوى البصري القصصي الأطول.",
         "buttonLabel": "اختيار",
         "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
       }
@@ -83,7 +83,7 @@
       { "label": "تطوير الفكرة والسيناريو", "cells": ["✓", "✓", "✓"] },
       { "label": "تصميم الكادرات والإنتاج بالذكاء الاصطناعي", "cells": ["✓", "✓", "✓"] },
       { "label": "المونتاج والمعالجة البصرية", "cells": ["✓", "✓", "✓"] },
-      { "label": "الموسيقى والمؤثرات الصوتية", "cells": ["✓", "✓", "✓"] },
+      { "label": "تصميم الصوت والمؤثرات الصوتية", "cells": ["✓", "✓", "✓"] },
       { "label": "دمج التعليق الصوتي أو الحوار", "cells": ["✓", "✓", "✓"] },
       { "label": "اتساق الشخصيات والهوية البصرية", "cells": ["أساسي", "متقدم", "موسع"] },
       { "label": "مدة الفيديو (ثانية)", "cells": ["30", "60", "240"] },
