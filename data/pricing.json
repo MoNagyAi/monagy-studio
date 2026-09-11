@@ -1,0 +1,91 @@
+{
+  "settings": {
+    "eyebrowEn": "AI VIDEO PRODUCTION",
+    "eyebrowAr": "إنتاج فيديو بالذكاء الاصطناعي",
+    "titleEn": "Compare packages",
+    "titleAr": "مقارنة الباقات",
+    "noteEn": "Choose the package that fits your project. Final pricing may vary with complexity, duration and production requirements.",
+    "noteAr": "اختر الباقة المناسبة لمشروعك. قد يختلف السعر النهائي حسب درجة التعقيد والمدة ومتطلبات الإنتاج.",
+    "defaultLanguage": "en"
+  },
+  "english": {
+    "firstColumnLabel": "Package",
+    "packages": [
+      {
+        "price": "US$100",
+        "name": "Basic",
+        "tagline": "BEST FOR TESTING A PRODUCT",
+        "summary": "1x AI Video Up to 15 Seconds",
+        "buttonLabel": "Select",
+        "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+      },
+      {
+        "price": "US$200",
+        "name": "Standard",
+        "tagline": "BEST FOR BRANDS & SOCIAL MEDIA ADS",
+        "summary": "1x AI Video Up to 30 Seconds",
+        "buttonLabel": "Select",
+        "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+      },
+      {
+        "price": "US$500",
+        "name": "Premium",
+        "tagline": "CINEMATIC BRAND CAMPAIGN",
+        "summary": "1x AI Video Up to 60 Seconds",
+        "buttonLabel": "Select",
+        "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+      }
+    ],
+    "rows": [
+      { "label": "Video editing", "cells": ["✓", "✓", "✓"] },
+      { "label": "Script writing", "cells": ["✓", "✓", "✓"] },
+      { "label": "Show product imagery", "cells": ["✓", "✓", "✓"] },
+      { "label": "Voice-over", "cells": ["✓", "✓", "✓"] },
+      { "label": "Running time (seconds)", "cells": ["15", "30", "60"] },
+      { "label": "Number of orientations", "cells": ["1", "1", "1"] },
+      { "label": "Revisions", "cells": ["1", "2", "3"] },
+      { "label": "Delivery Time", "cells": ["● 3 days\n○ 1 day (+US$15)", "● 5 days\n○ 2 days (+US$25)", "● 7 days\n○ 3 days (+US$40)"] },
+      { "label": "Total", "cells": ["US$100", "US$200", "US$500"], "emphasis": true }
+    ]
+  },
+  "arabic": {
+    "firstColumnLabel": "الباقة",
+    "packages": [
+      {
+        "price": "100 دولار",
+        "name": "أساسي",
+        "tagline": "مناسب لاختبار منتج أو فكرة",
+        "summary": "فيديو واحد بالذكاء الاصطناعي حتى 15 ثانية",
+        "buttonLabel": "اختيار",
+        "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+      },
+      {
+        "price": "200 دولار",
+        "name": "قياسي",
+        "tagline": "مناسب للعلامات التجارية وإعلانات التواصل الاجتماعي",
+        "summary": "فيديو واحد بالذكاء الاصطناعي حتى 30 ثانية",
+        "buttonLabel": "اختيار",
+        "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+      },
+      {
+        "price": "500 دولار",
+        "name": "مميز",
+        "tagline": "حملة سينمائية للعلامة التجارية",
+        "summary": "فيديو واحد بالذكاء الاصطناعي حتى 60 ثانية",
+        "buttonLabel": "اختيار",
+        "buttonUrl": "https://wa.me/message/MI6QH6JGHCE5L1"
+      }
+    ],
+    "rows": [
+      { "label": "مونتاج الفيديو", "cells": ["✓", "✓", "✓"] },
+      { "label": "كتابة السيناريو", "cells": ["✓", "✓", "✓"] },
+      { "label": "إظهار صور المنتج", "cells": ["✓", "✓", "✓"] },
+      { "label": "التعليق الصوتي", "cells": ["✓", "✓", "✓"] },
+      { "label": "مدة الفيديو (ثانية)", "cells": ["15", "30", "60"] },
+      { "label": "عدد اتجاهات الفيديو", "cells": ["1", "1", "1"] },
+      { "label": "عدد التعديلات", "cells": ["1", "2", "3"] },
+      { "label": "مدة التسليم", "cells": ["● 3 أيام\n○ يوم واحد (+15 دولار)", "● 5 أيام\n○ يومان (+25 دولار)", "● 7 أيام\n○ 3 أيام (+40 دولار)"] },
+      { "label": "الإجمالي", "cells": ["100 دولار", "200 دولار", "500 دولار"], "emphasis": true }
+    ]
+  }
+}
