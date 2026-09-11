@@ -1,6 +1,32 @@
 /* MoNagy visit summaries. Disabled until a deployed Apps Script URL is supplied. */
 (async function () {
   "use strict";
+
+  /* Keep pricing and FAQ connected to the main portfolio navigation. */
+  const mainNav = document.querySelector(".topbar nav");
+  if (mainNav) {
+    const contactLink = mainNav.querySelector('a[href="#contact"]');
+    const navItems = [
+      { href: "pricing.html#pricingTitle", en: "Prices", ar: "الأسعار" },
+      { href: "pricing.html#faqSection", en: "FAQ", ar: "الأسئلة الشائعة" }
+    ];
+    navItems.forEach(item => {
+      if (mainNav.querySelector(`a[href="${item.href}"]`)) return;
+      const link = document.createElement("a");
+      link.href = item.href;
+      const en = document.createElement("span");
+      en.className = "nav-label-en";
+      en.textContent = item.en;
+      const ar = document.createElement("span");
+      ar.className = "nav-label-ar";
+      ar.dir = "rtl";
+      ar.textContent = item.ar;
+      link.append(en, ar);
+      if (contactLink) mainNav.insertBefore(link, contactLink);
+      else mainNav.appendChild(link);
+    });
+  }
+
   let config;
   try { config = await (await fetch("data/visit-notifications.json", {cache:"no-store"})).json(); } catch (_) { return; }
   if (!config.enabled || !/^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(config.endpoint || "")) return;
