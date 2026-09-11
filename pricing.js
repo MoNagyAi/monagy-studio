@@ -38,18 +38,50 @@
     corner.scope = "col"; corner.append(bilingual({en:"Your production", ar:"تفاصيل الإنتاج"})); top.append(corner);
     data.packages.forEach(p => {
       const th = node("th"); th.scope = "col";
-      th.append(bilingual(p.name), node("strong", "package-price", "$" + Number(p.price).toLocaleString("en-US")), bilingual(p.summary));
+      th.append(node("strong", "package-price", "US$" + Number(p.price).toLocaleString("en-US")), bilingual(p.name, "h3"), bilingual(p.summary), bilingual(p.description));
       top.append(th);
     });
     thead.append(top); table.append(thead);
     const tbody = node("tbody");
     (data.rows || []).forEach(row => {
       const tr = node("tr"), label = node("th"); label.scope = "row"; label.append(bilingual(row.label)); tr.append(label);
-      data.packages.forEach(p => { const td = node("td"); td.append(bilingual(row[p.id])); tr.append(td); });
+      data.packages.forEach(p => {
+        const td = node("td"), value = row[p.id];
+        if (row.kind === "feature") {
+          const included = value?.included === true;
+          const mark = node("span", "price-check", included ? "✓" : "—");
+          mark.setAttribute("aria-hidden", "true");
+          td.append(mark, bilingual({en:included?"Included":"Not included",ar:included?"مشمول":"غير مشمول"}, "span"));
+          td.lastElementChild.classList.add("price-sr-only");
+        } else { td.append(bilingual(value)); }
+        tr.append(td);
+      });
       tbody.append(tr);
     });
+    const deliveryRow = node("tr"), deliveryLabel = node("th");
+    deliveryLabel.scope = "row";
+    deliveryLabel.append(bilingual({en:"Delivery time",ar:"مدة التسليم"})); deliveryRow.append(deliveryLabel);
+    const selections = data.packages.map(() => false);
+    const updaters = [];
+    data.packages.forEach((p, index) => {
+      const td = node("td"), group = node("fieldset", "delivery-options");
+      group.append(bilingual(p.name, "legend")); group.firstElementChild.classList.add("price-sr-only");
+      [false, true].forEach(express => {
+        if (express && !p.expressEnabled) return;
+        const label = node("label"), radio = node("input");
+        radio.type = "radio"; radio.name = "pricing-delivery-" + index;
+        radio.value = express ? "express" : "standard"; radio.checked = !express;
+        const days = express ? p.expressDays : p.deliveryDays;
+        const fee = express ? " (+US$" + Number(p.expressFee).toLocaleString("en-US") + ")" : "";
+        label.append(radio, bilingual({en:days+" business day(s)"+fee,ar:days+" يوم عمل"+fee}));
+        radio.addEventListener("change", () => { selections[index] = express; updaters[index]?.(); });
+        group.append(label);
+      });
+      td.append(group); deliveryRow.append(td);
+    });
+    tbody.append(deliveryRow);
     const actions = node("tr"), actionLabel = node("th"); actionLabel.scope = "row";
-    actionLabel.append(bilingual({en:"Start a conversation",ar:"ناقش مشروعك"})); actions.append(actionLabel);
+    actionLabel.append(bilingual({en:"Total",ar:"الإجمالي"})); actions.append(actionLabel);
     let email = "monagy-studio@hotmail.com";
     try {
       const r = await fetch("data/content.json", {cache:"no-store"});
@@ -59,12 +91,22 @@
         if (typeof candidate === "string" && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(candidate)) email = candidate;
       }
     } catch (_) { /* Public contact fallback. */ }
-    data.packages.forEach(p => {
+    data.packages.forEach((p, index) => {
       const td = node("td"), a = node("a", "pricing-cta");
-      const body = "Package / الباقة: " + p.name.en + " / " + p.name.ar + "\n\n" +
-        (data.requirements || []).map(r => r.en + "\n" + r.ar + "\n").join("\n");
-      a.href = "mailto:" + encodeURIComponent(email) + "?subject=" + encodeURIComponent("Project inquiry — " + p.name.en) + "&body=" + encodeURIComponent(body);
-      a.append(bilingual(data.cta)); td.append(a); actions.append(td);
+      const total = node("output", "pricing-total"); total.setAttribute("aria-live", "polite");
+      const update = () => {
+        const express = selections[index], amount = Number(p.price) + (express ? Number(p.expressFee) : 0);
+        total.textContent = "US$" + amount.toLocaleString("en-US");
+        total.setAttribute("aria-label", p.name.en + " / " + p.name.ar + ": " + total.textContent);
+        const body = "Package / الباقة: " + p.name.en + " / " + p.name.ar +
+          "\nDelivery / التسليم: " + (express ? "Express / سريع" : "Standard / عادي") +
+          " — " + (express ? p.expressDays : p.deliveryDays) + " business day(s) / يوم عمل" +
+          "\nEstimated total / الإجمالي المبدئي: US$" + amount +
+          "\n\n" + (data.requirements || []).map(r => r.en + "\n" + r.ar + "\n").join("\n");
+        a.href = "mailto:" + encodeURIComponent(email) + "?subject=" + encodeURIComponent("Project inquiry — " + p.name.en) + "&body=" + encodeURIComponent(body);
+      };
+      updaters[index] = update; update();
+      a.append(bilingual(data.cta)); td.append(total, a); actions.append(td);
     });
     tbody.append(actions); table.append(tbody); wrap.append(table); host.append(wrap);
     host.append(bilingual(data.note, "p"));
