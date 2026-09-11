@@ -44,6 +44,22 @@
     return switcher;
   }
 
+  function renderOffer(){
+    const badge=$('#pricingOfferBadge');
+    const title=$('#pricingOfferTitle');
+    const text=$('#pricingOfferText');
+    if(!badge||!title||!text) return;
+    if(lang==='ar'){
+      badge.textContent='عرض إطلاق خاص';
+      title.textContent='خصم 80% على الأسعار الأساسية';
+      text.textContent='الأسعار المعروضة حاليًا أسعار ترويجية خاصة لفترة الإطلاق وليست الأسعار الدائمة للخدمات، وقد يتم تحديثها لاحقًا.';
+    }else{
+      badge.textContent='LAUNCH OFFER';
+      title.textContent='80% off standard package rates';
+      text.textContent='Special introductory pricing for a limited launch period. These promotional rates are not the permanent standard prices and may be updated later.';
+    }
+  }
+
   function renderOverview(){
     const block=lang==='ar'?(overviewData.arabic||{}):(overviewData.english||{});
     if(!block||!Object.keys(block).length) return;
@@ -128,6 +144,7 @@
     html+='</tr></tbody>';
     table.dir=page.dir;
     table.innerHTML=html;
+    renderOffer();
     renderOverview();
     renderFaq();
   }
