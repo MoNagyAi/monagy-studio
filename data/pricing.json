@@ -1,7 +1,7 @@
 {
   "cta": {
-    "ar": "اطلب عرضًا لهذه الباقة",
-    "en": "Request this package"
+    "en": "Select package",
+    "ar": "اختيار الباقة"
   },
   "custom": {
     "ar": "تحتاج فيلمًا أطول أو تحريك شخصيات أو حملة كاملة؟ اطلب عرضًا مخصصًا من قسم التواصل.",
@@ -55,8 +55,8 @@
     },
     {
       "answer": {
-        "ar": "نعم، بتسعير منفصل. حدّد اللغة واللهجة والنص المعتمد. يتم تأكيد الصوت وترخيصه قبل الإنتاج، وتكلفة المؤدي البشري منفصلة.",
-        "en": "Yes, as a separately quoted option. Specify the language, accent and approved script. Voice choice and licensing are confirmed before production; human talent has a separate cost."
+        "en": "One AI voiceover in Arabic or English is included, using the approved script. Specify language, accent and pronunciation before production. Human voice talent, extra languages and additional versions are quoted separately; voice licensing is confirmed before use.",
+        "ar": "يشمل السعر تعليقًا صوتيًا واحدًا بالذكاء الاصطناعي بالعربية أو الإنجليزية وفق النص المعتمد. حدّد اللغة واللهجة والنطق قبل الإنتاج. المؤدي البشري واللغات والنسخ الإضافية تُسعّر منفصلة، ويُؤكد ترخيص الصوت قبل استخدامه."
       },
       "question": {
         "ar": "هل يمكن إضافة تعليق صوتي عربي أو إنجليزي؟",
@@ -99,45 +99,69 @@
     "en": "Choose a starting point for your AI video. Each package covers one product or brand, one concept and one final video."
   },
   "note": {
-    "ar": "أسعار تبدأ من المبالغ المعروضة بالدولار الأمريكي. يتم الاتفاق كتابيًا على السعر النهائي والجدول الزمني والدفع وحقوق الاستخدام بعد مراجعة متطلباتك. المشاهد المعقدة والتسليمات الإضافية لها عرض منفصل.",
-    "en": "Starting prices in USD. The final quote, schedule, payment terms and usage rights are agreed in writing after reviewing your brief. Complex scenes and additional deliverables are quoted separately."
+    "en": "Starting prices in USD for the stated scope. The total updates with your delivery choice. Express delivery is subject to availability and confirmation. Final scope, quote, payment terms and usage rights are agreed in writing before booking.",
+    "ar": "أسعار تبدأ من المبالغ المعروضة بالدولار الأمريكي للنطاق الموضح. يتغير الإجمالي بحسب اختيار التسليم. التسليم السريع يخضع للتوافر والتأكيد. يُعتمد نطاق العمل والسعر والدفع وحقوق الاستخدام كتابيًا قبل الحجز."
   },
   "packages": [
     {
       "id": "starter",
       "name": {
-        "ar": "بداية سينمائية",
-        "en": "Cinematic Starter"
+        "en": "Basic",
+        "ar": "الأساسية"
       },
       "price": 100,
       "summary": {
-        "ar": "فيديو تشويقي قصير لرسالة رئيسية واحدة.",
-        "en": "A focused teaser for one key message."
-      }
+        "en": "Best for testing a product",
+        "ar": "مناسبة لتجربة إعلان لمنتج"
+      },
+      "description": {
+        "en": "1 AI video up to 15 seconds",
+        "ar": "فيديو واحد بالذكاء الاصطناعي حتى 15 ثانية"
+      },
+      "deliveryDays": 3,
+      "expressEnabled": true,
+      "expressDays": 1,
+      "expressFee": 15
     },
     {
       "id": "product",
       "name": {
-        "ar": "حكاية منتج",
-        "en": "Product Story"
+        "en": "Standard",
+        "ar": "المتوسطة"
       },
       "price": 200,
       "summary": {
-        "ar": "إعلان منتج بسرد بصري واضح.",
-        "en": "A product-led ad with a clear visual narrative."
-      }
+        "en": "For brands & social media ads",
+        "ar": "للعلامات التجارية وإعلانات التواصل"
+      },
+      "description": {
+        "en": "1 AI video up to 30 seconds",
+        "ar": "فيديو واحد بالذكاء الاصطناعي حتى 30 ثانية"
+      },
+      "deliveryDays": 5,
+      "expressEnabled": true,
+      "expressDays": 2,
+      "expressFee": 25
     },
     {
       "id": "brand",
       "name": {
-        "ar": "فيلم العلامة",
-        "en": "Brand Film"
+        "en": "Premium",
+        "ar": "المتميزة"
       },
-      "price": 350,
+      "price": 500,
       "summary": {
-        "ar": "مساحة أوسع للحكاية والإخراج الإبداعي.",
-        "en": "More room for storytelling and creative direction."
-      }
+        "en": "Cinematic brand campaign",
+        "ar": "حملة سينمائية للعلامة التجارية"
+      },
+      "description": {
+        "en": "1 AI video up to 60 seconds",
+        "ar": "فيديو واحد بالذكاء الاصطناعي حتى 60 ثانية"
+      },
+      "deliveryDays": 7,
+      "expressEnabled": true,
+      "expressDays": 3,
+      "expressFee": 40
     }
   ],
   "requirements": [
@@ -172,152 +196,162 @@
   },
   "rows": [
     {
-      "brand": {
-        "ar": "حتى 30 ثانية",
-        "en": "Up to 30 seconds"
-      },
+      "kind": "feature",
       "label": {
-        "ar": "المدة النهائية",
-        "en": "Final duration"
-      },
-      "product": {
-        "ar": "حتى 20 ثانية",
-        "en": "Up to 20 seconds"
+        "en": "Video editing",
+        "ar": "مونتاج الفيديو"
       },
       "starter": {
-        "ar": "حتى 10 ثوانٍ",
-        "en": "Up to 10 seconds"
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "product": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "brand": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
       }
     },
     {
-      "brand": {
-        "ar": "حتى 8",
-        "en": "Up to 8"
-      },
+      "kind": "feature",
       "label": {
-        "ar": "اللقطات المخططة",
-        "en": "Planned shots"
-      },
-      "product": {
-        "ar": "حتى 5",
-        "en": "Up to 5"
+        "en": "Script writing",
+        "ar": "كتابة السيناريو"
       },
       "starter": {
-        "ar": "حتى 3",
-        "en": "Up to 3"
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "product": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "brand": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
       }
     },
     {
-      "brand": {
-        "ar": "نص قصير ومراجع وخطة مشاهد",
-        "en": "Short script + references + shot plan"
-      },
+      "kind": "feature",
       "label": {
-        "ar": "التطوير الإبداعي",
-        "en": "Creative development"
-      },
-      "product": {
-        "ar": "نص قصير ومراجع بصرية",
-        "en": "Short script + visual references"
+        "en": "Product imagery",
+        "ar": "إظهار صور المنتج"
       },
       "starter": {
-        "ar": "موجز الفكرة وخطة اللقطات",
-        "en": "Brief + shot outline"
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "product": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "brand": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
       }
     },
     {
-      "brand": {
-        "ar": "مونتاج وموسيقى ومؤثرات صوتية",
-        "en": "Editing + music + sound effects"
-      },
+      "kind": "feature",
       "label": {
-        "ar": "المونتاج والصوت",
-        "en": "Editing and sound"
-      },
-      "product": {
-        "ar": "مونتاج وموسيقى ومؤثرات صوتية",
-        "en": "Editing + music + sound effects"
+        "en": "AI voiceover",
+        "ar": "تعليق صوتي بالذكاء الاصطناعي"
       },
       "starter": {
-        "ar": "مونتاج وموسيقى",
-        "en": "Editing + music"
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "product": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
+      },
+      "brand": {
+        "included": true,
+        "en": "Included",
+        "ar": "مشمول"
       }
     },
     {
-      "brand": {
-        "ar": "جولتان بملاحظات مجمعة",
-        "en": "2 consolidated rounds"
-      },
+      "kind": "text",
       "label": {
-        "ar": "جولات التعديل",
-        "en": "Revision rounds"
-      },
-      "product": {
-        "ar": "جولتان بملاحظات مجمعة",
-        "en": "2 consolidated rounds"
+        "en": "Running time (seconds)",
+        "ar": "مدة الفيديو بالثواني"
       },
       "starter": {
-        "ar": "جولة واحدة بملاحظات مجمعة",
-        "en": "1 consolidated round"
+        "included": true,
+        "en": "15",
+        "ar": "15"
+      },
+      "product": {
+        "included": true,
+        "en": "30",
+        "ar": "30"
+      },
+      "brand": {
+        "included": true,
+        "en": "60",
+        "ar": "60"
       }
     },
     {
-      "brand": {
-        "ar": "7–10 أيام عمل",
-        "en": "7–10 business days"
-      },
+      "kind": "text",
       "label": {
-        "ar": "مدة الإنتاج التقديرية",
-        "en": "Estimated production"
-      },
-      "product": {
-        "ar": "5–7 أيام عمل",
-        "en": "5–7 business days"
+        "en": "Number of aspect ratios",
+        "ar": "عدد مقاسات العرض"
       },
       "starter": {
-        "ar": "3–5 أيام عمل",
-        "en": "3–5 business days"
+        "included": true,
+        "en": "1",
+        "ar": "1"
+      },
+      "product": {
+        "included": true,
+        "en": "1",
+        "ar": "1"
+      },
+      "brand": {
+        "included": true,
+        "en": "1",
+        "ar": "1"
       }
     },
     {
-      "brand": {
-        "ar": "ملف MP4 بدقة 1080p · مقاس واحد",
-        "en": "1080p MP4 · one aspect ratio"
-      },
+      "kind": "text",
       "label": {
-        "ar": "التسليم",
-        "en": "Delivery"
-      },
-      "product": {
-        "ar": "ملف MP4 بدقة 1080p · مقاس واحد",
-        "en": "1080p MP4 · one aspect ratio"
+        "en": "Revision rounds",
+        "ar": "جولات التعديل"
       },
       "starter": {
-        "ar": "ملف MP4 بدقة 1080p · مقاس واحد",
-        "en": "1080p MP4 · one aspect ratio"
-      }
-    },
-    {
-      "brand": {
-        "ar": "بتسعير منفصل",
-        "en": "Quoted separately"
-      },
-      "label": {
-        "ar": "التعليق الصوتي",
-        "en": "Voiceover"
+        "included": true,
+        "en": "1",
+        "ar": "1"
       },
       "product": {
-        "ar": "بتسعير منفصل",
-        "en": "Quoted separately"
+        "included": true,
+        "en": "2",
+        "ar": "2"
       },
-      "starter": {
-        "ar": "بتسعير منفصل",
-        "en": "Quoted separately"
+      "brand": {
+        "included": true,
+        "en": "3",
+        "ar": "3"
       }
     }
   ],
   "title": {
-    "ar": "محتوى سينمائي. تفاصيل واضحة.",
-    "en": "Cinematic content. Clear scope."
+    "en": "Compare packages",
+    "ar": "قارن الباقات"
   }
 }
