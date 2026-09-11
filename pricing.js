@@ -16,20 +16,51 @@
   }
 
   let lang=(localStorage.getItem('monagyPricingLanguage')||data.settings?.defaultLanguage||'en')==='ar'?'ar':'en';
+  const categoryKeys=['cinematic','threeD','lipSync'].filter(key=>data[key]);
+  let category=localStorage.getItem('monagyPricingCategory')||data.settings?.defaultCategory||categoryKeys[0]||'cinematic';
+  if(!categoryKeys.includes(category)) category=categoryKeys[0]||'cinematic';
+
   const page=$('#pricingPage');
   const table=$('#pricingTable');
 
+  function ensureCategorySwitch(){
+    let switcher=$('#pricingCategorySwitch');
+    if(switcher) return switcher;
+    switcher=document.createElement('div');
+    switcher.id='pricingCategorySwitch';
+    switcher.className='pricing-category-switch';
+    switcher.setAttribute('role','tablist');
+    switcher.setAttribute('aria-label','Pricing categories');
+    const hero=$('.pricing-hero');
+    if(hero) hero.appendChild(switcher);
+    return switcher;
+  }
+
   function render(){
     const settings=data.settings||{};
-    const block=lang==='ar'?(data.arabic||{}):(data.english||{});
+    const categoryData=data[category]||{};
+    const block=lang==='ar'?(categoryData.arabic||{}):(categoryData.english||{});
     const packages=Array.isArray(block.packages)?block.packages:[];
     const rows=Array.isArray(block.rows)?block.rows:[];
+
     page.dir=lang==='ar'?'rtl':'ltr';
     document.documentElement.lang=lang;
     $('#pricingEyebrow').textContent=lang==='ar'?(settings.eyebrowAr||''):(settings.eyebrowEn||'');
     $('#pricingTitle').textContent=lang==='ar'?(settings.titleAr||''):(settings.titleEn||'');
-    $('#pricingNote').textContent=lang==='ar'?(settings.noteAr||''):(settings.noteEn||'');
+    $('#pricingNote').textContent=lang==='ar'?(categoryData.noteAr||settings.noteAr||''):(categoryData.noteEn||settings.noteEn||'');
     $$('.language-switch button').forEach(btn=>btn.classList.toggle('active',btn.dataset.lang===lang));
+
+    const categorySwitch=ensureCategorySwitch();
+    categorySwitch.innerHTML=categoryKeys.map(key=>{
+      const item=data[key]||{};
+      const label=lang==='ar'?(item.labelAr||key):(item.labelEn||key);
+      return '<button type="button" role="tab" data-category="'+esc(key)+'" class="'+(key===category?'active':'')+'">'+esc(label)+'</button>';
+    }).join('');
+    $$('button[data-category]',categorySwitch).forEach(btn=>btn.addEventListener('click',()=>{
+      category=btn.dataset.category;
+      localStorage.setItem('monagyPricingCategory',category);
+      render();
+    }));
 
     let html='<thead><tr><th>'+esc(block.firstColumnLabel||'')+'</th>';
     packages.forEach(pkg=>{
