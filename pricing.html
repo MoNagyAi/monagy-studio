@@ -3,82 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="MoNagy Studio AI video production pricing packages.">
-  <title>MoNagy Studio — Pricing</title>
+  <meta name="robots" content="noindex">
+  <title>MoNagy Studio</title>
   <link rel="icon" type="image/png" href="assets/logo-mark.png">
-  <link rel="stylesheet" href="pricing.css">
+  <script>
+    (function () {
+      var hash = window.location.hash || "";
+      var target = "#prices";
+      if (/faq/i.test(hash)) target = "#faq";
+      window.location.replace("./" + target);
+    })();
+  </script>
 </head>
-<body>
-  <main class="pricing-page" id="pricingPage">
-    <header class="pricing-topbar">
-      <a class="pricing-brand" href="./"><img src="assets/logo-mark.png" alt="MoNagy Studio"><span>MoNagy Studio</span></a>
-      <div class="language-switch" role="group" aria-label="Language switcher">
-        <button type="button" data-lang="en" class="active">English</button>
-        <button type="button" data-lang="ar">العربية</button>
-      </div>
-    </header>
-
-    <section class="pricing-hero">
-      <p class="pricing-eyebrow" id="pricingEyebrow">AI VIDEO PRODUCTION</p>
-      <h1 id="pricingTitle">Compare packages</h1>
-      <p class="pricing-note" id="pricingNote"></p>
-    </section>
-
-    <section class="pricing-table-section" aria-labelledby="pricingTitle">
-      <div class="pricing-offer-banner" id="pricingOfferBanner" role="note">
-        <span class="pricing-offer-badge" id="pricingOfferBadge">LAUNCH OFFER</span>
-        <div>
-          <strong id="pricingOfferTitle">80% off standard package rates</strong>
-          <p id="pricingOfferText">Special introductory pricing for a limited launch period. These promotional rates are not the permanent standard prices and may be updated later.</p>
-        </div>
-      </div>
-      <div class="pricing-table-wrap">
-        <table class="pricing-table" id="pricingTable"></table>
-      </div>
-    </section>
-
-    <section class="service-overview-section" id="serviceOverviewSection" aria-labelledby="serviceOverviewTitle">
-      <div class="service-overview-heading">
-        <p class="pricing-eyebrow" id="serviceOverviewEyebrow">ABOUT THE SERVICE</p>
-        <h2 id="serviceOverviewTitle">High-End AI Cinematic Production</h2>
-        <p class="service-overview-subtitle" id="serviceOverviewSubtitle"></p>
-        <p class="service-overview-intro" id="serviceOverviewIntro"></p>
-      </div>
-      <div class="service-overview-grid">
-        <article>
-          <h3 id="serviceSummaryTitle"></h3>
-          <ul id="serviceSummaryList"></ul>
-        </article>
-        <article>
-          <h3 id="serviceIdealTitle"></h3>
-          <ul id="serviceIdealList"></ul>
-        </article>
-        <article>
-          <h3 id="serviceIncludesTitle"></h3>
-          <ul id="serviceIncludesList"></ul>
-        </article>
-      </div>
-      <div class="service-overview-note">
-        <h3 id="serviceNoteTitle"></h3>
-        <p id="serviceNote"></p>
-        <strong id="serviceCta"></strong>
-      </div>
-    </section>
-
-    <section class="pricing-faq-section" id="faqSection" aria-labelledby="faqTitle">
-      <div class="pricing-faq-heading">
-        <p class="pricing-eyebrow" id="faqEyebrow">FAQ</p>
-        <h2 id="faqTitle">Frequently Asked Questions</h2>
-        <p id="faqIntro"></p>
-      </div>
-      <div class="pricing-faq-list" id="faqList"></div>
-    </section>
-
-    <footer class="pricing-footer">
-      <a href="./">← Back to portfolio</a>
-      <span>MoNagy Studio</span>
-    </footer>
-  </main>
-  <script src="pricing.js"></script>
+<body style="margin:0;background:#070707;color:#f6f3ea;font-family:Arial,sans-serif">
+  <p style="padding:32px">Redirecting to the MoNagy Studio portfolio…</p>
+  <noscript>
+    <p style="padding:0 32px"><a href="./#prices" style="color:#d9a52a">Prices / الأسعار</a> · <a href="./#faq" style="color:#d9a52a">FAQ / الأسئلة الشائعة</a></p>
+  </noscript>
 </body>
 </html>
