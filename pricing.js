@@ -88,8 +88,8 @@
         pricesSection.className = "home-pricing-section";
         pricesSection.innerHTML = `
           <p class="home-section-kicker">PRICES / الأسعار</p>
-          <h2 class="home-section-title">Production Packages</h2>
-          <p class="home-section-ar" dir="rtl">باقات وأسعار الإنتاج</p>
+          <h2 class="home-section-title">${esc(pricingData.settings?.titleEn || "Production Packages")}</h2>
+          <p class="home-section-ar" dir="rtl">${esc(pricingData.settings?.titleAr || "باقات وأسعار الإنتاج")}</p>
           <p class="home-section-note">Compare the available production packages and current launch offers. / قارن بين باقات الإنتاج والعروض الحالية واختر الأنسب لمشروعك.</p>
           <div class="home-offer"><span class="home-offer-badge">LAUNCH / إطلاق</span><div><strong>Launch Offer / عرض إطلاق خاص</strong><p>Current prices are introductory promotional rates. / الأسعار الحالية عروض ترويجية خاصة لفترة الإطلاق وليست الأسعار الدائمة.</p></div></div>
           <div class="home-price-tabs" id="homePriceTabs"></div>
@@ -101,8 +101,8 @@
         faqSection.className = "home-faq-section";
         faqSection.innerHTML = `
           <p class="home-section-kicker">FAQ / الأسئلة الشائعة</p>
-          <h2 class="home-section-title">Frequently Asked Questions</h2>
-          <p class="home-section-ar" dir="rtl">كل ما تحتاج معرفته قبل بدء المشروع</p>
+          <h2 class="home-section-title">${esc(faqData.titleEn || "Frequently Asked Questions")}</h2>
+          <p class="home-section-ar" dir="rtl">${esc(faqData.titleAr || "الأسئلة الشائعة")}</p>
           <p class="home-section-note">${esc(faqData.introEn || "")}<br><span dir="rtl">${esc(faqData.introAr || "")}</span></p>
           <div class="home-faq-list" id="homeFaqList"></div>`;
         contact.parentNode.insertBefore(faqSection, contact);
@@ -133,7 +133,7 @@
           const arPackages = Array.isArray(ar.packages) ? ar.packages : [];
           const enRows = Array.isArray(en.rows) ? en.rows : [];
           const arRows = Array.isArray(ar.rows) ? ar.rows : [];
-          let html = `<caption class="home-table-caption">Compare packages / مقارنة الباقات</caption><thead><tr><th scope="col">Package<br><span class="home-feature-ar" dir="rtl">الباقة</span></th>`;
+          let html = `<caption class="home-table-caption">Compare packages / مقارنة الباقات</caption><thead><tr><th scope="col">${esc(en.firstColumnLabel || "Package")}<br><span class="home-feature-ar" dir="rtl">${esc(ar.firstColumnLabel || "الباقة")}</span></th>`;
           enPackages.forEach((pkg, index) => {
             const arPkg = arPackages[index] || {};
             html += `<th scope="col"><span class="home-price-original">${esc(pkg.originalPrice || "")}</span><span class="home-price-current">${esc(pkg.price || "")}</span><span class="home-price-name">${esc(pkg.name || "")}</span><span class="home-price-name-ar" dir="rtl">${esc(arPkg.name || "")}</span><span class="home-price-summary">${esc(pkg.tagline || "")}<br>${esc(pkg.summary || "")}</span><span class="home-price-summary home-summary-ar" lang="ar" dir="rtl">${esc(arPkg.tagline || "")}<br>${esc(arPkg.summary || "")}</span></th>`;
