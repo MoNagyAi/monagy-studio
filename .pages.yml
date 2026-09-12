@@ -181,6 +181,18 @@ content:
           - { name: tiktok, label: رابط TikTok, type: string }
           - { name: whatsapp, label: رابط WhatsApp, type: string }
 
+          - { name: platformsTitleEn, label: عنوان منصات العمل بالإنجليزية, type: string }
+          - { name: platformsTitleAr, label: عنوان منصات العمل بالعربية, type: string }
+          - name: platforms
+            label: منصات العمل الحر والتواصل المهني
+            type: object
+            list: true
+            fields:
+              - { name: nameEn, label: اسم المنصة بالإنجليزية, type: string }
+              - { name: nameAr, label: اسم المنصة بالعربية, type: string }
+              - { name: url, label: رابط الملف الشخصي, type: string }
+              - { name: visible, label: إظهار المنصة, type: boolean, default: true }
+
       - name: footer
         label: 15) الفوتر Footer
         type: object
