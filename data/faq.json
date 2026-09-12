@@ -4,59 +4,267 @@
   "introEn": "Common questions about cinematic films, 3D-style films and AI lip-sync services.",
   "introAr": "أسئلة شائعة حول الأفلام السينمائية وأفلام الطابع ثلاثي الأبعاد وخدمات مزامنة الشفاه.",
   "english": [
-    {"question":"What information do you need before starting?","answer":"Please send your project brief, desired video duration, preferred aspect ratio, script or concept if available, visual references, and any characters, products, logos or brand assets you want included."},
-    {"question":"Which video formats and aspect ratios do you support?","answer":"I can deliver in 16:9 landscape, 9:16 vertical, 1:1 square, 4:5 portrait, and cinematic widescreen formats when required. One main output format is included unless otherwise agreed."},
-    {"question":"Can you create the video from an idea only?","answer":"Yes. I can develop the concept, visual direction, shot structure and script from a basic idea or brief."},
-    {"question":"Do you provide script development?","answer":"Yes. Script and concept development can be included depending on the selected package and project requirements."},
-    {"question":"Can you keep the same character consistent across multiple shots?","answer":"Yes. Character and visual consistency are part of my workflow. The level of consistency depends on project complexity, number of scenes, angles, costumes and required duration."},
-    {"question":"Do you create virtual environments and custom assets?","answer":"Yes. Depending on the package, I can develop virtual environments and integrate custom visual assets such as props, products, set elements, logos and other scene-specific elements. More complex asset or environment work may require a custom quote."},
-    {"question":"Are AI tools the only tools used in production?","answer":"No. AI is one part of a broader professional production workflow. Depending on the project, I also use Adobe Creative Cloud applications and DaVinci Resolve for editing, compositing, visual treatment, color work, audio processing and final finishing, alongside specialized AI tools."},
-    {"question":"Who makes up the MoNagy Studio team?","answer":"MoNagy Studio is currently independently led and operated by Mohamed Nagy, combining creative direction, concept and script development, shot design, AI production, editing, post-production and project supervision. When workload or project requirements call for it, trusted collaborators and specialists may join the production. The long-term vision is to grow into a dedicated multidisciplinary team that can include a director, screenwriter, editor, sound designer, VFX/3D specialists, AI specialists and production support."},
-    {"question":"What is the difference between Cinematic Films and 3D-Style Films?","answer":"Cinematic Films focus on realistic or cinematic visual storytelling. 3D-Style Films use a more dimensional and stylized look with designed environments, stronger depth and more pronounced 3D-style visual development."},
-    {"question":"What do you need for AI lip-sync?","answer":"Please provide clear reference images of the character or characters, preferably front-facing or with the face clearly visible, together with the final audio or dialogue. Higher-quality character images generally produce more stable and convincing lip-sync results."},
-    {"question":"Can you lip-sync more than one character?","answer":"Yes. Multi-character lip-sync is possible, but pricing may vary depending on the number of speakers, shot complexity, camera angles and dialogue length."},
-    {"question":"Do you include voice-over?","answer":"I can integrate voice-over or dialogue provided by the client. Voice generation or custom voice production can be discussed separately depending on the project."},
-    {"question":"Is sound design included?","answer":"Sound design and sound effects can be included in cinematic and 3D-style projects. Music production is not included unless specifically agreed."},
-    {"question":"How do I follow the project and receive updates?","answer":"For larger projects, progress is shared through clear production checkpoints. Typical checkpoints may include concept and visual direction, character/environment approval, selected keyframes or shot previews, first edit, and final delivery. This helps keep the project aligned before moving into the next production stage."},
-    {"question":"What are project checkpoints?","answer":"Checkpoints are approval stages during production. They allow you to review important creative decisions before I continue to the next stage. The number and type of checkpoints depend on the package and project complexity."},
-    {"question":"How are revisions handled after a checkpoint is approved?","answer":"Once a checkpoint is approved, production continues based on that approved direction. Reasonable revisions within the current stage are covered by the package. Major changes to an already approved concept, character, environment or sequence may require additional time and cost."},
-    {"question":"How many revisions are included?","answer":"The number of revisions depends on the selected package. Revisions cover reasonable adjustments within the approved concept and scope. Major changes to the concept or script may require an additional fee."},
-    {"question":"Can I request an additional aspect ratio after the video is completed?","answer":"Yes. Additional versions such as 16:9, 9:16, 1:1 or 4:5 can be created. Reframing or regenerating shots for a new format may require an additional fee."},
-    {"question":"How will I receive the final project?","answer":"The final approved video is delivered as a high-quality digital video file in the agreed aspect ratio and format, typically MP4 unless another format is requested. Additional versions, alternate aspect ratios or other agreed deliverables can be included as part of the final handoff."},
-    {"question":"Can you provide separate project assets or source files?","answer":"Final delivery normally includes the agreed rendered video files. Separate generated assets, image sequences, project files or editable source files are not automatically included and should be agreed in advance if required."},
-    {"question":"Can you create videos for commercial use?","answer":"Yes. I can create content for brands, agencies, sports media, campaigns, presentations, social media and other commercial projects."},
-    {"question":"Can you work with my existing footage?","answer":"Yes. Existing footage can be combined with AI-generated shots, visual effects, lip-sync, compositing or other post-production work depending on the project."},
-    {"question":"What can affect the final price?","answer":"Video duration, number of scenes, number of characters, character consistency, virtual environments, custom assets, visual complexity, lip-sync difficulty, 3D-style requirements, source quality, revisions, extra aspect ratios and delivery time can affect the final quote."},
-    {"question":"What payment methods are available for clients in Egypt?","answer":"For clients in Egypt, payment may be completed by local bank transfer or other available local payment methods. Please contact me before making any payment so I can confirm the current available method, payment details and total amount for your project."},
-    {"question":"What payment methods are available for clients outside Egypt?","answer":"For international clients, payment may be made by international bank transfer or another available cross-border payment method depending on the client’s country and project platform. Please contact me before sending payment to confirm the most suitable method, currency, transfer details and any applicable fees."},
-    {"question":"Should I contact you before placing an order?","answer":"For cinematic films, 3D-style projects, multi-character videos or complex lip-sync work, contacting me first is highly recommended so I can confirm the correct package, timeline and scope."}
+    {
+      "question": "What information do you need before starting?",
+      "answer": "Please send your project brief, desired video duration, preferred aspect ratio, script or concept if available, visual references, and any characters, products, logos or brand assets you want included.",
+      "group": "planning"
+    },
+    {
+      "question": "Which video formats and aspect ratios do you support?",
+      "answer": "I can deliver in 16:9 landscape, 9:16 vertical, 1:1 square, 4:5 portrait, and cinematic widescreen formats when required. One main output format is included unless otherwise agreed.",
+      "group": "planning"
+    },
+    {
+      "question": "Can you create the video from an idea only?",
+      "answer": "Yes. I can develop the concept, visual direction, shot structure and script from a basic idea or brief.",
+      "group": "planning"
+    },
+    {
+      "question": "Do you provide script development?",
+      "answer": "Yes. Script and concept development can be included depending on the selected package and project requirements.",
+      "group": "production"
+    },
+    {
+      "question": "Can you keep the same character consistent across multiple shots?",
+      "answer": "Yes. Character and visual consistency are part of my workflow. The level of consistency depends on project complexity, number of scenes, angles, costumes and required duration.",
+      "group": "production"
+    },
+    {
+      "question": "Do you create virtual environments and custom assets?",
+      "answer": "Yes. Depending on the package, I can develop virtual environments and integrate custom visual assets such as props, products, set elements, logos and other scene-specific elements. More complex asset or environment work may require a custom quote.",
+      "group": "production"
+    },
+    {
+      "question": "Are AI tools the only tools used in production?",
+      "answer": "No. AI is one part of a broader professional production workflow. Depending on the project, I also use Adobe Creative Cloud applications and DaVinci Resolve for editing, compositing, visual treatment, color work, audio processing and final finishing, alongside specialized AI tools.",
+      "group": "production"
+    },
+    {
+      "question": "Who makes up the MoNagy Studio team?",
+      "answer": "MoNagy Studio is currently independently led and operated by Mohamed Nagy, combining creative direction, concept and script development, shot design, AI production, editing, post-production and project supervision. When workload or project requirements call for it, trusted collaborators and specialists may join the production. The long-term vision is to grow into a dedicated multidisciplinary team that can include a director, screenwriter, editor, sound designer, VFX/3D specialists, AI specialists and production support.",
+      "group": "planning"
+    },
+    {
+      "question": "What is the difference between Cinematic Films and 3D-Style Films?",
+      "answer": "Cinematic Films focus on realistic or cinematic visual storytelling. 3D-Style Films use a more dimensional and stylized look with designed environments, stronger depth and more pronounced 3D-style visual development.",
+      "group": "production"
+    },
+    {
+      "question": "What do you need for AI lip-sync?",
+      "answer": "Please provide clear reference images of the character or characters, preferably front-facing or with the face clearly visible, together with the final audio or dialogue. Higher-quality character images generally produce more stable and convincing lip-sync results.",
+      "group": "production"
+    },
+    {
+      "question": "Can you lip-sync more than one character?",
+      "answer": "Yes. Multi-character lip-sync is possible, but pricing may vary depending on the number of speakers, shot complexity, camera angles and dialogue length.",
+      "group": "production"
+    },
+    {
+      "question": "Do you include voice-over?",
+      "answer": "I can integrate voice-over or dialogue provided by the client. Voice generation or custom voice production can be discussed separately depending on the project.",
+      "group": "production"
+    },
+    {
+      "question": "Is sound design included?",
+      "answer": "Sound design and sound effects can be included in cinematic and 3D-style projects. Music production is not included unless specifically agreed.",
+      "group": "production"
+    },
+    {
+      "question": "How do I follow the project and receive updates?",
+      "answer": "For larger projects, progress is shared through clear production checkpoints. Typical checkpoints may include concept and visual direction, character/environment approval, selected keyframes or shot previews, first edit, and final delivery. This helps keep the project aligned before moving into the next production stage.",
+      "group": "production"
+    },
+    {
+      "question": "What are project checkpoints?",
+      "answer": "Checkpoints are approval stages during production. They allow you to review important creative decisions before I continue to the next stage. The number and type of checkpoints depend on the package and project complexity.",
+      "group": "production"
+    },
+    {
+      "question": "How are revisions handled after a checkpoint is approved?",
+      "answer": "Once a checkpoint is approved, production continues based on that approved direction. Reasonable revisions within the current stage are covered by the package. Major changes to an already approved concept, character, environment or sequence may require additional time and cost.",
+      "group": "production"
+    },
+    {
+      "question": "How many revisions are included?",
+      "answer": "The number of revisions depends on the selected package. Revisions cover reasonable adjustments within the approved concept and scope. Major changes to the concept or script may require an additional fee.",
+      "group": "production"
+    },
+    {
+      "question": "Can I request an additional aspect ratio after the video is completed?",
+      "answer": "Yes. Additional versions such as 16:9, 9:16, 1:1 or 4:5 can be created. Reframing or regenerating shots for a new format may require an additional fee.",
+      "group": "delivery"
+    },
+    {
+      "question": "How will I receive the final project?",
+      "answer": "The final approved video is delivered as a high-quality digital video file in the agreed aspect ratio and format, typically MP4 unless another format is requested. Additional versions, alternate aspect ratios or other agreed deliverables can be included as part of the final handoff.",
+      "group": "delivery"
+    },
+    {
+      "question": "Can you provide separate project assets or source files?",
+      "answer": "Final delivery normally includes the agreed rendered video files. Separate generated assets, image sequences, project files or editable source files are not automatically included and should be agreed in advance if required.",
+      "group": "delivery"
+    },
+    {
+      "question": "Can you create videos for commercial use?",
+      "answer": "Yes. I can create content for brands, agencies, sports media, campaigns, presentations, social media and other commercial projects.",
+      "group": "delivery"
+    },
+    {
+      "question": "Can you work with my existing footage?",
+      "answer": "Yes. Existing footage can be combined with AI-generated shots, visual effects, lip-sync, compositing or other post-production work depending on the project.",
+      "group": "production"
+    },
+    {
+      "question": "What can affect the final price?",
+      "answer": "Video duration, number of scenes, number of characters, character consistency, virtual environments, custom assets, visual complexity, lip-sync difficulty, 3D-style requirements, source quality, revisions, extra aspect ratios and delivery time can affect the final quote.",
+      "group": "planning"
+    },
+    {
+      "question": "What payment methods are available for clients in Egypt?",
+      "answer": "For clients in Egypt, payment may be completed by local bank transfer or other available local payment methods. Please contact me before making any payment so I can confirm the current available method, payment details and total amount for your project.",
+      "group": "delivery"
+    },
+    {
+      "question": "What payment methods are available for clients outside Egypt?",
+      "answer": "For international clients, payment may be made by international bank transfer or another available cross-border payment method depending on the client’s country and project platform. Please contact me before sending payment to confirm the most suitable method, currency, transfer details and any applicable fees.",
+      "group": "delivery"
+    },
+    {
+      "question": "Should I contact you before placing an order?",
+      "answer": "For cinematic films, 3D-style projects, multi-character videos or complex lip-sync work, contacting me first is highly recommended so I can confirm the correct package, timeline and scope.",
+      "group": "planning"
+    }
   ],
   "arabic": [
-    {"question":"ما المعلومات المطلوبة قبل بدء المشروع؟","answer":"أحتاج إلى وصف مختصر للمشروع، مدة الفيديو، نسبة العرض المطلوبة، السيناريو أو الفكرة إن وجدت، المراجع البصرية، وأي شخصيات أو منتجات أو شعارات تريد ظهورها."},
-    {"question":"ما مقاسات ونسب عرض الفيديو المتاحة؟","answer":"يمكن التسليم بنسب 16:9 أفقي، 9:16 رأسي، 1:1 مربع، 4:5 رأسي، بالإضافة إلى المقاسات السينمائية العريضة عند الحاجة. يشمل السعر الأساسي عادةً مقاسًا رئيسيًا واحدًا."},
-    {"question":"هل يمكن تنفيذ الفيديو من مجرد فكرة؟","answer":"نعم. يمكنني تطوير الفكرة والإخراج البصري وتصميم المشاهد وترتيب اللقطات والسيناريو انطلاقًا من وصف بسيط للمشروع."},
-    {"question":"هل تشمل الخدمة تطوير السيناريو؟","answer":"نعم. يمكن أن تشمل الباقة تطوير الفكرة والسيناريو وفقًا لنوع المشروع والباقة المختارة ومتطلبات التنفيذ."},
-    {"question":"هل يمكن الحفاظ على نفس الشخصية في جميع المشاهد؟","answer":"نعم. اتساق الشخصيات والهوية البصرية جزء أساسي من سير العمل، ويعتمد مستوى الاتساق على عدد المشاهد والزوايا والملابس ومدة المشروع ودرجة التعقيد."},
-    {"question":"هل تشمل الخدمة تصميم البيئة الافتراضية والأصول البصرية؟","answer":"نعم. حسب الباقة يمكن تصميم وتطوير بيئات افتراضية ودمج أصول وعناصر بصرية مخصصة مثل المنتجات والإكسسوارات وعناصر المشهد والشعارات وغيرها. المشروعات التي تتطلب بيئات أو أصولًا أكثر تعقيدًا قد تحتاج إلى عرض سعر مخصص."},
-    {"question":"هل أدوات الذكاء الاصطناعي هي الأدوات الوحيدة المستخدمة في الإنتاج؟","answer":"لا. الذكاء الاصطناعي جزء من مسار إنتاج احترافي أوسع، وليس الأداة الوحيدة. وفقًا لطبيعة المشروع أستخدم أيضًا برامج Adobe Creative Cloud وبرنامج DaVinci Resolve في المونتاج والمعالجة البصرية والتركيب وتصحيح الألوان ومعالجة الصوت والإخراج النهائي، إلى جانب أدوات الذكاء الاصطناعي المتخصصة."},
-    {"question":"ممَّ يتكوّن فريق العمل في MoNagy Studio؟","answer":"في الوقت الحالي أُدير MoNagy Studio بشكل مستقل، وأجمع بنفسي بين الإخراج الإبداعي وتطوير الفكرة والسيناريو وتصميم الكادرات والإنتاج بالذكاء الاصطناعي والمونتاج وما بعد الإنتاج والإشراف على المشروع. وعند ضغط العمل أو عندما يتطلب المشروع تخصصات إضافية، أستعين بمتعاونين ومتخصصين موثوقين حسب الحاجة. أما الرؤية المستقبلية فهي تطوير الاستوديو إلى فريق متعدد التخصصات يمكن أن يضم مخرجًا وسيناريست ومونتيرًا ومصمم صوت ومتخصصي مؤثرات بصرية و3D ومتخصصي ذكاء اصطناعي ودعمًا للإنتاج."},
-    {"question":"ما الفرق بين الأفلام السينمائية وأفلام الطابع ثلاثي الأبعاد؟","answer":"الأفلام السينمائية تركز على السرد البصري والمظهر السينمائي الواقعي أو شبه الواقعي، بينما تعتمد أفلام الطابع ثلاثي الأبعاد على مظهر أكثر تجسيمًا وعمقًا وبيئات ذات معالجة بصرية ثلاثية الأبعاد."},
-    {"question":"ماذا تحتاج لخدمة مزامنة الشفاه؟","answer":"أحتاج إلى صور مرجعية واضحة للشخصية أو الشخصيات، ويفضل أن يكون الوجه ظاهرًا بوضوح أو في زاوية أمامية مناسبة، بالإضافة إلى ملف الصوت أو الحوار النهائي. كلما كانت صور الشخصيات أعلى جودة وأكثر وضوحًا كانت نتيجة مزامنة الشفاه أكثر ثباتًا وإقناعًا."},
-    {"question":"هل يمكن عمل مزامنة شفاه لأكثر من شخصية؟","answer":"نعم. يمكن تنفيذ أكثر من شخصية متحدثة، لكن السعر قد يختلف حسب عدد الشخصيات والزوايا وطول الحوار وتعقيد المشاهد."},
-    {"question":"هل يشمل السعر التعليق الصوتي؟","answer":"يمكنني دمج التعليق الصوتي أو الحوار المقدم من العميل. أما إنشاء الصوت أو إنتاج صوت مخصص فيتم الاتفاق عليه بشكل منفصل حسب المشروع."},
-    {"question":"هل تصميم الصوت والمؤثرات الصوتية مشمول؟","answer":"يمكن أن يشمل العمل تصميم الصوت والمؤثرات الصوتية في الأفلام السينمائية وأفلام الطابع ثلاثي الأبعاد. إنتاج الموسيقى ليس ضمن الخدمة إلا عند الاتفاق المسبق."},
-    {"question":"كيف أتابع تحديثات المشروع أثناء التنفيذ؟","answer":"في المشروعات الأكبر يتم إرسال تحديثات وفق نقاط مراجعة واضحة أثناء مراحل الإنتاج. وقد تشمل اعتماد الفكرة والاتجاه البصري، اعتماد الشخصيات أو البيئة، مراجعة الكادرات أو اللقطات الرئيسية، النسخة الأولى للمونتاج، ثم النسخة النهائية. بهذه الطريقة يمكن التأكد من أن المشروع يسير في الاتجاه المتفق عليه قبل الانتقال إلى المرحلة التالية."},
-    {"question":"ما المقصود بنقاط المراجعة أو Checkpoints؟","answer":"هي مراحل اعتماد محددة أثناء التنفيذ تتيح لك مراجعة القرارات الإبداعية الأساسية قبل استكمال العمل. يختلف عدد نقاط المراجعة وطبيعتها حسب الباقة وحجم وتعقيد المشروع."},
-    {"question":"كيف يتم التعامل مع التعديلات بعد اعتماد نقطة مراجعة؟","answer":"بعد اعتماد نقطة مراجعة يتم استكمال العمل بناءً على الاتجاه الذي تم اعتماده. التعديلات المعقولة داخل المرحلة الحالية تكون وفق حدود الباقة، أما تغيير فكرة أو شخصية أو بيئة أو تسلسل تم اعتماده بالفعل فقد يحتاج إلى وقت وتكلفة إضافية."},
-    {"question":"كم عدد التعديلات المتاحة؟","answer":"يختلف عدد التعديلات حسب الباقة. وتشمل التعديلات التغييرات المعقولة داخل الفكرة والنطاق المتفق عليه، أما تغيير الفكرة أو السيناريو بشكل جوهري فقد يحتاج إلى تكلفة إضافية."},
-    {"question":"هل يمكن طلب مقاس أو نسبة عرض إضافية بعد الانتهاء؟","answer":"نعم. يمكن تجهيز نسخ إضافية مثل 16:9 أو 9:16 أو 1:1 أو 4:5. إذا احتاج المقاس الجديد إلى إعادة كادر أو إعادة توليد بعض اللقطات فقد تكون هناك تكلفة إضافية."},
-    {"question":"كيف أستلم المشروع النهائي؟","answer":"يتم تسليم الفيديو النهائي بعد الاعتماد كملف فيديو رقمي عالي الجودة بنسبة العرض والصيغة المتفق عليهما، وعادة بصيغة MP4 ما لم يتم طلب صيغة أخرى. ويمكن أن يشمل التسليم النهائي نسخًا إضافية أو نسب عرض مختلفة أو أي ملفات أخرى تم الاتفاق عليها مسبقًا."},
-    {"question":"هل يمكن استلام الأصول أو ملفات المشروع بشكل منفصل؟","answer":"يشمل التسليم الأساسي عادة ملفات الفيديو النهائية المتفق عليها. أما الأصول المولدة أو تسلسلات الصور أو ملفات المشروع المفتوحة أو الملفات القابلة للتعديل فلا تكون مشمولة تلقائيًا، ويجب الاتفاق عليها مسبقًا إذا كانت مطلوبة."},
-    {"question":"هل يمكن استخدام الفيديو تجاريًا؟","answer":"نعم. يمكن تنفيذ مشروعات للعلامات التجارية والوكالات والميديا الرياضية والحملات والمحتوى الرقمي والعروض والمشروعات التجارية."},
-    {"question":"هل يمكن العمل على فيديو موجود بالفعل؟","answer":"نعم. يمكن دمج الفيديو الموجود مع مشاهد مولدة بالذكاء الاصطناعي أو المؤثرات البصرية أو مزامنة الشفاه أو المعالجة والمونتاج."},
-    {"question":"ما العوامل التي قد تغيّر السعر النهائي؟","answer":"مدة الفيديو، عدد المشاهد، عدد الشخصيات، مستوى اتساق الشخصيات، البيئات الافتراضية، الأصول البصرية المخصصة، التعقيد البصري، صعوبة مزامنة الشفاه، متطلبات الطابع ثلاثي الأبعاد، جودة المواد المصدرية، عدد التعديلات، المقاسات الإضافية وموعد التسليم قد تؤثر على السعر النهائي."},
-    {"question":"ما وسائل الدفع المتاحة للعملاء من داخل مصر؟","answer":"للعملاء داخل مصر يمكن الدفع عن طريق التحويل البنكي المحلي أو من خلال وسائل دفع محلية أخرى متاحة وقت تنفيذ المشروع. يُرجى التواصل معي قبل إجراء أي تحويل للتأكد من وسيلة الدفع المتاحة حاليًا، وبيانات التحويل، والقيمة النهائية للمشروع."},
-    {"question":"ما وسائل الدفع المتاحة للعملاء من خارج مصر؟","answer":"للعملاء من خارج مصر يمكن الدفع عن طريق التحويل البنكي الدولي أو من خلال وسيلة دفع دولية أخرى متاحة وفقًا لدولة العميل والمنصة المستخدمة في تنفيذ المشروع. يُرجى التواصل معي قبل إجراء الدفع للتأكد من الوسيلة الأنسب، والعملة، وبيانات التحويل، وأي رسوم محتملة."},
-    {"question":"هل يُفضّل التواصل قبل الطلب؟","answer":"نعم، خصوصًا في الأفلام السينمائية ومشروعات الطابع ثلاثي الأبعاد والأعمال متعددة الشخصيات أو مشروعات مزامنة الشفاه المعقدة، حتى نحدد الباقة والمدة والتكلفة المناسبة بدقة."}
+    {
+      "question": "ما المعلومات المطلوبة قبل بدء المشروع؟",
+      "answer": "أحتاج إلى وصف مختصر للمشروع، مدة الفيديو، نسبة العرض المطلوبة، السيناريو أو الفكرة إن وجدت، المراجع البصرية، وأي شخصيات أو منتجات أو شعارات تريد ظهورها.",
+      "group": "planning"
+    },
+    {
+      "question": "ما مقاسات ونسب عرض الفيديو المتاحة؟",
+      "answer": "يمكن التسليم بنسب 16:9 أفقي، 9:16 رأسي، 1:1 مربع، 4:5 رأسي، بالإضافة إلى المقاسات السينمائية العريضة عند الحاجة. يشمل السعر الأساسي عادةً مقاسًا رئيسيًا واحدًا.",
+      "group": "planning"
+    },
+    {
+      "question": "هل يمكن تنفيذ الفيديو من مجرد فكرة؟",
+      "answer": "نعم. يمكنني تطوير الفكرة والإخراج البصري وتصميم المشاهد وترتيب اللقطات والسيناريو انطلاقًا من وصف بسيط للمشروع.",
+      "group": "planning"
+    },
+    {
+      "question": "هل تشمل الخدمة تطوير السيناريو؟",
+      "answer": "نعم. يمكن أن تشمل الباقة تطوير الفكرة والسيناريو وفقًا لنوع المشروع والباقة المختارة ومتطلبات التنفيذ.",
+      "group": "production"
+    },
+    {
+      "question": "هل يمكن الحفاظ على نفس الشخصية في جميع المشاهد؟",
+      "answer": "نعم. اتساق الشخصيات والهوية البصرية جزء أساسي من سير العمل، ويعتمد مستوى الاتساق على عدد المشاهد والزوايا والملابس ومدة المشروع ودرجة التعقيد.",
+      "group": "production"
+    },
+    {
+      "question": "هل تشمل الخدمة تصميم البيئة الافتراضية والأصول البصرية؟",
+      "answer": "نعم. حسب الباقة يمكن تصميم وتطوير بيئات افتراضية ودمج أصول وعناصر بصرية مخصصة مثل المنتجات والإكسسوارات وعناصر المشهد والشعارات وغيرها. المشروعات التي تتطلب بيئات أو أصولًا أكثر تعقيدًا قد تحتاج إلى عرض سعر مخصص.",
+      "group": "production"
+    },
+    {
+      "question": "هل أدوات الذكاء الاصطناعي هي الأدوات الوحيدة المستخدمة في الإنتاج؟",
+      "answer": "لا. الذكاء الاصطناعي جزء من مسار إنتاج احترافي أوسع، وليس الأداة الوحيدة. وفقًا لطبيعة المشروع أستخدم أيضًا برامج Adobe Creative Cloud وبرنامج DaVinci Resolve في المونتاج والمعالجة البصرية والتركيب وتصحيح الألوان ومعالجة الصوت والإخراج النهائي، إلى جانب أدوات الذكاء الاصطناعي المتخصصة.",
+      "group": "production"
+    },
+    {
+      "question": "ممَّ يتكوّن فريق العمل في MoNagy Studio؟",
+      "answer": "في الوقت الحالي أُدير MoNagy Studio بشكل مستقل، وأجمع بنفسي بين الإخراج الإبداعي وتطوير الفكرة والسيناريو وتصميم الكادرات والإنتاج بالذكاء الاصطناعي والمونتاج وما بعد الإنتاج والإشراف على المشروع. وعند ضغط العمل أو عندما يتطلب المشروع تخصصات إضافية، أستعين بمتعاونين ومتخصصين موثوقين حسب الحاجة. أما الرؤية المستقبلية فهي تطوير الاستوديو إلى فريق متعدد التخصصات يمكن أن يضم مخرجًا وسيناريست ومونتيرًا ومصمم صوت ومتخصصي مؤثرات بصرية و3D ومتخصصي ذكاء اصطناعي ودعمًا للإنتاج.",
+      "group": "planning"
+    },
+    {
+      "question": "ما الفرق بين الأفلام السينمائية وأفلام الطابع ثلاثي الأبعاد؟",
+      "answer": "الأفلام السينمائية تركز على السرد البصري والمظهر السينمائي الواقعي أو شبه الواقعي، بينما تعتمد أفلام الطابع ثلاثي الأبعاد على مظهر أكثر تجسيمًا وعمقًا وبيئات ذات معالجة بصرية ثلاثية الأبعاد.",
+      "group": "production"
+    },
+    {
+      "question": "ماذا تحتاج لخدمة مزامنة الشفاه؟",
+      "answer": "أحتاج إلى صور مرجعية واضحة للشخصية أو الشخصيات، ويفضل أن يكون الوجه ظاهرًا بوضوح أو في زاوية أمامية مناسبة، بالإضافة إلى ملف الصوت أو الحوار النهائي. كلما كانت صور الشخصيات أعلى جودة وأكثر وضوحًا كانت نتيجة مزامنة الشفاه أكثر ثباتًا وإقناعًا.",
+      "group": "production"
+    },
+    {
+      "question": "هل يمكن عمل مزامنة شفاه لأكثر من شخصية؟",
+      "answer": "نعم. يمكن تنفيذ أكثر من شخصية متحدثة، لكن السعر قد يختلف حسب عدد الشخصيات والزوايا وطول الحوار وتعقيد المشاهد.",
+      "group": "production"
+    },
+    {
+      "question": "هل يشمل السعر التعليق الصوتي؟",
+      "answer": "يمكنني دمج التعليق الصوتي أو الحوار المقدم من العميل. أما إنشاء الصوت أو إنتاج صوت مخصص فيتم الاتفاق عليه بشكل منفصل حسب المشروع.",
+      "group": "production"
+    },
+    {
+      "question": "هل تصميم الصوت والمؤثرات الصوتية مشمول؟",
+      "answer": "يمكن أن يشمل العمل تصميم الصوت والمؤثرات الصوتية في الأفلام السينمائية وأفلام الطابع ثلاثي الأبعاد. إنتاج الموسيقى ليس ضمن الخدمة إلا عند الاتفاق المسبق.",
+      "group": "production"
+    },
+    {
+      "question": "كيف أتابع تحديثات المشروع أثناء التنفيذ؟",
+      "answer": "في المشروعات الأكبر يتم إرسال تحديثات وفق نقاط مراجعة واضحة أثناء مراحل الإنتاج. وقد تشمل اعتماد الفكرة والاتجاه البصري، اعتماد الشخصيات أو البيئة، مراجعة الكادرات أو اللقطات الرئيسية، النسخة الأولى للمونتاج، ثم النسخة النهائية. بهذه الطريقة يمكن التأكد من أن المشروع يسير في الاتجاه المتفق عليه قبل الانتقال إلى المرحلة التالية.",
+      "group": "production"
+    },
+    {
+      "question": "ما المقصود بنقاط المراجعة أو Checkpoints؟",
+      "answer": "هي مراحل اعتماد محددة أثناء التنفيذ تتيح لك مراجعة القرارات الإبداعية الأساسية قبل استكمال العمل. يختلف عدد نقاط المراجعة وطبيعتها حسب الباقة وحجم وتعقيد المشروع.",
+      "group": "production"
+    },
+    {
+      "question": "كيف يتم التعامل مع التعديلات بعد اعتماد نقطة مراجعة؟",
+      "answer": "بعد اعتماد نقطة مراجعة يتم استكمال العمل بناءً على الاتجاه الذي تم اعتماده. التعديلات المعقولة داخل المرحلة الحالية تكون وفق حدود الباقة، أما تغيير فكرة أو شخصية أو بيئة أو تسلسل تم اعتماده بالفعل فقد يحتاج إلى وقت وتكلفة إضافية.",
+      "group": "production"
+    },
+    {
+      "question": "كم عدد التعديلات المتاحة؟",
+      "answer": "يختلف عدد التعديلات حسب الباقة. وتشمل التعديلات التغييرات المعقولة داخل الفكرة والنطاق المتفق عليه، أما تغيير الفكرة أو السيناريو بشكل جوهري فقد يحتاج إلى تكلفة إضافية.",
+      "group": "production"
+    },
+    {
+      "question": "هل يمكن طلب مقاس أو نسبة عرض إضافية بعد الانتهاء؟",
+      "answer": "نعم. يمكن تجهيز نسخ إضافية مثل 16:9 أو 9:16 أو 1:1 أو 4:5. إذا احتاج المقاس الجديد إلى إعادة كادر أو إعادة توليد بعض اللقطات فقد تكون هناك تكلفة إضافية.",
+      "group": "delivery"
+    },
+    {
+      "question": "كيف أستلم المشروع النهائي؟",
+      "answer": "يتم تسليم الفيديو النهائي بعد الاعتماد كملف فيديو رقمي عالي الجودة بنسبة العرض والصيغة المتفق عليهما، وعادة بصيغة MP4 ما لم يتم طلب صيغة أخرى. ويمكن أن يشمل التسليم النهائي نسخًا إضافية أو نسب عرض مختلفة أو أي ملفات أخرى تم الاتفاق عليها مسبقًا.",
+      "group": "delivery"
+    },
+    {
+      "question": "هل يمكن استلام الأصول أو ملفات المشروع بشكل منفصل؟",
+      "answer": "يشمل التسليم الأساسي عادة ملفات الفيديو النهائية المتفق عليها. أما الأصول المولدة أو تسلسلات الصور أو ملفات المشروع المفتوحة أو الملفات القابلة للتعديل فلا تكون مشمولة تلقائيًا، ويجب الاتفاق عليها مسبقًا إذا كانت مطلوبة.",
+      "group": "delivery"
+    },
+    {
+      "question": "هل يمكن استخدام الفيديو تجاريًا؟",
+      "answer": "نعم. يمكن تنفيذ مشروعات للعلامات التجارية والوكالات والميديا الرياضية والحملات والمحتوى الرقمي والعروض والمشروعات التجارية.",
+      "group": "delivery"
+    },
+    {
+      "question": "هل يمكن العمل على فيديو موجود بالفعل؟",
+      "answer": "نعم. يمكن دمج الفيديو الموجود مع مشاهد مولدة بالذكاء الاصطناعي أو المؤثرات البصرية أو مزامنة الشفاه أو المعالجة والمونتاج.",
+      "group": "production"
+    },
+    {
+      "question": "ما العوامل التي قد تغيّر السعر النهائي؟",
+      "answer": "مدة الفيديو، عدد المشاهد، عدد الشخصيات، مستوى اتساق الشخصيات، البيئات الافتراضية، الأصول البصرية المخصصة، التعقيد البصري، صعوبة مزامنة الشفاه، متطلبات الطابع ثلاثي الأبعاد، جودة المواد المصدرية، عدد التعديلات، المقاسات الإضافية وموعد التسليم قد تؤثر على السعر النهائي.",
+      "group": "planning"
+    },
+    {
+      "question": "ما وسائل الدفع المتاحة للعملاء من داخل مصر؟",
+      "answer": "للعملاء داخل مصر يمكن الدفع عن طريق التحويل البنكي المحلي أو من خلال وسائل دفع محلية أخرى متاحة وقت تنفيذ المشروع. يُرجى التواصل معي قبل إجراء أي تحويل للتأكد من وسيلة الدفع المتاحة حاليًا، وبيانات التحويل، والقيمة النهائية للمشروع.",
+      "group": "delivery"
+    },
+    {
+      "question": "ما وسائل الدفع المتاحة للعملاء من خارج مصر؟",
+      "answer": "للعملاء من خارج مصر يمكن الدفع عن طريق التحويل البنكي الدولي أو من خلال وسيلة دفع دولية أخرى متاحة وفقًا لدولة العميل والمنصة المستخدمة في تنفيذ المشروع. يُرجى التواصل معي قبل إجراء الدفع للتأكد من الوسيلة الأنسب، والعملة، وبيانات التحويل، وأي رسوم محتملة.",
+      "group": "delivery"
+    },
+    {
+      "question": "هل يُفضّل التواصل قبل الطلب؟",
+      "answer": "نعم، خصوصًا في الأفلام السينمائية ومشروعات الطابع ثلاثي الأبعاد والأعمال متعددة الشخصيات أو مشروعات مزامنة الشفاه المعقدة، حتى نحدد الباقة والمدة والتكلفة المناسبة بدقة.",
+      "group": "planning"
+    }
   ]
 }
