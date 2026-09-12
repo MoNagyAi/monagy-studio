@@ -443,6 +443,7 @@ content:
         type: object
         list: true
         fields:
+          - { name: group, label: مجموعة السؤال, type: select, options: [planning, production, delivery], description: "planning قبل الطلب؛ production الإنتاج؛ delivery التسليم والدفع. طابق ترتيب الأسئلة باللغتين." }
           - { name: question, label: السؤال, type: string }
           - { name: answer, label: الإجابة, type: text }
       - name: arabic
@@ -450,6 +451,7 @@ content:
         type: object
         list: true
         fields:
+          - { name: group, label: مجموعة السؤال, type: select, options: [planning, production, delivery], description: "planning قبل الطلب؛ production الإنتاج؛ delivery التسليم والدفع. طابق ترتيب الأسئلة باللغتين." }
           - { name: question, label: السؤال, type: string }
           - { name: answer, label: الإجابة, type: text }
 
