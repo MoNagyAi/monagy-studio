@@ -193,7 +193,65 @@
     "threads": "https://www.threads.com/@mo.nagy.ai",
     "youtube": "https://www.youtube.com/@MoNagyAi",
     "tiktok": "https://www.tiktok.com/@monagyai",
-    "whatsapp": "https://wa.me/message/MI6QH6JGHCE5L1"
+    "whatsapp": "https://wa.me/message/MI6QH6JGHCE5L1",
+    "platformsTitleEn": "Freelance & Professional Platforms",
+    "platformsTitleAr": "منصات العمل الحر والتواصل المهني",
+    "platforms": [
+      {
+        "nameEn": "Upwork",
+        "nameAr": "أب وورك",
+        "url": "https://www.upwork.com/freelancers/~011476c882fc8cbbe4",
+        "visible": true
+      },
+      {
+        "nameEn": "Freelancer",
+        "nameAr": "فريلانسر",
+        "url": "https://www.freelancer.com/u/monagyAI",
+        "visible": true
+      },
+      {
+        "nameEn": "Contra",
+        "nameAr": "كونترا",
+        "url": "https://contra.com/studio/mo_nagy",
+        "visible": true
+      },
+      {
+        "nameEn": "Fiverr",
+        "nameAr": "فايفر",
+        "url": "https://www.fiverr.com/mohamed_nagy_ai?public_mode=true",
+        "visible": true
+      },
+      {
+        "nameEn": "Kafiil",
+        "nameAr": "كفيل",
+        "url": "https://kafiil.com/u/Mohamed_Nagy_Ai",
+        "visible": true
+      },
+      {
+        "nameEn": "Mostaql",
+        "nameAr": "مستقل",
+        "url": "https://mostaql.com/u/monagyai",
+        "visible": true
+      },
+      {
+        "nameEn": "LinkedIn",
+        "nameAr": "لينكدإن",
+        "url": "https://www.linkedin.com/in/mo-nagy-ai/",
+        "visible": true
+      },
+      {
+        "nameEn": "Baaeed",
+        "nameAr": "بعيد",
+        "url": "https://baaeed.com/u/monagyai",
+        "visible": true
+      },
+      {
+        "nameEn": "Khamsat",
+        "nameAr": "خمسات",
+        "url": "https://khamsat.com/user/monagyai",
+        "visible": true
+      }
+    ]
   },
   "footer": {
     "tagline": "LET'S CREATE SOMETHING CINEMATIC.",
