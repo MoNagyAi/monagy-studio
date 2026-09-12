@@ -194,6 +194,17 @@
     }
   }
 
+
+  // Editable professional profiles, displayed in both languages.
+  const platforms = (contact.platforms || []).filter(item => item.visible !== false && /^https?:\/\//i.test(String(item.url || "").trim()));
+  if ($("#contact") && platforms.length) {
+    const section = document.createElement("section");
+    section.className = "contact-platforms";
+    section.setAttribute("aria-labelledby", "platforms-heading");
+    section.innerHTML = `<h3 id="platforms-heading"><span lang="en">${escapeHtml(contact.platformsTitleEn || "Freelance & Professional Platforms")}</span><span lang="ar" dir="rtl">${escapeHtml(contact.platformsTitleAr || "منصات العمل الحر والتواصل المهني")}</span></h3><div class="contact-platform-grid">${platforms.map(item => `<a href="${escapeHtml(safeUrl(item.url))}" target="_blank" rel="noopener noreferrer"><span><strong lang="en">${escapeHtml(item.nameEn)}</strong><small lang="ar" dir="rtl">${escapeHtml(item.nameAr)}</small></span><span aria-hidden="true">↗</span></a>`).join("")}</div>`;
+    $("#contact").appendChild(section);
+  }
+
   const socialMap = {
     Facebook: contact.facebook,
     LinkedIn: contact.linkedin,
