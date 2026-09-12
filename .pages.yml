@@ -241,6 +241,7 @@ content:
             fields:
               - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
               - name: packages
+                description: "إضافة أو حذف عنصر تضيف أو تحذف عمودًا. نفّذ التغيير نفسه في العربية، وعدّل خلايا الصفوف بنفس ترتيب الباقات."
                 label: الباقات / الأعمدة الإنجليزية
                 type: object
                 list: true
@@ -260,6 +261,7 @@ content:
                 fields:
                   - { name: label, label: اسم الصف, type: string }
                   - name: cells
+                    description: "كل قيمة تخص باقة بالترتيب. عند إضافة أو حذف عمود، أضف أو احذف القيمة المقابلة هنا وفي اللغة الأخرى. عدّل صف الإجمالي عند تغيير السعر."
                     label: قيم الخلايا حسب ترتيب الباقات
                     type: string
                     list: true
@@ -270,6 +272,7 @@ content:
             fields:
               - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
               - name: packages
+                description: "طابق عدد وترتيب الأعمدة مع النسخة الإنجليزية، ثم عدّل خلايا الصفوف المقابلة."
                 label: الباقات / الأعمدة العربية
                 type: object
                 list: true
@@ -289,6 +292,7 @@ content:
                 fields:
                   - { name: label, label: اسم الصف, type: string }
                   - name: cells
+                    description: "كل قيمة تخص باقة بالترتيب. عند إضافة أو حذف عمود، أضف أو احذف القيمة المقابلة هنا وفي اللغة الأخرى. عدّل صف الإجمالي عند تغيير السعر."
                     label: قيم الخلايا حسب ترتيب الباقات
                     type: string
                     list: true
@@ -308,6 +312,7 @@ content:
             fields:
               - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
               - name: packages
+                description: "إضافة أو حذف عنصر تضيف أو تحذف عمودًا. نفّذ التغيير نفسه في العربية، وعدّل خلايا الصفوف بنفس ترتيب الباقات."
                 label: الباقات / الأعمدة الإنجليزية
                 type: object
                 list: true
@@ -327,6 +332,7 @@ content:
                 fields:
                   - { name: label, label: اسم الصف, type: string }
                   - name: cells
+                    description: "كل قيمة تخص باقة بالترتيب. عند إضافة أو حذف عمود، أضف أو احذف القيمة المقابلة هنا وفي اللغة الأخرى. عدّل صف الإجمالي عند تغيير السعر."
                     label: قيم الخلايا حسب ترتيب الباقات
                     type: string
                     list: true
@@ -337,6 +343,7 @@ content:
             fields:
               - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
               - name: packages
+                description: "طابق عدد وترتيب الأعمدة مع النسخة الإنجليزية، ثم عدّل خلايا الصفوف المقابلة."
                 label: الباقات / الأعمدة العربية
                 type: object
                 list: true
@@ -356,6 +363,7 @@ content:
                 fields:
                   - { name: label, label: اسم الصف, type: string }
                   - name: cells
+                    description: "كل قيمة تخص باقة بالترتيب. عند إضافة أو حذف عمود، أضف أو احذف القيمة المقابلة هنا وفي اللغة الأخرى. عدّل صف الإجمالي عند تغيير السعر."
                     label: قيم الخلايا حسب ترتيب الباقات
                     type: string
                     list: true
@@ -375,6 +383,7 @@ content:
             fields:
               - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
               - name: packages
+                description: "إضافة أو حذف عنصر تضيف أو تحذف عمودًا. نفّذ التغيير نفسه في العربية، وعدّل خلايا الصفوف بنفس ترتيب الباقات."
                 label: الباقات / الأعمدة الإنجليزية
                 type: object
                 list: true
@@ -394,6 +403,7 @@ content:
                 fields:
                   - { name: label, label: اسم الصف, type: string }
                   - name: cells
+                    description: "كل قيمة تخص باقة بالترتيب. عند إضافة أو حذف عمود، أضف أو احذف القيمة المقابلة هنا وفي اللغة الأخرى. عدّل صف الإجمالي عند تغيير السعر."
                     label: قيم الخلايا حسب ترتيب الباقات
                     type: string
                     list: true
@@ -404,6 +414,7 @@ content:
             fields:
               - { name: firstColumnLabel, label: عنوان العمود الأول, type: string }
               - name: packages
+                description: "طابق عدد وترتيب الأعمدة مع النسخة الإنجليزية، ثم عدّل خلايا الصفوف المقابلة."
                 label: الباقات / الأعمدة العربية
                 type: object
                 list: true
@@ -423,6 +434,7 @@ content:
                 fields:
                   - { name: label, label: اسم الصف, type: string }
                   - name: cells
+                    description: "كل قيمة تخص باقة بالترتيب. عند إضافة أو حذف عمود، أضف أو احذف القيمة المقابلة هنا وفي اللغة الأخرى. عدّل صف الإجمالي عند تغيير السعر."
                     label: قيم الخلايا حسب ترتيب الباقات
                     type: string
                     list: true
