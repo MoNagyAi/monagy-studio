@@ -338,3 +338,19 @@ button,input,textarea,select { font:inherit; }
     padding-top:122px;
   }
 }
+
+/* Editable bilingual professional platform links. */
+.contact-platforms { margin-top:44px; padding-top:30px; border-top:1px solid var(--line); }
+.contact-platforms h3 { margin:0 0 22px; font-size:clamp(18px,2vw,24px); }
+.contact-platforms h3 span { display:block; }
+.contact-platforms h3 [lang="ar"] { color:var(--gold); font-family:Cairo,sans-serif; font-size:.85em; margin-top:7px; text-align:start; }
+.contact-platform-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+.contact-platform-grid a { display:flex; justify-content:space-between; border:1px solid #ffffff32; text-decoration:none; letter-spacing:normal; min-width:0; }
+.contact-platform-grid strong,.contact-platform-grid small { display:block; }
+.contact-platform-grid strong { font-size:16px; }
+.contact-platform-grid small { margin-top:5px; font:500 13px Cairo,sans-serif; color:#d2c9b9; text-align:start; }
+.contact-platform-grid a:hover { border-color:var(--gold); background:#ffffff08; }
+.contact-platform-grid a:focus-visible { outline:2px solid var(--gold); outline-offset:4px; }
+.contact-platform-grid a>span:last-child { color:var(--gold); }
+@media(max-width:600px) { .contact-platform-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:360px) { .contact-platform-grid { grid-template-columns:1fr; } }
