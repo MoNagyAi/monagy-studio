@@ -8,7 +8,7 @@
     const frame = document.getElementById("showreel-player");
     if (frame) {
       if (frame.getAttribute("src") !== EMBED_URL) frame.setAttribute("src", EMBED_URL);
-      frame.setAttribute("sandbox", "allow-scripts allow-same-origin allow-presentation");
+      if (!frame.hasAttribute("sandbox")) frame.setAttribute("sandbox", "allow-scripts allow-same-origin allow-presentation");
       frame.setAttribute("allow", "autoplay; encrypted-media; fullscreen; picture-in-picture");
       frame.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
     }
@@ -24,21 +24,13 @@
     }
   }
 
+  // site.js loads content asynchronously, so apply again after it has had time to finish.
   apply();
   document.addEventListener("DOMContentLoaded", apply, { once: true });
   window.addEventListener("load", apply, { once: true });
-
-  const observer = new MutationObserver(() => apply());
-  observer.observe(document.documentElement, {
-    subtree: true,
-    childList: true,
-    attributes: true,
-    attributeFilter: ["src", "href", "hidden"]
-  });
-
-  setTimeout(apply, 250);
-  setTimeout(apply, 1000);
-  setTimeout(apply, 2500);
+  setTimeout(apply, 300);
+  setTimeout(apply, 1200);
+  setTimeout(apply, 3000);
 })();
 
 /* Optional visit summaries. */
