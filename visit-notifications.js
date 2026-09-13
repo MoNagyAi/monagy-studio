@@ -57,12 +57,23 @@
   const browser = /Edg\//.test(ua) ? "Edge" : /Firefox\//.test(ua) ? "Firefox" : /Chrome\//.test(ua) ? "Chrome" : /Safari\//.test(ua) ? "Safari" : "Other";
   const summary = document.createElement("p");
   summary.dir = "auto";
-  summary.style.cssText = "font-size:12px;padding:12px;opacity:.8";
-  summary.append("إحصاءات الزيارة: نرسل ملخصًا للتفاعلات إلى مالك الموقع، دون اسمك أو بريدك. Anonymous visit interactions are emailed to the site owner. ");
+  summary.setAttribute("aria-label", "Anonymous visit analytics notice");
+  summary.style.cssText = "margin:0 auto;padding:7px 14px;max-width:980px;font-size:10px;line-height:1.45;text-align:center;color:rgba(255,255,255,.42);background:transparent;border-top:1px solid rgba(255,255,255,.05);font-family:inherit;font-weight:400;letter-spacing:.01em";
+  summary.append("إحصاءات مجهولة لتحسين الموقع — دون اسم أو بريد. Anonymous visit analytics. ");
   const off = document.createElement("button");
-  off.type = "button"; off.textContent = "إيقاف هذا التتبّع / Opt out";
-  off.onclick = () => { stopped = true; try { localStorage.setItem("monagy-visit-optout","1"); } catch (_) {} summary.textContent = "تم إيقاف ملخصات الزيارة على هذا المتصفح. Visit summaries disabled."; };
-  summary.append(off); (document.querySelector("footer") || document.body).append(summary);
+  off.type = "button";
+  off.textContent = "إيقاف / Opt out";
+  off.style.cssText = "appearance:none;border:0;background:none;padding:0 2px;margin:0;color:rgba(255,255,255,.5);font:inherit;font-size:10px;text-decoration:underline;text-underline-offset:2px;cursor:pointer;opacity:.85";
+  off.addEventListener("mouseenter", () => { off.style.color = "rgba(255,255,255,.8)"; });
+  off.addEventListener("mouseleave", () => { off.style.color = "rgba(255,255,255,.5)"; });
+  off.onclick = () => {
+    stopped = true;
+    try { localStorage.setItem("monagy-visit-optout","1"); } catch (_) {}
+    summary.textContent = "تم إيقاف الإحصاءات على هذا المتصفح. Analytics disabled.";
+    summary.style.opacity = ".55";
+  };
+  summary.append(off);
+  (document.querySelector("footer") || document.body).append(summary);
   function send(force) {
     if (stopped || optedOut() || (!force && Date.now()-lastSend < 30000)) return;
     lastSend = Date.now();
