@@ -54,8 +54,28 @@ content:
           - { name: nameLine2, label: السطر الثاني - STUDIO, type: string }
           - { name: textEn, label: مقدمة الكفر بالإنجليزية, type: text }
           - { name: textAr, label: مقدمة الكفر بالعربية, type: text }
-          - { name: buttonEn, label: زر مشاهدة الأفلام - إنجليزي, type: string }
-          - { name: buttonAr, label: زر مشاهدة الأفلام - عربي, type: string }
+          - { name: buttonEn, label: زر مشاهدة الشوريل - إنجليزي, type: string }
+          - { name: buttonAr, label: زر مشاهدة الشوريل - عربي, type: string }
+
+      - name: showreel
+        label: 3ب) الشوريل الافتتاحي — أول فيديو
+        type: object
+        fields:
+          - { name: visible, label: إظهار الشوريل بعد الكفر, type: boolean, default: true }
+          - name: videoUrl
+            label: رابط فيديو الشوريل
+            type: string
+            description: "رابط Google Drive أو YouTube كامل. يجب أن تكون مشاهدة الفيديو متاحة للزوار. عند إخفاء الشوريل يعود زر الكفر إلى قسم الأفلام."
+          - { name: eyebrowEn, label: العبارة التعريفية بالإنجليزية, type: string }
+          - { name: eyebrowAr, label: العبارة التعريفية بالعربية, type: string }
+          - { name: titleEn, label: عنوان الشوريل بالإنجليزية, type: string }
+          - { name: titleAr, label: عنوان الشوريل بالعربية, type: string }
+          - { name: descriptionEn, label: وصف الشوريل بالإنجليزية, type: text }
+          - { name: descriptionAr, label: وصف الشوريل بالعربية, type: text }
+          - { name: openLabelEn, label: زر الفتح الخارجي بالإنجليزية, type: string }
+          - { name: openLabelAr, label: زر الفتح الخارجي بالعربية, type: string }
+          - { name: projectsLabelEn, label: زر المشروعات بالإنجليزية, type: string }
+          - { name: projectsLabelAr, label: زر المشروعات بالعربية, type: string }
 
       - name: bio
         label: 4) التعريف الشخصي والسيرة الذاتية

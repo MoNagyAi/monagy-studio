@@ -100,6 +100,57 @@
     heroHeading.innerHTML = `${escapeHtml(hero.namePrefix || "")}<span>${escapeHtml(hero.nameAccent || "")}</span><br>${escapeHtml(hero.nameLine2 || "")}`;
   }
 
+
+  // The opening reel is editable in Pages CMS. Embed only supported video hosts.
+  const reel = data.showreel || {};
+  const reelSection = $("#showreel");
+  const reelPlayer = $("#showreel-player");
+  const heroReelLink = $(".classic-hero a.showreel");
+  function reelSource(value) {
+    try {
+      const url = new URL(String(value || "").trim());
+      if (url.protocol !== "https:") return null;
+      if (url.hostname === "drive.google.com") {
+        const match = url.pathname.match(/^\/file\/d\/([\w-]+)(?:\/(?:view|preview))?\/?$/);
+        const id = match ? match[1] : (/^\/(?:open|uc)$/.test(url.pathname) ? url.searchParams.get("id") : "");
+        if (!/^[\w-]{15,}$/.test(id || "")) return null;
+        const resourceKey = url.searchParams.get("resourcekey");
+        const query = resourceKey ? "?resourcekey=" + encodeURIComponent(resourceKey) : "";
+        return {embed:"https://drive.google.com/file/d/" + id + "/preview" + query,
+          view:"https://drive.google.com/file/d/" + id + "/view" + query};
+      }
+      if (["youtube.com","www.youtube.com","m.youtube.com","youtu.be"].includes(url.hostname)) {
+        const id = url.hostname === "youtu.be" ? url.pathname.slice(1) :
+          url.pathname === "/watch" ? url.searchParams.get("v") :
+          (url.pathname.match(/^\/(?:embed|shorts)\/([\w-]+)\/?$/) || [])[1];
+        if (!/^[\w-]{11}$/.test(id || "")) return null;
+        return {embed:"https://www.youtube.com/embed/" + id + "?rel=0",view:"https://www.youtube.com/watch?v=" + id};
+      }
+    } catch (_) {}
+    return null;
+  }
+  const reelVideo = reelSource(reel.videoUrl);
+  if (reelSection && reelPlayer && reel.visible !== false && reelVideo) {
+    $("[data-reel-field]",reelSection).forEach(element => {
+      setElementText(element,reel[element.dataset.reelField]);
+    });
+    setText(".reel-brand",settings.brandName,reelSection);
+    reelPlayer.title = [settings.brandName || "MoNagy Studio",reel.titleEn || "Showreel",reel.titleAr || "الشوريل"].join(" — ");
+    reelPlayer.src = reelVideo.embed;
+    $(".reel-open-link",reelSection).href = reelVideo.view;
+    reelSection.hidden = false;
+    if (heroReelLink) heroReelLink.href = "#showreel";
+    if (location.hash === "#showreel") requestAnimationFrame(() => reelSection.scrollIntoView());
+  } else {
+    if (reelSection) reelSection.hidden = true;
+    if (reelPlayer) reelPlayer.removeAttribute("src");
+    if (heroReelLink) {
+      heroReelLink.href = "#films";
+      setText(".showreel-en","VIEW SELECTED FILMS",heroReelLink);
+      setText(".showreel-ar","شاهد الأفلام المختارة",heroReelLink);
+    }
+  }
+
   const bioParagraphs = $$("#bio .bio-copy > p");
   setElementText(bioParagraphs[0], bio.eyebrow);
   setElementText(bioParagraphs[1], bio.textEn);

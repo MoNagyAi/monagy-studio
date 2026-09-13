@@ -1,119 +1,436 @@
 window.MONAGY_CONTENT = {
-  settings: {
-    brandName: "MoNagy Studio",
-    email: "",
-    youtube: "https://www.youtube.com/@MoNagyAi",
-    accent: "#d9a52a"
+  "settings": {
+    "brandName": "MoNagy Studio",
+    "pageTitle": "MoNagy Studio — AI Filmmaker & Creative Director",
+    "metaDescription": "Cinematic Generative AI filmmaking portfolio by Mohamed Nagy.",
+    "accent": "#d9a52a",
+    "background": "#070707",
+    "panel": "#101010",
+    "text": "#f6f3ea",
+    "muted": "#a4a09a",
+    "logoMark": "/monagy-studio/assets/ChatGPT Image 6 سبتمبر 2026، 10_30_52 ص.png",
+    "logoFull": "/monagy-studio/assets/ChatGPT Image 6 سبتمبر 2026، 10_30_52 ص-1.png",
+    "favicon": "/monagy-studio/assets/ChatGPT Image 6 سبتمبر 2026، 10_30_52 ص-2.png",
+    "cover": "/monagy-studio/assets/Screenshot 2026-09-07 213117.png",
+    "profile": "/monagy-studio/assets/profile-1.jpg",
+    "showGrain": true
   },
-  services: [
-    { titleEn: "Generative AI Filmmaking", titleAr: "صناعة الأفلام بالذكاء الاصطناعي" },
-    { titleEn: "Creative Direction", titleAr: "الإخراج الإبداعي" },
-    { titleEn: "Cinematic Storytelling", titleAr: "السرد السينمائي" },
-    { titleEn: "Branded Content & Campaigns", titleAr: "المحتوى الدعائي والحملات" },
-    { titleEn: "Character Consistency & Visual Development", titleAr: "اتساق الشخصيات والتطوير البصري" },
-    { titleEn: "AI Media Production", titleAr: "إنتاج الميديا بالذكاء الاصطناعي" },
-    { titleEn: "Virtual Production & Post", titleAr: "الإنتاج الافتراضي وما بعد الإنتاج" },
-    { titleEn: "Custom AI Production Workflows", titleAr: "مسارات إنتاج مخصصة بالذكاء الاصطناعي" },
-    { titleEn: "AI Music & Sound Design", titleAr: "الموسيقى وتصميم الصوت بالذكاء الاصطناعي" }
-  ],
-  workflow: [
+  "navigation": {
+    "filmsEn": "Films",
+    "filmsAr": "الأفلام",
+    "aboutEn": "About",
+    "aboutAr": "نبذة",
+    "resumeEn": "Resume",
+    "resumeAr": "السيرة الذاتية",
+    "servicesEn": "Services",
+    "servicesAr": "الخدمات",
+    "contactEn": "Contact",
+    "contactAr": "تواصل"
+  },
+  "hero": {
+    "roleEn": "AI FILMMAKER • CREATIVE DIRECTOR",
+    "roleAr": "صانع أفلام بالذكاء الاصطناعي • مخرج إبداعي",
+    "namePrefix": "MO",
+    "nameAccent": "NAGY",
+    "nameLine2": "STUDIO",
+    "textEn": "Generative AI filmmaking, cinematic storytelling and media production — from concept to final frame.",
+    "textAr": "صناعة أفلام بالذكاء الاصطناعي وسرد سينمائي وإنتاج إعلامي متكامل — من الفكرة إلى الكادر الأخير.",
+    "buttonEn": "WATCH THE SHOWREEL",
+    "buttonAr": "شاهد الشوريل"
+  },
+  "showreel": {
+    "visible": true,
+    "videoUrl": "https://drive.google.com/file/d/12wMYsDO0bKKaK4B2x0NRNWuOr_MvsU4y/view",
+    "eyebrowEn": "ENTER MY CINEMATIC WORLD",
+    "eyebrowAr": "ادخل عالمي السينمائي",
+    "titleEn": "Cinematic Showreel",
+    "titleAr": "الشوريل السينمائي",
+    "descriptionEn": "A glimpse into my world of visual storytelling. Watch the reel, then explore the films and the creative process behind each project.",
+    "descriptionAr": "لمحة من عالمي في السرد البصري. شاهد الشوريل، ثم اكتشف الأفلام ومراحل تنفيذ كل مشروع.",
+    "openLabelEn": "Open in a new tab",
+    "openLabelAr": "افتح في صفحة مستقلة",
+    "projectsLabelEn": "Explore the projects",
+    "projectsLabelAr": "اكتشف المشروعات"
+  },
+  "bio": {
+    "eyebrow": "MEET THE FILMMAKER / تعرف على صانع الأفلام",
+    "textEn": "I'm Mohamed Fathi Nagy, PhD — a Generative AI Filmmaker and AI Media Producer based in Egypt, working remotely with clients and creative teams worldwide. I specialize in cinematic storytelling, animation, sports media and branded content, developing projects from concept and visual development through to final delivery using tools like ComfyUI, Adobe After Effects and Unreal Engine. I hold a PhD in Applied Arts and currently teach at the Faculty of Applied Arts, Beni Suef University.",
+    "textAr": "أنا محمد فتحي ناجي، حاصل على درجة الدكتوراه، صانع أفلام ومنتج ميديا بالذكاء الاصطناعي التوليدي، مقيم في مصر وأعمل عن بُعد مع عملاء وفرق إبداعية حول العالم. أتخصص في السرد السينمائي والأنيميشن والميديا الرياضية والمحتوى الدعائي، وأطوّر المشروعات من الفكرة والتطوير البصري وحتى التسليم النهائي باستخدام أدوات مثل ComfyUI وAdobe After Effects وUnreal Engine. حاصل على الدكتوراه في الفنون التطبيقية، وأعمل حاليًا مدرسًا بكلية الفنون التطبيقية، جامعة بني سويف.",
+    "resumeTitleEn": "Resume",
+    "resumeTitleAr": "السيرة الذاتية",
+    "resumeIntroEn": "View or download — available in English and Arabic, hosted on Google Drive.",
+    "resumeIntroAr": "عرض أو تحميل — متاحة بالعربية والإنجليزية عبر جوجل درايف.",
+    "resumeEnLabel": "Resume — English",
+    "resumeEnView": "https://drive.google.com/file/d/1LMkW-2MhcKxmZPB-19u0bz6Ce1x5-TsX/view?usp=drive_link",
+    "resumeEnDownload": "https://drive.google.com/uc?export=download&id=1LMkW-2MhcKxmZPB-19u0bz6Ce1x5-TsX",
+    "resumeArLabel": "السيرة الذاتية — عربي",
+    "resumeArView": "https://drive.google.com/file/d/1tZCGmljEbW91CYAi-vV6diOScY8Ony5g/view?usp=drive_link",
+    "resumeArDownload": "https://drive.google.com/uc?export=download&id=1tZCGmljEbW91CYAi-vV6diOScY8Ony5g"
+  },
+  "filmsSection": {
+    "eyebrow": "SELECTED FILMS",
+    "titleLine1En": "Every film has its own",
+    "titleLine2En": "Project Breakdown PDF.",
+    "noteEn": "The films shown here are personal projects — you can explore commercial work through the Resume.",
+    "noteAr": "كل فيلم مرفق بدراسة مشروع خاصة به بصيغة PDF بالعربية والإنجليزية.",
+    "commercialNoteAr": "الأفلام المعروضة هنا مشاريع شخصية — يمكنك الاطلاع على المشاريع التجارية من خلال السيرة الذاتية.",
+    "featuredLabel": "FEATURED FILM",
+    "defaultLabel": "AI CINEMATIC FILM",
+    "breakdownLabelEn": "PROJECT BREAKDOWN PDF",
+    "breakdownLabelAr": "دراسة وتفاصيل تنفيذ المشروع",
+    "breakdownEnglishButton": "ENGLISH PDF ↗",
+    "breakdownArabicButton": "PDF العربية ↗",
+    "refsLabelEn": "SAMPLE OF VISUAL REFERENCES",
+    "refsLabelAr": "نماذج من المراجع البصرية"
+  },
+  "about": {
+    "eyebrow": "ABOUT THE STUDIO",
+    "titleEn": "From concept to final frame.",
+    "titleAr": "من الفكرة إلى الكادر الأخير.",
+    "textEn": "I create cinematic films and visual experiences with Generative AI, combining concept development, directing, storyboarding, character consistency and post-production in a complete professional workflow.",
+    "textAr": "أصنع أفلامًا وتجارب بصرية سينمائية باستخدام الذكاء الاصطناعي التوليدي، من تطوير الفكرة والإخراج والستوري بورد واتساق الشخصيات حتى مرحلة ما بعد الإنتاج."
+  },
+  "role": {
+    "eyebrow": "THE ROLE / الدور الإبداعي",
+    "titleEn": "AI Filmmaker & Creative Director",
+    "textEn": "I bridge cinematic direction and Generative AI production, turning an initial concept into a coherent film with a clear visual identity. Every project is shaped through story development, shot design, character consistency and final post-production.",
+    "textAr": "أجمع بين الإخراج السينمائي والإنتاج بالذكاء الاصطناعي التوليدي لتحويل الفكرة إلى فيلم متكامل بهوية بصرية واضحة، من تطوير الحكاية وتصميم اللقطات واتساق الشخصيات حتى مرحلة ما بعد الإنتاج."
+  },
+  "servicesSection": {
+    "eyebrow": "SERVICES / الخدمات"
+  },
+  "services": [
     {
-      titleEn: "Concept & Strategy", titleAr: "الفكرة والاستراتيجية",
-      descriptionEn: "Story direction, audience, mood and the visual language of the project.",
-      detailEn: "Defining the creative brief, target platform and visual reference boards before production begins.",
-      detailAr: "تحديد البريف الإبداعي والمنصة المستهدفة ولوحات المراجع البصرية قبل بدء الإنتاج."
+      "titleEn": "Generative AI Filmmaking",
+      "titleAr": "صناعة الأفلام بالذكاء الاصطناعي"
     },
     {
-      titleEn: "Pre-production", titleAr: "ما قبل الإنتاج",
-      descriptionEn: "Script development, storyboards, shot planning and character design.",
-      detailEn: "Building consistent character sheets and technical shot lists ready for generative production.",
-      detailAr: "إعداد شيتات شخصيات ثابتة وقوائم لقطات تقنية جاهزة للإنتاج التوليدي."
+      "titleEn": "Creative Direction",
+      "titleAr": "الإخراج الإبداعي"
     },
     {
-      titleEn: "Generative Production", titleAr: "الإنتاج التوليدي",
-      descriptionEn: "Purpose-built AI workflows with visual and character consistency.",
-      detailEn: "Combining multiple AI engines with 3D modeling and camera tracking for cinematic camera moves.",
-      detailAr: "دمج أكثر من محرك ذكاء اصطناعي مع النمذجة ثلاثية الأبعاد وتتبع الكاميرا للحصول على حركات كاميرا سينمائية."
+      "titleEn": "Cinematic Storytelling",
+      "titleAr": "السرد السينمائي"
     },
     {
-      titleEn: "Post & Delivery", titleAr: "ما بعد الإنتاج والتسليم",
-      descriptionEn: "Editing, sound, color, finishing and platform-ready delivery.",
-      detailEn: "Final compositing, color grading and quality control tailored to each platform's specs.",
-      detailAr: "التجميع النهائي والتصحيح اللوني ومراقبة الجودة بما يتناسب مع مواصفات كل منصة."
+      "titleEn": "Ai Branded Content & Campaigns",
+      "titleAr": "المحتوى الدعائي والحملات"
+    },
+    {
+      "titleEn": "Character Consistency & Visual Development",
+      "titleAr": "اتساق الشخصيات والتطوير البصري"
+    },
+    {
+      "titleEn": "AI Media Production",
+      "titleAr": "إنتاج الميديا بالذكاء الاصطناعي"
+    },
+    {
+      "titleEn": "Custom AI Production Workflows",
+      "titleAr": "مسارات إنتاج مخصصة بالذكاء الاصطناعي"
+    },
+    {
+      "titleEn": "AI SFX & Sound Design",
+      "titleAr": "تصميم الصوت والمؤثرات , بالذكاء الاصطناعي"
     }
   ],
-  tools: ["ComfyUI", "Kling", "Veo", "Runway", "MiniMax", "LTX", "Stable Diffusion", "Higgsfield", "3ds Max", "Camera Tracking", "After Effects", "Premiere Pro", "DaVinci Resolve", "Unreal Engine", "Blender", "Photoshop"],
-  projects: [
+  "workflowSection": {
+    "eyebrow": "PRODUCTION WORKFLOW / مراحل الإنتاج",
+    "titleLine1En": "One connected workflow.",
+    "titleLine2En": "From idea to final film."
+  },
+  "workflow": [
     {
-      id: "search-for-self", videoId: "lOpPuKnwH0w", featured: true,
-      titleEn: "Searching for the Self — Episode One", titleAr: "البحث عن الذات — الحلقة الأولى",
-      descriptionEn: "A cinematic personal film tracing memory, identity and the return to the beginning.",
-      descriptionAr: "فيلم شخصي سينمائي يتتبع الذاكرة والهوية والعودة إلى نقطة البداية.",
-      breakdownAr: "https://drive.google.com/file/d/1OxEIjMhkJ4Q582J7guJJ8GvUFyhJLJA8/view?usp=drivesdk",
-      breakdownEn: "https://drive.google.com/file/d/13O3IOIUidbGwFSwWruSLweunErtOvC49/view?usp=drivesdk",
-      refs: ["11cwUPcPYXCxWr1qEjnoY9WOt6pXr9B2p","1hZckGdPHPm3SP4J-Hg5UiOHEk11gsitw","12tPkYmDoAshvQr7fVht67--SwMomrZIH","1Df_HkKnzJmDCrUm8cYyJ_FRfXUVdd5xo","1iTWB4Hm45qXgoQggHvn6792H9igQrg3p","1mEhH90cZFlQzWKRPx1IGAxgiYqpf7LaQ"]
+      "titleEn": "Concept & Strategy",
+      "titleAr": "الفكرة والاستراتيجية",
+      "descriptionEn": "Story direction, audience, mood and the visual language of the project.",
+      "detailEn": "Defining the creative brief, target platform and visual reference boards before production begins.",
+      "detailAr": "تحديد البريف الإبداعي والمنصة المستهدفة ولوحات المراجع البصرية قبل بدء الإنتاج."
     },
     {
-      id: "black-cat", videoId: "NXDDc7eO5qM", featured: true,
-      titleEn: "Al Maddāh — Legend of the Black Cat", titleAr: "المداح — أسطورة القط الأسود",
-      descriptionEn: "Egyptian mythology meets cinematic football drama in a character-led sports fantasy.",
-      descriptionAr: "تمتزج الأسطورة المصرية بالدراما الكروية السينمائية في فانتازيا رياضية قائمة على الشخصية.",
-      breakdownAr: "https://drive.google.com/file/d/19sQ4eHkb1hhBbYwOThu0qGPoKEfKPOIB/view?usp=drivesdk",
-      breakdownEn: "https://drive.google.com/file/d/1vQBtWRARmc3cMzAC7e4SR-yjbT2VZSL8/view?usp=drivesdk",
-      refs: ["12mPYKTsSlKYQ024uJfhhnWUFFAVZQh-T","1AMQSEgymqtGKBeQ-pX5WkpyNowhww6Xv","162YEKVh5Qe0M--m88_urQBxh7x_ZtyuO","1qQ6fT1ug_SnQ2NAmTJ2KIYKfDOcm3Mrb","1uupBCbpXxKVEFw-xNeePaU_XAf_FFPf4","1u5Atrez_qCNwTCv47F27Pjkys2i9uW5-"]
+      "titleEn": "Pre-production",
+      "titleAr": "ما قبل الإنتاج",
+      "descriptionEn": "Script development, storyboards, shot planning and character design.",
+      "detailEn": "Building consistent character sheets and technical shot lists ready for generative production.",
+      "detailAr": "إعداد شيتات شخصيات ثابتة وقوائم لقطات تقنية جاهزة للإنتاج التوليدي."
     },
     {
-      id: "spirit-of-legend", videoId: "ir7-1haoF4s", featured: false,
-      titleEn: "When Egypt Plays with the Spirit of a Legend", titleAr: "حين تلعب مصر بروح الأسطورة",
-      descriptionEn: "An epic opening to Egypt’s 2026 World Cup journey.",
-      descriptionAr: "افتتاح ملحمي لرحلة منتخب مصر في كأس العالم 2026.",
-      breakdownAr: "breakdowns/spirit-of-legend-ar.pdf", breakdownEn: "breakdowns/spirit-of-legend-en.pdf",
-      refs: ["1H_w7llI310yZwfA5pVS4QNhLdbxtZM-W","1LgSaehRcrS6CzeFvpVZhVI5eKKFVJb8O","1vkxDc7-MnfaXX5ysLjY7X3UFFvy58S7G","1A_-TiO6h10yvEVfeAyCvM-_8GZIQS4mk","1tlAytUw4JLY2Kb8eXdbuF4MCiweLc0oI","1XiXw3UlKL85jN8cvdpr54rU7G2hFUFGP"]
+      "titleEn": "Generative Production",
+      "titleAr": "الإنتاج التوليدي",
+      "descriptionEn": "Purpose-built AI workflows with visual and character consistency.",
+      "detailEn": "Combining multiple AI engines with 3D modeling and camera tracking for cinematic camera moves.",
+      "detailAr": "دمج أكثر من محرك ذكاء اصطناعي مع النمذجة ثلاثية الأبعاد وتتبع الكاميرا للحصول على حركات كاميرا سينمائية."
     },
     {
-      id: "shobeir", videoId: "kV2h9sctsJE", featured: false,
-      titleEn: "Mostafa Shobeir — Guardian of Egypt", titleAr: "مصطفى شوبير — حارس مصر",
-      descriptionEn: "A cinematic sequence built around decisive saves and composure under pressure.",
-      descriptionAr: "مشهد سينمائي يُبرز التصديات الحاسمة والثبات تحت ضغط الهجوم.",
-      breakdownAr: "https://drive.google.com/file/d/1V9KEn-40wCLjbiH3Pwp1_LcfKqfMGjKk/view?usp=drivesdk",
-      breakdownEn: "https://drive.google.com/file/d/1o8DGdxCykHmwkyvzj28lCRjD4W5f1W2M/view?usp=drivesdk",
-      refs: ["11hpDR9MwM2Y7XXtJL1RtX8zIZWPGSvZ9","1Kr-TwvKi4_-anjeMwCNYWqBpVsnDW0Tz","19m2IdgQJhVyHfonnDNh8ct2feH9hEXDC","1W-1bAd9-_GBDq6dX7plEYKOLfjpV-4sE","1rl6PzRmePKakTtsoVtRipl77RjA5luKp","1HXIzfn7OwcO8BhbE2M-mn0IK9tLexuJL"]
+      "titleEn": "Post & Delivery",
+      "titleAr": "ما بعد الإنتاج والتسليم",
+      "descriptionEn": "Editing, sound, color, finishing and platform-ready delivery.",
+      "detailEn": "Final compositing, color grading and quality control tailored to each platform's specs.",
+      "detailAr": "التجميع النهائي والتصحيح اللوني ومراقبة الجودة بما يتناسب مع مواصفات كل منصة."
+    }
+  ],
+  "stackSection": {
+    "eyebrow": "PRODUCTION STACK",
+    "titleEn": "Tools serving the story.",
+    "textAr": "الأدوات في خدمة الحكاية، وليست بديلًا عن الرؤية الإبداعية."
+  },
+  "tools": [
+    "ComfyUI",
+    "Kling",
+    "Veo",
+    "Runway",
+    "MiniMax",
+    "LTX",
+    "Stable Diffusion",
+    "Higgsfield",
+    "3ds Max",
+    "Camera Tracking",
+    "After Effects",
+    "Premiere Pro",
+    "DaVinci Resolve",
+    "Unreal Engine",
+    "Blender",
+    "Photoshop"
+  ],
+  "contact": {
+    "eyebrow": "START A CONVERSATION / تواصل وتعاون دولي",
+    "titleLine1En": "Ready to build your",
+    "titleLine2En": "next cinematic story?",
+    "textEn": "Based in Egypt • Working globally",
+    "textAr": "متاح لإنتاج الأفلام والمحتوى السينمائي والحملات الإبداعية والتعاون مع العملاء والاستوديوهات حول العالم.",
+    "email": "monagy-studio@hotmail.com",
+    "phone1": "+20 100 634 7562",
+    "phone2": "+20 106 749 8965",
+    "youtubeButton": "VIEW YOUTUBE CHANNEL",
+    "facebook": "https://www.facebook.com/mo.nagyai",
+    "linkedin": "https://www.linkedin.com/in/mo-nagy-ai/",
+    "instagram": "https://www.instagram.com/mo.nagy.ai",
+    "threads": "https://www.threads.com/@mo.nagy.ai",
+    "youtube": "https://www.youtube.com/@MoNagyAi",
+    "tiktok": "https://www.tiktok.com/@monagyai",
+    "whatsapp": "https://wa.me/message/MI6QH6JGHCE5L1",
+    "platformsTitleEn": "Freelance & Professional Platforms",
+    "platformsTitleAr": "منصات العمل الحر والتواصل المهني",
+    "platforms": [
+      {
+        "nameEn": "Upwork",
+        "nameAr": "أب وورك",
+        "url": "https://www.upwork.com/freelancers/~011476c882fc8cbbe4",
+        "visible": true
+      },
+      {
+        "nameEn": "Freelancer",
+        "nameAr": "فريلانسر",
+        "url": "https://www.freelancer.com/u/monagyAI",
+        "visible": true
+      },
+      {
+        "nameEn": "Contra",
+        "nameAr": "كونترا",
+        "url": "https://contra.com/studio/mo_nagy",
+        "visible": true
+      },
+      {
+        "nameEn": "Fiverr",
+        "nameAr": "فايفر",
+        "url": "https://www.fiverr.com/mohamed_nagy_ai?public_mode=true",
+        "visible": true
+      },
+      {
+        "nameEn": "Kafiil",
+        "nameAr": "كفيل",
+        "url": "https://kafiil.com/u/Mohamed_Nagy_Ai",
+        "visible": true
+      },
+      {
+        "nameEn": "Mostaql",
+        "nameAr": "مستقل",
+        "url": "https://mostaql.com/u/monagyai",
+        "visible": true
+      },
+      {
+        "nameEn": "LinkedIn",
+        "nameAr": "لينكدإن",
+        "url": "https://www.linkedin.com/in/mo-nagy-ai/",
+        "visible": true
+      },
+      {
+        "nameEn": "Baaeed",
+        "nameAr": "بعيد",
+        "url": "https://baaeed.com/u/monagyai",
+        "visible": true
+      },
+      {
+        "nameEn": "Khamsat",
+        "nameAr": "خمسات",
+        "url": "https://khamsat.com/user/monagyai",
+        "visible": true
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "LET'S CREATE SOMETHING CINEMATIC.",
+    "youtubeLabel": "YOUTUBE CHANNEL"
+  },
+  "projects": [
+    {
+      "id": "black-cat",
+      "visible": true,
+      "featured": true,
+      "videoId": "NXDDc7eO5qM",
+      "titleEn": "Al Maddāh — Legend of the Black Cat",
+      "titleAr": "المداح — أسطورة القط الأسود",
+      "descriptionEn": "Egyptian mythology meets cinematic football drama in a character-led sports fantasy.",
+      "descriptionAr": "تمتزج الأسطورة المصرية بالدراما الكروية السينمائية في فانتازيا رياضية قائمة على الشخصية.",
+      "breakdownEn": "https://drive.google.com/file/d/1vQBtWRARmc3cMzAC7e4SR-yjbT2VZSL8/view?usp=drivesdk",
+      "breakdownAr": "https://drive.google.com/file/d/19sQ4eHkb1hhBbYwOThu0qGPoKEfKPOIB/view?usp=drivesdk",
+      "refs": [
+        "12mPYKTsSlKYQ024uJfhhnWUFFAVZQh-T",
+        "1AMQSEgymqtGKBeQ-pX5WkpyNowhww6Xv",
+        "162YEKVh5Qe0M--m88_urQBxh7x_ZtyuO",
+        "1qQ6fT1ug_SnQ2NAmTJ2KIYKfDOcm3Mrb",
+        "1uupBCbpXxKVEFw-xNeePaU_XAf_FFPf4",
+        "1u5Atrez_qCNwTCv47F27Pjkys2i9uW5-"
+      ]
     },
     {
-      id: "egypt-unbroken", videoId: "244g8TdgJGo", featured: false,
-      titleEn: "Egypt Unbroken — The Pharaohs vs Argentina", titleAr: "مصر لا تنكسر — الفراعنة أمام الأرجنتين",
-      descriptionEn: "A story of pride and resistance in Egypt’s clash with Argentina.",
-      descriptionAr: "حكاية فخر ومقاومة في مواجهة مصر والأرجنتين.",
-      breakdownAr: "https://drive.google.com/file/d/1qu9bzPAK_HuUIPTdShHkt3SlGHcVPCRZ/view?usp=drivesdk",
-      breakdownEn: "https://drive.google.com/file/d/1nl9NhIwOLVhCq-r0wKr3XRZeTZA2dSUB/view?usp=drivesdk",
-      refs: ["1zSZLDnPyie4kL3u8WNU4XCfe11oE5jQP","1lhMf-lvJfCHDwH74qkU3JANQZEaDmgD3","1sPHN1LPCsxzz2VFRf8nD8Po8g2H4t3CI","1IJQCS_5H5tBqrT0UK3DNR3eJb6yqdIQz","1Xd9vYr2FnQNLZWitYbawyDrYT_ymvXav","1aga_fmN2Q8VPc_dZDK8ww0_VEJ_8Hsgt"]
+      "id": "shobeir",
+      "visible": true,
+      "featured": false,
+      "videoId": "kV2h9sctsJE",
+      "titleEn": "Mostafa Shobeir — Guardian of Egypt",
+      "titleAr": "مصطفى شوبير — حارس مصر",
+      "descriptionEn": "A cinematic sequence built around decisive saves and composure under pressure.",
+      "descriptionAr": "مشهد سينمائي يُبرز التصديات الحاسمة والثبات تحت ضغط الهجوم.",
+      "breakdownEn": "https://drive.google.com/file/d/1o8DGdxCykHmwkyvzj28lCRjD4W5f1W2M/view?usp=drivesdk",
+      "breakdownAr": "https://drive.google.com/file/d/1V9KEn-40wCLjbiH3Pwp1_LcfKqfMGjKk/view?usp=drivesdk",
+      "refs": [
+        "11hpDR9MwM2Y7XXtJL1RtX8zIZWPGSvZ9",
+        "1Kr-TwvKi4_-anjeMwCNYWqBpVsnDW0Tz",
+        "19m2IdgQJhVyHfonnDNh8ct2feH9hEXDC",
+        "1W-1bAd9-_GBDq6dX7plEYKOLfjpV-4sE",
+        "1rl6PzRmePKakTtsoVtRipl77RjA5luKp",
+        "1HXIzfn7OwcO8BhbE2M-mn0IK9tLexuJL"
+      ]
     },
     {
-      id: "when-egypt-moves", videoId: "H5HATae-XtU", featured: false,
-      titleEn: "When Egypt Moves, the World Cup Shakes", titleAr: "حين تتحرك مصر يهتز المونديال",
-      descriptionEn: "A historic three-goal statement shaped as a cinematic Egyptian spectacle.",
-      descriptionAr: "ثلاثية تاريخية بروح مصرية وملحمة بصرية من أرض الحضارة.",
-      breakdownAr: "https://drive.google.com/file/d/1u-COeOB3JTTj-2zE8b8ZOCEF0irYQLC1/view?usp=drivesdk",
-      breakdownEn: "https://drive.google.com/file/d/1V_NnD42DlucfL1N6X2Ev6TaHPm7RjH-1/view?usp=drivesdk",
-      refs: ["1Md0lfvawNUXcPPPW9gJeT1OU6lyQ7L07","1HDZxGt0Go2urdAsjL_ZVfHbiZyf73Xgo","10A_CfO_Wf5oe9qtp3T4miDmX1EYvxSQc","1hbfpPp5gtzpz43j5ewL6iZFjzqvItWt8","1MPOGVRnIpA58McNzFUL_e089UaAYLuvM","1Kn28ZYqCirM71bOi2Um1N7KXXKPj9PUC"]
+      "id": "egypt-unbroken",
+      "visible": true,
+      "featured": false,
+      "videoId": "244g8TdgJGo",
+      "titleEn": "Egypt Unbroken — The Pharaohs vs Argentina",
+      "titleAr": "مصر لا تنكسر — الفراعنة أمام الأرجنتين",
+      "descriptionEn": "A story of pride and resistance in Egypt’s clash with Argentina.",
+      "descriptionAr": "حكاية فخر ومقاومة في مواجهة مصر والأرجنتين.",
+      "breakdownEn": "https://drive.google.com/file/d/1nl9NhIwOLVhCq-r0wKr3XRZeTZA2dSUB/view?usp=drivesdk",
+      "breakdownAr": "https://drive.google.com/file/d/1qu9bzPAK_HuUIPTdShHkt3SlGHcVPCRZ/view?usp=drivesdk",
+      "refs": [
+        "1zSZLDnPyie4kL3u8WNU4XCfe11oE5jQP",
+        "1lhMf-lvJfCHDwH74qkU3JANQZEaDmgD3",
+        "1sPHN1LPCsxzz2VFRf8nD8Po8g2H4t3CI",
+        "1IJQCS_5H5tBqrT0UK3DNR3eJb6yqdIQz",
+        "1Xd9vYr2FnQNLZWitYbawyDrYT_ymvXav",
+        "1aga_fmN2Q8VPc_dZDK8ww0_VEJ_8Hsgt"
+      ]
     },
     {
-      id: "goat-legend", videoId: "pMfT4R5Hb1E", featured: false,
-      titleEn: "Al Maddāh — The Goat Legend", titleAr: "المداح — أسطورة الماعز",
-      descriptionEn: "A cinematic sports fantasy transforming Messi into a giant goat for a mythic showdown.",
-      descriptionAr: "فانتازيا رياضية سينمائية تحوّل ميسي إلى ماعز عملاق في مواجهة أسطورية.",
-      breakdownAr: "https://drive.google.com/file/d/18vOfRY_HJg8B-p8fg_kvLq2HdbcT3_Jk/view?usp=drivesdk",
-      breakdownEn: "https://drive.google.com/file/d/1foY2gbPt0M5eAZf43Xc02zAD_wnlKurX/view?usp=drivesdk",
-      refs: ["1BVKCgiWsOHLddJMsbxyetd0eLp95CN9e","1OkXtLUv3z2bpPfoLbD4ENe-8YnST2_oC","1XC5HMiOHqGJHutWm7Pjnt59WumxF5gIc","17gujG0loQQHnvtgKOdpPyHp-o8Tvo8Z-","1HjhOuzTDCL9AmWQ9Ot92SmvyIsLF0bSQ","1WEjwIsZ2mQ6AcVk80I5N0_73ucNIRdRS"]
+      "id": "when-egypt-moves",
+      "visible": true,
+      "featured": false,
+      "videoId": "H5HATae-XtU",
+      "titleEn": "When Egypt Moves, the World Cup Shakes",
+      "titleAr": "حين تتحرك مصر يهتز المونديال",
+      "descriptionEn": "A historic three-goal statement shaped as a cinematic Egyptian spectacle.",
+      "descriptionAr": "ثلاثية تاريخية بروح مصرية وملحمة بصرية من أرض الحضارة.",
+      "breakdownEn": "https://drive.google.com/file/d/1V_NnD42DlucfL1N6X2Ev6TaHPm7RjH-1/view?usp=drivesdk",
+      "breakdownAr": "https://drive.google.com/file/d/1u-COeOB3JTTj-2zE8b8ZOCEF0irYQLC1/view?usp=drivesdk",
+      "refs": [
+        "1Md0lfvawNUXcPPPW9gJeT1OU6lyQ7L07",
+        "1HDZxGt0Go2urdAsjL_ZVfHbiZyf73Xgo",
+        "10A_CfO_Wf5oe9qtp3T4miDmX1EYvxSQc",
+        "1hbfpPp5gtzpz43j5ewL6iZFjzqvItWt8",
+        "1MPOGVRnIpA58McNzFUL_e089UaAYLuvM",
+        "1Kn28ZYqCirM71bOi2Um1N7KXXKPj9PUC"
+      ]
     },
     {
-      id: "stage-legend", videoId: "DwatbG2eoUU", featured: false,
-      titleEn: "Al Maddāh — Legend of the Stage", titleAr: "المداح — أسطورة المسرح",
-      descriptionEn: "An Egyptian fantasy film developed from concept and AI direction through shot design and final edit.",
-      descriptionAr: "فيلم خيالي مصري يمتد من تطوير الفكرة والإخراج بالذكاء الاصطناعي إلى تصميم اللقطات والمونتاج النهائي.",
-      breakdownAr: "https://drive.google.com/file/d/1nSKfWYLUJIJrzoTUda_xSid9KoaCgQIN/view?usp=drivesdk",
-      breakdownEn: "https://drive.google.com/file/d/1jPvSRcXiWxPXM34LKzYVZFaEmuDfpEgt/view?usp=drivesdk",
-      refs: ["1AgxvUD7kkHz0X7Heze95n9mWdsj4V6uk","12z7wyesE1jUZtAVquS2nnBaYotVtzZcY","101LaeNo6KRRP1rFurm6LbbvcMAjGC7nC","1zRRc9jjG8mLIMUAT1wZ9iIDaZR0bwtwX","1r44p3ombK-4B3jEQA1Rz50DJhICubwV_","1ZyPywypoOoMAeRAcYZ8aaL2d3WcILJso"]
+      "id": "search-for-self",
+      "visible": true,
+      "featured": true,
+      "videoId": "lOpPuKnwH0w",
+      "titleEn": "Searching for the Self — Episode One",
+      "titleAr": "البحث عن الذات — الحلقة الأولى",
+      "descriptionEn": "A cinematic personal film tracing memory, identity and the return to the beginning.",
+      "descriptionAr": "فيلم شخصي سينمائي يتتبع الذاكرة والهوية والعودة إلى نقطة البداية.",
+      "breakdownEn": "https://drive.google.com/file/d/13O3IOIUidbGwFSwWruSLweunErtOvC49/view?usp=drivesdk",
+      "breakdownAr": "https://drive.google.com/file/d/1OxEIjMhkJ4Q582J7guJJ8GvUFyhJLJA8/view?usp=drivesdk",
+      "refs": [
+        "11cwUPcPYXCxWr1qEjnoY9WOt6pXr9B2p",
+        "1hZckGdPHPm3SP4J-Hg5UiOHEk11gsitw",
+        "12tPkYmDoAshvQr7fVht67--SwMomrZIH",
+        "1Df_HkKnzJmDCrUm8cYyJ_FRfXUVdd5xo",
+        "1iTWB4Hm45qXgoQggHvn6792H9igQrg3p",
+        "1mEhH90cZFlQzWKRPx1IGAxgiYqpf7LaQ"
+      ]
+    },
+    {
+      "id": "spirit-of-legend",
+      "visible": true,
+      "featured": false,
+      "videoId": "ir7-1haoF4s",
+      "titleEn": "When Egypt Plays with the Spirit of a Legend",
+      "titleAr": "حين تلعب مصر بروح الأسطورة",
+      "descriptionEn": "An epic opening to Egypt’s 2026 World Cup journey.",
+      "descriptionAr": "افتتاح ملحمي لرحلة منتخب مصر في كأس العالم 2026.",
+      "breakdownEn": "breakdowns/spirit-of-legend-en.pdf",
+      "breakdownAr": "breakdowns/spirit-of-legend-ar.pdf",
+      "refs": [
+        "1H_w7llI310yZwfA5pVS4QNhLdbxtZM-W",
+        "1LgSaehRcrS6CzeFvpVZhVI5eKKFVJb8O",
+        "1vkxDc7-MnfaXX5ysLjY7X3UFFvy58S7G",
+        "1A_-TiO6h10yvEVfeAyCvM-_8GZIQS4mk",
+        "1tlAytUw4JLY2Kb8eXdbuF4MCiweLc0oI",
+        "1XiXw3UlKL85jN8cvdpr54rU7G2hFUFGP"
+      ]
+    },
+    {
+      "id": "goat-legend",
+      "visible": true,
+      "featured": false,
+      "videoId": "pMfT4R5Hb1E",
+      "titleEn": "Al Maddāh — The Goat Legend",
+      "titleAr": "المداح — أسطورة الماعز",
+      "descriptionEn": "A cinematic sports fantasy transforming Messi into a giant goat for a mythic showdown.",
+      "descriptionAr": "فانتازيا رياضية سينمائية تحوّل ميسي إلى ماعز عملاق في مواجهة أسطورية.",
+      "breakdownEn": "https://drive.google.com/file/d/1foY2gbPt0M5eAZf43Xc02zAD_wnlKurX/view?usp=drivesdk",
+      "breakdownAr": "https://drive.google.com/file/d/18vOfRY_HJg8B-p8fg_kvLq2HdbcT3_Jk/view?usp=drivesdk",
+      "refs": [
+        "1BVKCgiWsOHLddJMsbxyetd0eLp95CN9e",
+        "1OkXtLUv3z2bpPfoLbD4ENe-8YnST2_oC",
+        "1XC5HMiOHqGJHutWm7Pjnt59WumxF5gIc",
+        "17gujG0loQQHnvtgKOdpPyHp-o8Tvo8Z-",
+        "1HjhOuzTDCL9AmWQ9Ot92SmvyIsLF0bSQ",
+        "1WEjwIsZ2mQ6AcVk80I5N0_73ucNIRdRS"
+      ]
+    },
+    {
+      "id": "stage-legend",
+      "visible": true,
+      "featured": false,
+      "videoId": "DwatbG2eoUU",
+      "titleEn": "Al Maddāh — Legend of the Stage",
+      "titleAr": "المداح — أسطورة المسرح",
+      "descriptionEn": "An Egyptian fantasy film developed from concept and AI direction through shot design and final edit.",
+      "descriptionAr": "فيلم خيالي مصري يمتد من تطوير الفكرة والإخراج بالذكاء الاصطناعي إلى تصميم اللقطات والمونتاج النهائي.",
+      "breakdownEn": "https://drive.google.com/file/d/1jPvSRcXiWxPXM34LKzYVZFaEmuDfpEgt/view?usp=drivesdk",
+      "breakdownAr": "https://drive.google.com/file/d/1nSKfWYLUJIJrzoTUda_xSid9KoaCgQIN/view?usp=drivesdk",
+      "refs": [
+        "1AgxvUD7kkHz0X7Heze95n9mWdsj4V6uk",
+        "12z7wyesE1jUZtAVquS2nnBaYotVtzZcY",
+        "101LaeNo6KRRP1rFurm6LbbvcMAjGC7nC",
+        "1zRRc9jjG8mLIMUAT1wZ9iIDaZR0bwtwX",
+        "1r44p3ombK-4B3jEQA1Rz50DJhICubwV_",
+        "1ZyPywypoOoMAeRAcYZ8aaL2d3WcILJso"
+      ]
     }
   ]
 };

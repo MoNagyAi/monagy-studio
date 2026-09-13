@@ -354,3 +354,52 @@ button,input,textarea,select { font:inherit; }
 .contact-platform-grid a>span:last-child { color:var(--gold); }
 @media(max-width:600px) { .contact-platform-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:360px) { .contact-platform-grid { grid-template-columns:1fr; } }
+
+/* Opening showreel: a cinematic screen immediately after the original cover. */
+.featured-showreel { position:relative; padding:94px clamp(20px,7vw,110px) 104px; scroll-margin-top:94px; background:radial-gradient(ellipse at 50% 68%,color-mix(in srgb,var(--gold) 9%,transparent),transparent 65%),#090909; border-block:1px solid var(--line); }
+.featured-showreel[hidden] { display:none; }
+.reel-section-heading { display:grid; grid-template-columns:1.1fr 1fr; gap:clamp(28px,6vw,100px); align-items:end; max-width:1320px; margin:0 auto 38px; }
+.reel-eyebrow { display:flex; flex-wrap:wrap; gap:10px 16px; margin:0 0 22px; color:var(--gold); font-size:10px; font-weight:700; letter-spacing:.17em; }
+.reel-eyebrow [lang="ar"] { letter-spacing:0; font-family:Cairo,sans-serif; }
+.classic-site .reel-heading-copy h2 { max-width:600px; margin:0; font:700 clamp(44px,6.8vw,94px)/1.02 "Space Grotesk",Cairo,sans-serif; letter-spacing:-.065em; }
+.reel-intro h3 { margin:0 0 15px; color:var(--gold); font:600 clamp(24px,2.5vw,34px)/1.5 Cairo,sans-serif; }
+.reel-intro p { margin:10px 0 0; color:#bbb7b0; font-size:14px; line-height:1.85; }
+.reel-intro [lang="ar"] { font-family:Cairo,sans-serif; }
+.reel-cinema { position:relative; max-width:1320px; margin:auto; padding:0 18px; border:1px solid color-mix(in srgb,var(--gold) 40%,transparent); background:linear-gradient(140deg,#19150e,#0c0c0c 45%); box-shadow:0 35px 90px #0009; }
+.reel-cinema::before,.reel-cinema::after { content:""; position:absolute; top:52px; bottom:104px; width:6px; background:repeating-linear-gradient(to bottom,transparent 0 12px,#ffffff12 12px 23px,transparent 23px 34px); pointer-events:none; }
+.reel-cinema::before { left:5px; }
+.reel-cinema::after { right:5px; }
+.reel-frame-bar { display:flex; align-items:center; gap:22px; height:52px; color:var(--gold); }
+.reel-brand { font:600 11px "Space Grotesk",sans-serif; letter-spacing:.18em; text-transform:uppercase; }
+.reel-frame-line { height:1px; flex:1; background:linear-gradient(90deg,color-mix(in srgb,var(--gold) 35%,transparent),transparent); }
+.reel-frame-mark { font-size:11px; }
+.reel-video-shell { position:relative; width:100%; aspect-ratio:16/9; overflow:hidden; background:#030303; border:1px solid #ffffff12; }
+.reel-video-shell iframe { display:block; width:100%; height:100%; border:0; }
+.reel-actions { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:20px 5px; }
+.reel-actions a { display:flex; align-items:center; gap:25px; padding:5px 0; transition:color .2s ease; }
+.reel-actions strong,.reel-actions small { display:block; }
+.reel-actions strong { font-size:12px; font-weight:600; }
+.reel-actions small { margin-top:5px; color:#aaa69f; font:500 12px/1.6 Cairo,sans-serif; text-align:start; }
+.reel-actions a>span:last-child { color:var(--gold); font-size:23px; }
+.reel-actions a:hover,.reel-actions a:hover small { color:var(--gold); }
+.reel-actions a:focus-visible,.classic-hero a.showreel:focus-visible { outline:2px solid var(--gold); outline-offset:7px; }
+@media (max-width:900px) {
+  .featured-showreel { scroll-margin-top:122px; padding-block:68px 76px; }
+  .reel-section-heading { grid-template-columns:1fr; gap:24px; }
+  .classic-site .reel-heading-copy h2 { max-width:none; font-size:clamp(42px,7.5vw,68px); }
+  .reel-intro { max-width:700px; }
+}
+@media (max-width:560px) {
+  .featured-showreel { padding-inline:16px; }
+  .reel-section-heading { margin-bottom:25px; }
+  .reel-eyebrow { margin-bottom:16px; font-size:9px; }
+  .reel-intro p { font-size:13px; }
+  .reel-cinema { padding-inline:7px; }
+  .reel-cinema::before,.reel-cinema::after { display:none; }
+  .reel-frame-bar { height:40px; padding-inline:4px; }
+  .reel-brand { font-size:9px; }
+  .reel-actions { gap:16px; padding:16px 5px; align-items:flex-start; }
+  .reel-actions a { gap:8px; }
+  .reel-actions strong,.reel-actions small { font-size:10px; }
+  .reel-actions a>span:last-child { font-size:18px; }
+}

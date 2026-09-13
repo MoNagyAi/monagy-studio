@@ -35,8 +35,22 @@
     "nameLine2": "STUDIO",
     "textEn": "Generative AI filmmaking, cinematic storytelling and media production — from concept to final frame.",
     "textAr": "صناعة أفلام بالذكاء الاصطناعي وسرد سينمائي وإنتاج إعلامي متكامل — من الفكرة إلى الكادر الأخير.",
-    "buttonEn": "VIEW SELECTED FILMS",
-    "buttonAr": "شاهد الأفلام المختارة"
+    "buttonEn": "WATCH THE SHOWREEL",
+    "buttonAr": "شاهد الشوريل"
+  },
+  "showreel": {
+    "visible": true,
+    "videoUrl": "https://drive.google.com/file/d/12wMYsDO0bKKaK4B2x0NRNWuOr_MvsU4y/view",
+    "eyebrowEn": "ENTER MY CINEMATIC WORLD",
+    "eyebrowAr": "ادخل عالمي السينمائي",
+    "titleEn": "Cinematic Showreel",
+    "titleAr": "الشوريل السينمائي",
+    "descriptionEn": "A glimpse into my world of visual storytelling. Watch the reel, then explore the films and the creative process behind each project.",
+    "descriptionAr": "لمحة من عالمي في السرد البصري. شاهد الشوريل، ثم اكتشف الأفلام ومراحل تنفيذ كل مشروع.",
+    "openLabelEn": "Open in a new tab",
+    "openLabelAr": "افتح في صفحة مستقلة",
+    "projectsLabelEn": "Explore the projects",
+    "projectsLabelAr": "اكتشف المشروعات"
   },
   "bio": {
     "eyebrow": "MEET THE FILMMAKER / تعرف على صانع الأفلام",
