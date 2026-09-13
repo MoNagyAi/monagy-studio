@@ -1,3 +1,46 @@
+/* Showreel runtime protection + optional visit summaries. */
+(function protectShowreelEmbed() {
+  "use strict";
+  const SHOWREEL_ID = "hdnQ1pbJbLo";
+  const EMBED_URL = `https://www.youtube-nocookie.com/embed/${SHOWREEL_ID}?rel=0&modestbranding=1&playsinline=1&controls=1&disablekb=1&iv_load_policy=3`;
+
+  function apply() {
+    const frame = document.getElementById("showreel-player");
+    if (frame) {
+      if (frame.getAttribute("src") !== EMBED_URL) frame.setAttribute("src", EMBED_URL);
+      frame.setAttribute("sandbox", "allow-scripts allow-same-origin allow-presentation");
+      frame.setAttribute("allow", "autoplay; encrypted-media; fullscreen; picture-in-picture");
+      frame.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+    }
+
+    const externalLink = document.querySelector("#showreel .reel-open-link");
+    if (externalLink) {
+      externalLink.hidden = true;
+      externalLink.style.display = "none";
+      externalLink.removeAttribute("href");
+      externalLink.removeAttribute("target");
+      externalLink.setAttribute("aria-hidden", "true");
+      externalLink.setAttribute("tabindex", "-1");
+    }
+  }
+
+  apply();
+  document.addEventListener("DOMContentLoaded", apply, { once: true });
+  window.addEventListener("load", apply, { once: true });
+
+  const observer = new MutationObserver(() => apply());
+  observer.observe(document.documentElement, {
+    subtree: true,
+    childList: true,
+    attributes: true,
+    attributeFilter: ["src", "href", "hidden"]
+  });
+
+  setTimeout(apply, 250);
+  setTimeout(apply, 1000);
+  setTimeout(apply, 2500);
+})();
+
 /* Optional visit summaries. */
 (async function () {
   "use strict";
