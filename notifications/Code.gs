@@ -13,6 +13,19 @@ function mnValidate_(d) {
     visibleSeconds:mnCount_(d.visibleSeconds,86400),clicks:mnCount_(d.clicks,10000),
     events:(Array.isArray(d.events)?d.events:[]).slice(0,30).map(x=>({label:mnText_(x.label),count:mnCount_(x.count,10000)}))};
 }
+
+// Called under the script lock. Only unsent visits use pending capacity;
+// small sent markers are retained for 24 hours to reject duplicate snapshots.
+function mnVisits_(p, now) {
+  const all = p.getProperties(), visits = {};
+  Object.keys(all).filter(k => k.indexOf("visit:") === 0).forEach(key => {
+    const r = JSON.parse(all[key]);
+    if (now - r.first > 86400000) p.deleteProperty(key);
+    else visits[key] = r;
+  });
+  return visits;
+}
+
 function doGet() { return ContentService.createTextOutput("MoNagy visit receiver ready"); }
 function doPost(e) {
   try {
@@ -23,12 +36,12 @@ function doPost(e) {
     if (!lock.tryLock(1500)) return ContentService.createTextOutput("busy");
     try {
       const p = PropertiesService.getScriptProperties(), key = "visit:" + d.visit;
-      const previous = p.getProperty(key);
-      const old = previous ? JSON.parse(previous) : null;
+      const visits = mnVisits_(p, now);
+      const old = visits[key] || null;
       if (old && old.sent) return ContentService.createTextOutput("closed");
       // Full snapshots are idempotent; ignore delayed snapshots.
       if (old && d.sequence <= old.data.sequence) return ContentService.createTextOutput("stale");
-      if (!old && Object.keys(p.getProperties()).filter(k=>k.indexOf("visit:")===0).length >= MN_PENDING_CAP) return ContentService.createTextOutput("capacity");
+      if (!old && Object.keys(visits).filter(k => !visits[k].sent).length >= MN_PENDING_CAP) return ContentService.createTextOutput("capacity");
       const value = JSON.stringify({first:old?old.first:now,last:now,data:d});
       if (Utilities.newBlob(value).getBytes().length > 8000) throw new Error("Snapshot too large");
       p.setProperty(key,value);
@@ -61,21 +74,23 @@ function sendPendingVisits() {
   const lock = LockService.getScriptLock();
   if (!lock.tryLock(1000)) return;
   try {
-    const p = PropertiesService.getScriptProperties(), all = p.getProperties(), now=Date.now();
+    const p = PropertiesService.getScriptProperties(), now=Date.now();
+    const visits = mnVisits_(p, now);
     const day = Utilities.formatDate(new Date(),"Africa/Cairo","yyyy-MM-dd");
     let count = Number(p.getProperty("mailDay") === day ? p.getProperty("mailCount") : 0) || 0;
     p.setProperty("mailDay",day); p.setProperty("mailCount",String(count));
-    Object.keys(all).filter(k=>k.indexOf("visit:")===0).forEach(key=>{
-      const r = JSON.parse(all[key]);
-      if (now-r.first > 86400000) { p.deleteProperty(key); return; }
+    Object.keys(visits).forEach(key=>{
+      const r = visits[key];
       if (r.sent || now-r.last < 300000) return;
       if (count >= MN_DAILY_CAP || MailApp.getRemainingDailyQuota() < 1) return;
       // Mark first to avoid duplicate email if execution stops after sending.
       // A crash between this write and send can lose this one notification.
       p.setProperty(key,JSON.stringify({first:r.first,last:r.last,sent:true}));
-      count++; p.setProperty("mailCount",String(count));
-      try { MailApp.sendEmail({to:MN_RECIPIENT,subject:"🔔 زيارة البورتفوليو — " + r.data.clicks + " ضغطة مسجلة",body:mnBody_(r),name:"MoNagy Portfolio"}); }
+      try {
+        MailApp.sendEmail({to:MN_RECIPIENT,subject:"🔔 زيارة البورتفوليو — " + r.data.clicks + " ضغطة مسجلة",body:mnBody_(r),name:"MoNagy Portfolio"});
+      }
       catch(err) { p.setProperty(key,JSON.stringify(r)); throw err; }
+      count++; p.setProperty("mailCount",String(count));
     });
   } finally { lock.releaseLock(); }
 }
@@ -88,4 +103,36 @@ function setup() {
 }
 function sendTestEmail() {
   MailApp.sendEmail({to:MN_RECIPIENT,subject:"اختبار تنبيهات MoNagy",body:"هذه رسالة اختبار لخدمة إشعارات البورتفوليو، وليست زيارة حقيقية.",name:"MoNagy Portfolio"});
+}
+
+// Run manually in the owner's Apps Script editor. This does not send email,
+// change stored visits, or expose account diagnostics through the public URL.
+function diagnoseNotifications() {
+  const p = PropertiesService.getScriptProperties(), all = p.getProperties(), now = Date.now();
+  const day = Utilities.formatDate(new Date(),"Africa/Cairo","yyyy-MM-dd");
+  let pending = 0, ready = 0, sent = 0, expired = 0, unreadable = 0, latest = 0;
+  Object.keys(all).filter(k => k.indexOf("visit:") === 0).forEach(key => {
+    let r;
+    try { r = JSON.parse(all[key]); } catch (_) { unreadable++; return; }
+    if (!r || !Number.isFinite(r.first)) { unreadable++; return; }
+    latest = Math.max(latest, Number(r.last) || r.first);
+    if (now - r.first > 86400000) { expired++; return; }
+    if (r.sent) sent++;
+    else { pending++; if (now - r.last >= 300000) ready++; }
+  });
+  const status = {
+    pendingVisits: pending,
+    pendingLimit: MN_PENDING_CAP,
+    readyAfterIdle: ready,
+    sentMarkers: sent,
+    expiredRecords: expired,
+    unreadableRecords: unreadable,
+    latestStoredUpdate: latest ? new Date(latest).toISOString() : null,
+    sentToday: all.mailDay === day ? Number(all.mailCount) || 0 : 0,
+    dailyEmailLimit: MN_DAILY_CAP,
+    googleEmailQuotaRemaining: MailApp.getRemainingDailyQuota(),
+    senderTriggersForCurrentAccount: ScriptApp.getProjectTriggers().filter(t => t.getHandlerFunction() === "sendPendingVisits").length
+  };
+  console.log(JSON.stringify(status, null, 2));
+  return status;
 }
