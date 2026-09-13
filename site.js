@@ -76,7 +76,6 @@
   $$(".portrait, #about > img").forEach(image => {
     if (settings.profile) image.src = safeUrl(settings.profile);
   });
-
   const navMap = [
     ["#films", navigation.filmsEn, navigation.filmsAr],
     ["#about", navigation.aboutEn, navigation.aboutAr],
@@ -131,13 +130,14 @@
   }
   const reelVideo = reelSource(reel.videoUrl);
   if (reelSection && reelPlayer && reel.visible !== false && reelVideo) {
-    $("[data-reel-field]",reelSection).forEach(element => {
+    $$("[data-reel-field]", reelSection).forEach(element => {
       setElementText(element,reel[element.dataset.reelField]);
     });
     setText(".reel-brand",settings.brandName,reelSection);
     reelPlayer.title = [settings.brandName || "MoNagy Studio",reel.titleEn || "Showreel",reel.titleAr || "الشوريل"].join(" — ");
     reelPlayer.src = reelVideo.embed;
-    $(".reel-open-link",reelSection).href = reelVideo.view;
+    const reelOpenLink = $(".reel-open-link", reelSection);
+    if (reelOpenLink) reelOpenLink.href = reelVideo.view;
     reelSection.hidden = false;
     if (heroReelLink) heroReelLink.href = "#showreel";
     if (location.hash === "#showreel") requestAnimationFrame(() => reelSection.scrollIntoView());
