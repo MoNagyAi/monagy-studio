@@ -105,6 +105,34 @@
   const reelSection = $("#showreel");
   const reelPlayer = $("#showreel-player");
   const heroReelLink = $(".classic-hero a.showreel");
+  const heroBottom = $(".classic-hero .hero-bottom");
+  if (heroBottom && heroReelLink && !$(".selected-films-link", heroBottom)) {
+    const actions = document.createElement("div");
+    actions.className = "hero-actions";
+    actions.style.display = "flex";
+    actions.style.alignItems = "center";
+    actions.style.justifyContent = "flex-end";
+    actions.style.gap = "clamp(20px, 2.5vw, 38px)";
+    actions.style.flexWrap = "wrap";
+    heroReelLink.replaceWith(actions);
+    actions.appendChild(heroReelLink);
+
+    const filmsLink = document.createElement("a");
+    filmsLink.className = "showreel selected-films-link";
+    filmsLink.href = "#films";
+    filmsLink.setAttribute("aria-label", "Explore selected films — اكتشف الأعمال المختارة");
+    filmsLink.innerHTML = `<span class="showreel-text"><span class="selected-films-en" lang="en">EXPLORE SELECTED WORK</span><span class="showreel-ar" lang="ar" dir="rtl">اكتشف الأعمال المختارة</span></span><i aria-hidden="true">↓</i>`;
+    const filmsEn = $(".selected-films-en", filmsLink);
+    if (filmsEn) {
+      filmsEn.style.textTransform = "uppercase";
+      filmsEn.style.letterSpacing = ".14em";
+      filmsEn.style.fontSize = "1rem";
+      filmsEn.style.fontWeight = "800";
+      filmsEn.style.color = "var(--text)";
+      filmsEn.style.textShadow = "0 2px 10px rgba(0,0,0,.55)";
+    }
+    actions.appendChild(filmsLink);
+  }
   function reelSource(value) {
     try {
       const url = new URL(String(value || "").trim());
