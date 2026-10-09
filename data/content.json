@@ -273,6 +273,66 @@
   },
   "projects": [
     {
+      "id": "monagy-hose",
+      "visible": true,
+      "featured": false,
+      "videoId": "aIjqA4OEA2M",
+      "titleEn": "MONAGY HOSE — The Impossible Wall",
+      "titleAr": "خرطوم موناجي — الساتر المستحيل",
+      "descriptionEn": "A fictional AI spec commercial turns football, fencing and strength into one cinematic challenge, with water delivering the final reveal.",
+      "descriptionAr": "إعلان تخيلي بالذكاء الاصطناعي يجمع كرة القدم والمبارزة والقوة في تحدٍ سينمائي واحد، قبل أن تحسم المياه النتيجة.",
+      "breakdownEn": "https://drive.google.com/file/d/16ObBzwkFLxo98Wn5LFw-WzmaorfqFRkc/view?usp=drivesdk",
+      "breakdownAr": "https://drive.google.com/file/d/1Zaq7ojgR7mGvsJUTt5LbmlnxPlHGqXhR/view?usp=drivesdk",
+      "refs": [
+        "1Q2ilIJ4PH1LQNJ8W94SrftG-XvY6UIaS",
+        "1MRgbchwVa5XhE3CNunNTpwxxkbtL6Xc1",
+        "1G0Qa10xD_j_ympoUtvsSFQwEam5swy6b",
+        "1l4-Ur3_IxMHnEkC1uBMoly2Ig3IMsRUi",
+        "1ygQhoT24GDDhjfqyZDg4B8EWWwvMTLFl",
+        "1s9hwBCLOW7ZpuE47WBMUrfWiPCKLKjOp"
+      ]
+    },
+    {
+      "id": "abu-al-tannin",
+      "visible": true,
+      "featured": false,
+      "videoId": "DPYylx8B0ZI",
+      "titleEn": "Abu Al-Tannin — The General",
+      "titleAr": "أبو التنين — الجنرال",
+      "descriptionEn": "A satirical AI + CG fantasy inspired by October 1973, where a dragon's fire meets an unmoved barrier and ingenuity opens the way.",
+      "descriptionAr": "فانتازيا ساخرة بتقنيات الذكاء الاصطناعي والجرافيك، مستوحاة من أكتوبر 1973؛ يعجز فيها لهب التنين أمام الساتر، وتفتح الفكرة الطريق.",
+      "breakdownEn": "https://drive.google.com/file/d/1Xc_Te9ajVfsYFLry2fCsgTj9sm8Hj8_D/view?usp=drivesdk",
+      "breakdownAr": "https://drive.google.com/file/d/1tZmO7hCmYwEgt0z_YzJalfMGxOGuPDTx/view?usp=drivesdk",
+      "refs": [
+        "187_17XSLfgsAr5mn-wwA9aMFbtUfSu_9",
+        "1_zgvxy00SdeFkEVd2TZR3TTqXyL87nYY",
+        "12EK96It6lowdeemeDzy2cj-6u-Mnq1rS",
+        "1xBoCg6jlRh1m-yQWJPQpGT4rEkeS4d4g",
+        "1egOnWK9v3QclnHT7ZMs69q9vuPAH2tr_",
+        "1WOPTaQYL2-OuB7FUz7o5nliNgTX3Pch8"
+      ]
+    },
+    {
+      "id": "unknown-soldier",
+      "visible": true,
+      "featured": false,
+      "videoId": "oUXQ2kHRwuU",
+      "titleEn": "The Unknown Soldier",
+      "titleAr": "الجندي المجهول",
+      "descriptionEn": "A character-led Local AI + CG drama following Naji, a fictional Egyptian soldier moving through the hardest moments to bring the wounded back to safety.",
+      "descriptionAr": "حكاية درامية بتقنيات الذكاء الاصطناعي المحلي والجرافيك تتبع «ناجي»، جنديًا مصريًا تخيليًا يتحرك وسط أصعب اللحظات لإنقاذ المصابين وإعادتهم إلى الأمان.",
+      "breakdownEn": "https://drive.google.com/file/d/1UZzQVc9LgVSUmWa53qDwmXGzd4h1kxmE/view?usp=drivesdk",
+      "breakdownAr": "https://drive.google.com/file/d/1ZpicRUqQGIySHZUVDXfE81FhDGN_5CBd/view?usp=drivesdk",
+      "refs": [
+        "1oMQb8hqOSMHg9qbKQnM5tC1U3P8nzsKd",
+        "1t9LsAdSM6tX1Hm7ZxB77FLQxohy2mT_g",
+        "179XwcOuD5VWaMQ5Dl7itOfQZ0x2mvh24",
+        "1LlpZ1txIgxZnWCwTmHeBaeqghYiVtDGa",
+        "1Kxp4gy6-Bge-t9gB_en8Oqfd_nEnRegJ",
+        "1inHmA_VC_yAlqcOqeAOsk78S0FOyShgK"
+      ]
+    },
+    {
       "id": "black-cat",
       "visible": true,
       "featured": true,
