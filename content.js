@@ -1,8 +1,8 @@
 window.MONAGY_CONTENT = {
   "settings": {
     "brandName": "MoNagy Studio",
-    "pageTitle": "MoNagy Studio — AI Filmmaker & Creative Director",
-    "metaDescription": "Cinematic Generative AI filmmaking portfolio by Mohamed Nagy.",
+    "pageTitle": "MoNagy Studio | Mohamed Nagy — Generative AI Filmmaker",
+    "metaDescription": "Explore films, animation and branded content by Mohamed Nagy, a Generative AI Filmmaker and AI Media Producer based in Egypt, working with clients worldwide.",
     "accent": "#d9a52a",
     "background": "#070707",
     "panel": "#101010",
